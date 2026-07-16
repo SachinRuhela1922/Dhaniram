@@ -1,0 +1,577 @@
+.lSSlideOuter,
+.lSSlideOuter .lSPager.lSGallery {
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    overflow: hidden
+}
+
+.lSSlideOuter .lSPager,
+.lSSlideOuter .lightSlider,
+ul {
+    padding-left: 0;
+    list-style: none
+}
+
+ul {
+    margin: 0
+}
+
+.content-slider li {
+    background-color: #2b1c2b;
+    text-align: center;
+    color: #fff;
+    position: relative
+}
+
+/*! lightslider - v1.1.3 - 2015-04-14
+* https://github.com/sachinchoolur/lightslider
+* Copyright (c) 2015 Sachin N; Licensed MIT */
+
+.lSSlideOuter {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+.gallery img {
+    width: 100%;
+    display: block;
+    height: auto;
+    transition: 555ms ease-in-out;
+}
+
+.lSAction>a,
+.testi-cell:before {
+    width: 45px;
+    height: 45px;
+    position: absolute
+}
+
+.gallery li {
+    position: relative;
+    overflow: hidden;
+    background-color: #333333;
+    outline: solid 2px rgba(255, 255, 255, 0.7);
+    outline-offset: -20px;
+}
+
+.gallery li:hover {
+    outline-offset: -10px;
+}
+
+.portfoliotext {
+    position: absolute;
+    left: 5%;
+    z-index: 99;
+    transition: 255ms ease-in-out;
+    font-size: 21px;
+    font-weight: normal;
+    top: 83%;
+    color: #000000;
+    background-color: #e6ce02;
+    width: 200px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 21px;
+    text-align: left;
+}
+
+.gallery li:hover .portfoliotext {
+    color: #fff;
+    top: 80%;
+    background-color: #009933;
+}
+
+.gallery li:hover img {
+    opacity: 0.7;
+    transform: scale(1.2)
+}
+
+.roompic .item #image-gallery li:hover img {
+    transform: scale(1.02);
+    opacity: 1;
+}
+
+.roompic .lSAction>a {
+    background-image: url('../images/controls.png');
+    cursor: pointer;
+    z-index: 99;
+    opacity: .7;
+    bottom: 48%;
+    text-align: center;
+    display: inline-block
+}
+
+.lSSlideOuter .lSPager.lSGallery:after,
+.lSSlideOuter .lSPager.lSGallery:before,
+.lightSlider:after,
+.lightSlider:before {
+    content: " ";
+    display: table
+}
+
+.testi-cell {
+    width: 100%;
+    font-size: 16px;
+    line-height: 24px;
+    position: relative;
+    margin-bottom: 35px;
+    overflow: hidden;
+    color: #fff;
+    background-color: #000;
+    border-radius: 5px;
+}
+
+.testidesc {
+    position: absolute;
+    z-index: 5;
+    bottom: 10%;
+    padding: 3em;
+    transition: all ease 222ms;
+}
+
+.testi-cell:hover .testidesc {
+    bottom: 15%;
+}
+
+.testi-cell h2 {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 400;
+    position: relative;
+    border-bottom: none;
+    padding-bottom: 0px;
+    margin-bottom: 19px;
+}
+
+.testi-cell h2:before {
+    position: absolute;
+    content: '';
+    width: 80%;
+    height: 40px;
+    background: linear-gradient(90deg, rgba(207, 99, 69, 1) 27%, rgba(207, 99, 69, 0) 100%);
+    z-index: -1;
+    margin-left: -21px;
+    border-radius: 25px;
+}
+
+.testi-cell img {
+    width: 100%;
+    height: 420px;
+    transition: all ease 522ms;
+    vertical-align: top;
+    object-fit: cover;
+}
+
+.testi-cell:hover img {
+    transform: scale(1.1);
+    opacity: 0.5
+}
+
+.testi-cell strong {
+    padding-top: 21px;
+    padding-bottom: 21px;
+    display: block;
+    background-image: url(../images/white-line.png);
+    background-repeat: no-repeat;
+    background-position: left bottom
+}
+
+#team li img {
+    border-radius: 50%;
+    height: auto;
+    width: 100%;
+    border: 11px solid rgba(204, 204, 204, .3);
+    transition: 222ms
+}
+
+#team li:hover img {
+    border: 11px solid #959a73
+}
+
+.item #team li {
+    padding: 3em;
+    padding-top: 0px;
+}
+
+.drname {
+    text-align: center;
+    width: 100%;
+    padding-top: 15px;
+    color: #443422;
+    font-size: 14px;
+    line-height: normal;
+    min-height: 200px;
+}
+
+.drname strong {
+    font-size: 15px;
+    display: block
+}
+
+.lSSlideOuter.vertical,
+.lSSlideWrapper,
+.lSSlideWrapper .lSFade {
+    position: relative
+}
+
+.lightSlider {
+    overflow: hidden;
+    margin: 0
+}
+
+.lSSlideWrapper {
+    max-width: 100%;
+    overflow: hidden
+}
+
+.lSSlideOuter .lSPager.lSGallery:after,
+.lSSlideWrapper>.lightSlider:after {
+    clear: both
+}
+
+.lSSlideWrapper .lSSlide {
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+    -webkit-transition: -webkit-transform 1s, height 1s;
+    -moz-transition-property: -moz-transform, height;
+    transition-property: transform, height;
+    -webkit-transition-duration: inherit !important;
+    transition-duration: inherit !important;
+    -webkit-transition-timing-function: inherit !important;
+    transition-timing-function: inherit !important
+}
+
+.lSSlideWrapper .lSFade>* {
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    margin-right: 0;
+    width: 100%
+}
+
+.lSSlideWrapper.usingCss .lSFade>* {
+    opacity: 0;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+    -webkit-transition-duration: inherit !important;
+    transition-duration: inherit !important;
+    -webkit-transition-property: opacity;
+    transition-property: opacity;
+    -webkit-transition-timing-function: inherit !important;
+    transition-timing-function: inherit !important
+}
+
+.lSSlideWrapper .lSFade>.active {
+    z-index: 10
+}
+
+.lSAction>a:hover,
+.lSSlideOuter .media.active,
+.lSSlideWrapper.usingCss .lSFade>.active {
+    opacity: 1
+}
+
+.lSSlideOuter .lSPager.lSpg {
+    text-align: center;
+}
+
+.lSSlideOuter .lSPager.lSpg>li {
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 5px
+}
+
+.lSSlideOuter .lSPager.lSpg>li a {
+    background-color: #FFFFFF;
+    display: inline-block;
+    height: 9px;
+    overflow: hidden;
+    text-indent: -999em;
+    width: 9px;
+    position: relative;
+    z-index: 99;
+    -webkit-transition: .5s linear;
+    transition: .5s linear;
+    border-radius: 50%;
+}
+
+/*.wrap66 .lSSlideOuter.lSPager.lSpg > li a {
+    background-color: #E1383B;
+}*/
+
+.wrap66 .lSSlideOuter .lSPager.lSpg li a {
+    background-color: #8c9167;
+}
+
+.wrap66 .lSSlideOuter .lSPager.lSpg {
+    margin-bottom: 55px;
+}
+
+.lSSlideOuter .lSPager.lSpg>li.active a,
+.lSSlideOuter .lSPager.lSpg>li:hover a {
+    background-color: #E34D38;
+    width: 25px;
+    border-radius: 5px;
+}
+
+.lSSlideOuter .media {
+    opacity: .8
+}
+
+.lSSlideOuter .lSPager.lSGallery {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    transform: translate3d(0, 0, 0);
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    display: none
+}
+
+.lSSlideOuter .lSPager.lSGallery li {
+    overflow: hidden
+}
+
+.lSSlideOuter .lSPager.lSGallery img {
+    display: block;
+    width: 120px;
+    height: 70px;
+    object-fit: cover
+}
+
+.lSAction>a {
+    background-image: url('../images/controls.png');
+    cursor: pointer;
+    z-index: 99;
+    opacity: .5;
+    bottom: 0;
+    text-align: center;
+    display: none
+}
+
+.lSAction>.lSPrev {
+    background-position: 0 0;
+    left: 4%
+}
+
+.lSAction>.lSNext {
+    background-position: -45px 0;
+    right: 4%;
+}
+
+.lSAction>a.disabled {
+    pointer-events: none
+}
+
+.cS-hidden {
+    height: 1px;
+    opacity: 0;
+    overflow: hidden
+}
+
+.lSSlideOuter.vertical.noPager {
+    padding-right: 0 !important
+}
+
+.lSSlideOuter.vertical .lSGallery {
+    position: absolute !important;
+    right: 0;
+    top: 0
+}
+
+.lSSlideOuter.vertical .lightSlider>* {
+    width: 100% !important;
+    max-width: none !important
+}
+
+.lSSlideOuter.vertical .lSAction>a {
+    left: 50%;
+    margin-left: -14px;
+    margin-top: 0
+}
+
+.lSSlideOuter.vertical .lSAction>.lSNext {
+    background-position: 31px -31px;
+    bottom: 10px;
+    top: auto
+}
+
+.lSSlideOuter.vertical .lSAction>.lSPrev {
+    background-position: 0 -31px;
+    bottom: auto;
+    top: 10px
+}
+
+.lSSlideOuter.lSrtl {
+    direction: rtl
+}
+
+.lSSlideOuter.lSrtl .lSPager,
+.lSSlideOuter.lSrtl .lightSlider {
+    padding-right: 0
+}
+
+.lSSlideOuter .lSGallery li,
+.lSSlideOuter .lightSlider>* {
+    float: left
+}
+
+.lSSlideOuter.lSrtl .lSGallery li,
+.lSSlideOuter.lSrtl .lightSlider>* {
+    float: right !important
+}
+
+@-webkit-keyframes rightEnd {
+    0%,
+    100% {
+        left: 0
+    }
+    50% {
+        left: -15px
+    }
+}
+
+@keyframes rightEnd {
+    0%,
+    100% {
+        left: 0
+    }
+    50% {
+        left: -15px
+    }
+}
+
+@-webkit-keyframes topEnd {
+    0%,
+    100% {
+        top: 0
+    }
+    50% {
+        top: -15px
+    }
+}
+
+@keyframes topEnd {
+    0%,
+    100% {
+        top: 0
+    }
+    50% {
+        top: -15px
+    }
+}
+
+@-webkit-keyframes leftEnd {
+    0%,
+    100% {
+        left: 0
+    }
+    50% {
+        left: 15px
+    }
+}
+
+@keyframes leftEnd {
+    0%,
+    100% {
+        left: 0
+    }
+    50% {
+        left: 15px
+    }
+}
+
+@-webkit-keyframes bottomEnd {
+    0%,
+    100% {
+        bottom: 0
+    }
+    50% {
+        bottom: -15px
+    }
+}
+
+@keyframes bottomEnd {
+    0%,
+    100% {
+        bottom: 0
+    }
+    50% {
+        bottom: -15px
+    }
+}
+
+.lSSlideOuter .rightEnd,
+.lSSlideOuter.lSrtl .leftEnd {
+    -webkit-animation: .3s rightEnd;
+    animation: .3s rightEnd;
+    position: relative
+}
+
+.lSSlideOuter .leftEnd,
+.lSSlideOuter.lSrtl .rightEnd {
+    -webkit-animation: .3s leftEnd;
+    animation: .3s leftEnd;
+    position: relative
+}
+
+.lSSlideOuter.vertical .rightEnd {
+    -webkit-animation: .3s topEnd;
+    animation: .3s topEnd;
+    position: relative
+}
+
+.lSSlideOuter.vertical .leftEnd {
+    -webkit-animation: .3s bottomEnd;
+    animation: .3s bottomEnd;
+    position: relative
+}
+
+.lightSlider.lsGrab>*,
+.lightSlider.lsGrabbing>* {
+    cursor: e-resize
+}
+
+@media(max-width:1440px) {
+    .testi-cell img {
+        height: 350px;
+    }
+}
+
+@media(max-width:780px) {
+    .demo .item {
+        margin-top: -140px
+    }
+}
+
+@media(max-width:490px) {
+    .lSSlideOuter .lSPager.lSGallery img {
+        height: 50px
+    }
+    .gallery li {
+        outline-offset: -22px;
+    }
+    .portfoliotext {
+        left: 5%;
+        font-size: 21px;
+        top: 75%;
+    }
+    .gallery li {
+        outline-offset: -11px;
+    }
+    .gallery img {
+        height: 260px;
+        object-fit: cover;
+    }
+    .roompic .lSAction>a {
+        bottom: 43%;
+    }
+}
