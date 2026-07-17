@@ -1,0 +1,1386 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Dhaniram Ayurveda · Treatments</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Poppins", sans-serif;
+        background: #fff;
+      }
+
+      /* ===== HEADER ===== */
+      header {
+        width: 100%;
+        background: #fff;
+        border-bottom: 1px solid #eee;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 999;
+        transition: all 0.3s ease;
+      }
+
+      .topbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 45px;
+        transition: all 0.3s ease;
+        overflow: hidden;
+        max-height: 80px;
+        opacity: 1;
+      }
+
+      .topbar.hidden {
+        max-height: 0;
+        padding: 0 45px;
+        opacity: 0;
+        border-bottom: none;
+      }
+
+      .left-info,
+      .right-info {
+        display: flex;
+        gap: 50px;
+      }
+
+      .info-box {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+
+      .info-box i {
+        font-size: 28px;
+        color: #8a9434;
+      }
+
+      .info-box h4 {
+        font-size: 14px;
+        font-weight: 600;
+        color: #b24d2c;
+        line-height: 1.1;
+      }
+
+      .info-box p {
+        font-size: 13px;
+        color: #444;
+      }
+
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 55px;
+        position: relative;
+        transition: all 0.3s ease;
+      }
+
+      .navbar.shrink {
+        padding: 6px 55px;
+      }
+
+      .nav-left,
+      .nav-right {
+        display: flex;
+        align-items: center;
+        gap: 45px;
+        list-style: none;
+      }
+
+      .logo img {
+        width: 160px;
+        display: block;
+        transition: all 0.3s ease;
+      }
+
+      .navbar.shrink .logo img {
+        width: 100px;
+      }
+
+      .navbar a {
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 600;
+        color: #222;
+        letter-spacing: 0.8px;
+        transition: 0.3s;
+        white-space: nowrap;
+      }
+
+      .navbar a:hover {
+        color: #8a9434;
+      }
+
+      .menu-toggle {
+        display: none;
+        flex-direction: column;
+        gap: 5px;
+        cursor: pointer;
+        padding: 8px;
+        background: none;
+        border: none;
+        z-index: 100;
+      }
+
+      .menu-toggle span {
+        display: block;
+        width: 28px;
+        height: 3px;
+        background: #222;
+        border-radius: 4px;
+        transition: 0.3s;
+      }
+
+      .menu-toggle.active span:nth-child(1) {
+        transform: rotate(45deg) translate(6px, 6px);
+      }
+      .menu-toggle.active span:nth-child(2) {
+        opacity: 0;
+      }
+      .menu-toggle.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(6px, -6px);
+      }
+
+      @media (max-width: 1100px) {
+        .topbar {
+          display: none !important;
+        }
+        .menu-toggle {
+          display: flex;
+        }
+        .navbar {
+          padding: 12px 25px;
+          flex-wrap: wrap;
+        }
+        .navbar.shrink {
+          padding: 8px 25px;
+        }
+        .nav-left,
+        .nav-right {
+          display: none;
+          flex-direction: column;
+          width: 100%;
+          gap: 10px;
+          padding: 15px 0 10px;
+          background: #fff;
+          border-top: 1px solid #eee;
+          order: 10;
+        }
+        .nav-left.open,
+        .nav-right.open {
+          display: flex;
+        }
+        .nav-left li,
+        .nav-right li {
+          width: 100%;
+          text-align: center;
+        }
+        .nav-left a,
+        .nav-right a {
+          display: block;
+          padding: 6px 0;
+          font-size: 15px;
+        }
+        .logo {
+          order: 0;
+          flex: 1;
+          text-align: center;
+        }
+        .logo img {
+          width: 130px;
+        }
+        .navbar.shrink .logo img {
+          width: 90px;
+        }
+        .menu-toggle {
+          order: 1;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .navbar {
+          padding: 10px 16px;
+        }
+        .navbar.shrink {
+          padding: 6px 16px;
+        }
+        .logo img {
+          width: 110px;
+        }
+        .navbar.shrink .logo img {
+          width: 80px;
+        }
+        .nav-left a,
+        .nav-right a {
+          font-size: 14px;
+        }
+      }
+
+      /* ===== CONTAINER ===== */
+      .container {
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 0 30px;
+      }
+
+      .section-tag {
+        display: inline-block;
+        font-weight: 600;
+        font-size: 0.8rem;
+        letter-spacing: 2.5px;
+        color: #b44d2b;
+        background: rgba(180, 77, 43, 0.08);
+        padding: 6px 22px;
+        border-radius: 40px;
+        margin-bottom: 16px;
+        text-transform: uppercase;
+      }
+
+      .section-title {
+        font-size: 3rem;
+        font-weight: 700;
+        line-height: 1.2;
+        color: #1e1e1e;
+      }
+
+      .section-title span {
+        color: #7b8736;
+      }
+
+      .section-subtitle {
+        font-size: 1.2rem;
+        color: #5a5a5a;
+        max-width: 700px;
+        line-height: 1.7;
+        margin-top: 12px;
+      }
+
+      /* ===== TREATMENTS HERO ===== */
+      .treatments-hero {
+        padding: 140px 0 60px;
+        background: #fbfaf8;
+      }
+
+      .treatments-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+        align-items: center;
+      }
+
+      .treatments-content .badge-group {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin: 24px 0 18px;
+      }
+
+      .treatments-content .badge-pill {
+        background: #f0ede7;
+        padding: 6px 22px;
+        border-radius: 60px;
+        font-size: 0.8rem;
+        font-weight: 500;
+        color: #2e2e2e;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .treatments-content .badge-pill i {
+        color: #7b8736;
+      }
+
+      .treatments-text {
+        color: #3d3d3d;
+        line-height: 1.9;
+        font-size: 1.05rem;
+        margin: 20px 0 20px;
+      }
+
+      .treatments-text strong {
+        color: #b44d2b;
+        font-weight: 600;
+      }
+
+      .treatments-visual {
+        position: relative;
+      }
+
+      .treatments-visual .img-wrapper {
+        background: #ece7df;
+        border-radius: 28px;
+        overflow: hidden;
+        box-shadow: 0 30px 50px -20px rgba(0, 0, 0, 0.15);
+        transition: transform 0.25s ease;
+      }
+
+      .treatments-visual .img-wrapper:hover {
+        transform: scale(1.01);
+      }
+
+      .treatments-visual .floating-card {
+        position: absolute;
+        bottom: -16px;
+        left: -16px;
+        background: #ffffff;
+        padding: 16px 28px;
+        border-radius: 20px;
+        box-shadow: 0 20px 35px -8px rgba(0, 0, 0, 0.1);
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        border: 1px solid rgba(255, 255, 255, 0.6);
+        backdrop-filter: blur(2px);
+      }
+
+      .treatments-visual .floating-card i {
+        font-size: 2rem;
+        color: #7b8736;
+      }
+
+      .treatments-visual .fc-text {
+        font-weight: 600;
+        color: #1e1e1e;
+      }
+
+      .treatments-visual .fc-text small {
+        display: block;
+        font-weight: 400;
+        font-size: 0.8rem;
+        color: #6b6b6b;
+      }
+
+      /* ===== TREATMENT CATEGORIES ===== */
+      .categories-section {
+        padding: 80px 0;
+        background: #ffffff;
+      }
+
+      .categories-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        margin-top: 50px;
+      }
+
+      .category-card {
+        background: #fbfaf8;
+        padding: 35px 28px;
+        border-radius: 24px;
+        border: 1px solid #f0ede8;
+        transition: 0.3s;
+        text-align: center;
+      }
+
+      .category-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.06);
+        border-color: #d6d0c6;
+      }
+
+      .category-card .cat-icon {
+        font-size: 48px;
+        color: #7b8736;
+        margin-bottom: 18px;
+      }
+
+      .category-card h4 {
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: #1e1e1e;
+        margin-bottom: 10px;
+      }
+
+      .category-card p {
+        color: #5a5a5a;
+        font-size: 0.95rem;
+        line-height: 1.7;
+      }
+
+      .category-card .treatment-list {
+        list-style: none;
+        margin-top: 16px;
+        text-align: left;
+      }
+
+      .category-card .treatment-list li {
+        padding: 6px 0;
+        color: #3d3d3d;
+        font-size: 0.92rem;
+        border-bottom: 1px solid #f0ede8;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .category-card .treatment-list li:last-child {
+        border-bottom: none;
+      }
+
+      .category-card .treatment-list li i {
+        color: #7b8736;
+        font-size: 14px;
+      }
+
+      /* ===== PANCHAKARMA DETAIL ===== */
+      .panchakarma-section {
+        padding: 80px 0;
+        background: #f7f5f1;
+      }
+
+      .panchakarma-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+        align-items: center;
+      }
+
+      .panchakarma-list {
+        list-style: none;
+        margin-top: 20px;
+      }
+
+      .panchakarma-list li {
+        display: flex;
+        align-items: flex-start;
+        gap: 16px;
+        padding: 14px 0;
+        border-bottom: 1px solid #e8e3dc;
+        font-size: 1rem;
+        color: #3d3d3d;
+        line-height: 1.6;
+      }
+
+      .panchakarma-list li:last-child {
+        border-bottom: none;
+      }
+
+      .panchakarma-list li i {
+        color: #7b8736;
+        font-size: 20px;
+        margin-top: 4px;
+        flex-shrink: 0;
+      }
+
+      .panchakarma-list li strong {
+        color: #b44d2b;
+      }
+
+      .panchakarma-image {
+        background: #d9d2c5;
+        border-radius: 28px;
+        overflow: hidden;
+        min-height: 320px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #5a4d3d;
+        font-size: 1.2rem;
+        font-weight: 500;
+      }
+
+      /* ===== CONDITIONS TREATED ===== */
+      .conditions-section {
+        padding: 80px 0;
+        background: #ffffff;
+        text-align: center;
+      }
+
+      .conditions-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        margin-top: 50px;
+      }
+
+      .condition-item {
+        background: #fbfaf8;
+        padding: 24px 16px;
+        border-radius: 16px;
+        border: 1px solid #f0ede8;
+        transition: 0.3s;
+      }
+
+      .condition-item:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 10px 30px -8px rgba(0, 0, 0, 0.05);
+      }
+
+      .condition-item i {
+        font-size: 32px;
+        color: #7b8736;
+        margin-bottom: 10px;
+      }
+
+      .condition-item h5 {
+        font-size: 1rem;
+        font-weight: 600;
+        color: #1e1e1e;
+      }
+
+      /* ===== TESTIMONIALS ===== */
+      .testimonials-section {
+        padding: 80px 0;
+        background: #fbfaf8;
+      }
+
+      .testimonials-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        margin-top: 50px;
+      }
+
+      .testimonial-card {
+        background: #ffffff;
+        padding: 30px 28px;
+        border-radius: 24px;
+        border: 1px solid #f0ede8;
+        transition: 0.3s;
+      }
+
+      .testimonial-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 10px 30px -8px rgba(0, 0, 0, 0.05);
+      }
+
+      .testimonial-card .stars {
+        color: #f5b342;
+        font-size: 18px;
+        margin-bottom: 12px;
+      }
+
+      .testimonial-card p {
+        color: #3d3d3d;
+        font-size: 0.98rem;
+        line-height: 1.7;
+        font-style: italic;
+      }
+
+      .testimonial-card .patient-name {
+        margin-top: 14px;
+        font-weight: 600;
+        color: #1e1e1e;
+      }
+
+      .testimonial-card .patient-name span {
+        font-weight: 400;
+        color: #7a7a7a;
+        font-size: 0.9rem;
+      }
+
+      /* ===== QUOTE ===== */
+      .quote-block {
+        background: #ffffff;
+        padding: 70px 0 80px;
+        text-align: center;
+      }
+
+      .quote-block .container {
+        max-width: 900px;
+      }
+
+      .big-quote {
+        font-size: 1.8rem;
+        font-weight: 500;
+        color: #1e1e1e;
+        line-height: 1.6;
+        margin-bottom: 16px;
+      }
+
+      .big-quote i {
+        color: #b44d2b;
+        opacity: 0.4;
+        font-size: 2rem;
+        margin: 0 6px;
+      }
+
+      .author {
+        color: #7b8736;
+        font-weight: 600;
+        font-size: 1.1rem;
+      }
+
+      .author span {
+        color: #5a5a5a;
+        font-weight: 400;
+      }
+
+      .btn-premium {
+        display: inline-block;
+        margin-top: 30px;
+        background: #7b8736;
+        color: #fff;
+        padding: 16px 48px;
+        border-radius: 60px;
+        font-weight: 600;
+        font-size: 1rem;
+        text-decoration: none;
+        letter-spacing: 0.5px;
+        transition: 0.2s ease;
+        box-shadow: 0 12px 24px -8px rgba(123, 135, 54, 0.25);
+        border: 1px solid #7b8736;
+      }
+
+      .btn-premium:hover {
+        background: #6a7630;
+        transform: scale(1.02);
+        box-shadow: 0 18px 30px -8px rgba(123, 135, 54, 0.3);
+      }
+
+      .btn-premium i {
+        margin-left: 10px;
+      }
+
+      /* ===== FOOTER ===== */
+      .footer {
+        width: 100%;
+        min-height: 860px;
+        background: url("pattern.png");
+        background-size: 250px;
+        background-repeat: repeat;
+        position: relative;
+        padding: 0;
+      }
+
+      .overlay {
+        width: 100%;
+        height: 100%;
+        min-height: 860px;
+        background: rgba(202, 108, 76, 0.92);
+        padding-top: 90px;
+        padding-bottom: 60px;
+      }
+
+      .overlay h2 {
+        color: #fff;
+        text-align: center;
+        font-size: 60px;
+        font-weight: 600;
+      }
+
+      .line {
+        width: 92%;
+        height: 1px;
+        background: rgba(255, 255, 255, 0.28);
+        margin: 70px auto;
+      }
+
+      .contact-row {
+        width: 92%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 30px;
+      }
+
+      .contact-box {
+        width: 420px;
+        display: flex;
+        align-items: flex-start;
+      }
+
+      .icon {
+        width: 78px;
+        height: 78px;
+        border-radius: 50%;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+      }
+
+      .icon i {
+        color: #c46c4b;
+        font-size: 33px;
+      }
+
+      .text {
+        margin-left: 28px;
+        color: #fff;
+      }
+
+      .text h3 {
+        font-size: 28px;
+        margin-bottom: 12px;
+        font-weight: 600;
+      }
+
+      .text p {
+        font-size: 18px;
+        line-height: 34px;
+      }
+
+      .footer-extra {
+        width: 92%;
+        margin: 50px auto 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+        padding-top: 40px;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+      }
+
+      .footer-extra h4 {
+        color: #fff;
+        font-size: 22px;
+        font-weight: 600;
+        margin-bottom: 16px;
+      }
+
+      .footer-extra ul {
+        list-style: none;
+      }
+
+      .footer-extra ul li {
+        color: rgba(255, 255, 255, 0.85);
+        font-size: 16px;
+        line-height: 2.2;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      .footer-extra ul li:hover {
+        color: #fff;
+        padding-left: 6px;
+      }
+
+      .footer-extra ul li i {
+        margin-right: 10px;
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.6);
+      }
+
+      .footer-extra .newsletter p {
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 16px;
+        line-height: 1.7;
+        margin-bottom: 16px;
+      }
+
+      .footer-extra .newsletter input {
+        padding: 12px 18px;
+        border-radius: 50px;
+        border: none;
+        width: 100%;
+        max-width: 280px;
+        font-size: 14px;
+        outline: none;
+        background: rgba(255, 255, 255, 0.15);
+        color: #fff;
+        backdrop-filter: blur(4px);
+      }
+
+      .footer-extra .newsletter input::placeholder {
+        color: rgba(255, 255, 255, 0.6);
+      }
+
+      .footer-extra .newsletter button {
+        padding: 12px 28px;
+        border-radius: 50px;
+        border: none;
+        background: #fff;
+        color: #c46c4b;
+        font-weight: 600;
+        font-size: 14px;
+        cursor: pointer;
+        transition: 0.3s;
+        margin-top: 10px;
+      }
+
+      .footer-extra .newsletter button:hover {
+        background: #f0ede7;
+        transform: scale(1.02);
+      }
+
+      .bottom-line {
+        margin-top: 60px;
+        margin-bottom: 40px;
+      }
+
+      .social-icons {
+        text-align: center;
+      }
+
+      .social-icons i {
+        color: #fff;
+        font-size: 40px;
+        margin: 0 35px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      .social-icons i:hover {
+        transform: translateY(-4px);
+        opacity: 0.8;
+      }
+
+      .copyright {
+        text-align: center;
+        color: #fff;
+        margin-top: 40px;
+      }
+
+      .copyright p {
+        font-size: 20px;
+        line-height: 38px;
+      }
+
+      /* ===== RESPONSIVE ===== */
+      @media (max-width: 1100px) {
+        .treatments-grid,
+        .panchakarma-grid {
+          grid-template-columns: 1fr;
+          gap: 40px;
+        }
+        .treatments-visual .floating-card {
+          position: relative;
+          bottom: 0;
+          left: 0;
+          margin-top: 20px;
+          width: fit-content;
+        }
+        .categories-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+        .testimonials-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+        .conditions-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .contact-row {
+          flex-direction: column;
+          align-items: center;
+          gap: 40px;
+        }
+        .contact-box {
+          width: 100%;
+          max-width: 420px;
+        }
+        .footer-extra {
+          grid-template-columns: 1fr 1fr;
+          gap: 30px;
+        }
+        .overlay h2 {
+          font-size: 40px;
+        }
+        .footer {
+          min-height: auto;
+        }
+        .overlay {
+          min-height: auto;
+        }
+        .treatments-hero {
+          padding-top: 120px;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .section-title {
+          font-size: 2.4rem;
+        }
+        .categories-grid {
+          grid-template-columns: 1fr;
+        }
+        .testimonials-grid {
+          grid-template-columns: 1fr;
+        }
+        .conditions-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+        .treatments-visual .floating-card {
+          flex-wrap: wrap;
+          padding: 14px 18px;
+        }
+        .footer-extra {
+          grid-template-columns: 1fr;
+          text-align: center;
+        }
+        .footer-extra .newsletter input {
+          max-width: 100%;
+        }
+        .treatments-hero {
+          padding-top: 100px;
+        }
+      }
+
+      @media (max-width: 600px) {
+        .overlay h2 {
+          font-size: 28px;
+        }
+        .social-icons i {
+          margin: 0 16px;
+          font-size: 30px;
+        }
+        .text h3 {
+          font-size: 22px;
+        }
+        .text p {
+          font-size: 15px;
+          line-height: 28px;
+        }
+        .conditions-grid {
+          grid-template-columns: 1fr;
+        }
+        .treatments-hero {
+          padding-top: 90px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ===== HEADER ===== -->
+    <header id="header">
+      <div class="topbar" id="topbar">
+        <div class="left-info">
+          <div class="info-box">
+            <i class="fa-regular fa-calendar-days"></i>
+            <div>
+              <h4>Online Booking</h4>
+              <p>Book Appointment</p>
+            </div>
+          </div>
+          <div class="info-box">
+            <i class="fa-regular fa-star"></i>
+            <div>
+              <h4>Accreditation</h4>
+              <p>NABH Certified</p>
+            </div>
+          </div>
+        </div>
+        <div class="right-info">
+          <div class="info-box">
+            <i class="fa-solid fa-phone"></i>
+            <div>
+              <h4>Call</h4>
+              <p>+91 90458 87854</p>
+            </div>
+          </div>
+          <div class="info-box">
+            <i class="fa-solid fa-envelope"></i>
+            <div>
+              <h4>Email</h4>
+              <p>info@dhaniram.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <nav class="navbar" id="navbar">
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul class="nav-left" id="navLeft">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT DHANIRAM</a></li>
+          <li><a href="dhaniram.html">WHY DHANIRAM</a></li>
+        </ul>
+
+        <div class="logo">
+          <img src="https://res.cloudinary.com/kgqfbt78/image/upload/v1784277802/WhatsApp_Image_2026-07-16_at_21.31.47_lyb95e.jpg" alt="Dhaniram Ayurveda Logo" id="logoImg" />
+        </div>
+
+        <ul class="nav-right" id="navRight">
+          <li><a href="#">AYURVEDA TREATMENTS</a></li>
+          <li><a href="#">RETREATS</a></li>
+          <li><a href="#">CONTACT</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- ===== TREATMENTS HERO ===== -->
+    <section class="treatments-hero">
+      <div class="container treatments-grid">
+        <div class="treatments-content">
+          <div class="section-tag"><i class="fa-regular fa-heart-pulse" style="margin-right:6px;"></i> Our Treatments</div>
+          <h2 class="section-title">Authentic <span>Ayurvedic</span> Therapies</h2>
+
+          <div class="badge-group">
+            <span class="badge-pill"><i class="fa-regular fa-circle-check"></i> Panchakarma</span>
+            <span class="badge-pill"><i class="fa-regular fa-circle-check"></i> Rejuvenation</span>
+            <span class="badge-pill"><i class="fa-regular fa-circle-check"></i> Detoxification</span>
+          </div>
+
+          <p class="treatments-text">
+            At <strong>Dhaniram Ayurveda Hospital</strong>, we offer a comprehensive range of authentic Ayurvedic treatments designed to restore balance and promote holistic healing. Our therapies are rooted in ancient wisdom, supervised by experienced doctors, and tailored to your unique constitution.
+          </p>
+          <p class="treatments-text">
+            From <strong>Panchakarma detoxification</strong> to specialized treatments for chronic conditions, we combine classical Ayurvedic principles with modern care standards to deliver safe, effective, and lasting results.
+          </p>
+        </div>
+
+        <div class="treatments-visual">
+          <div class="img-wrapper">
+            <svg width="100%" height="340" viewBox="0 0 600 400" preserveAspectRatio="xMidYMid slice" style="background: #d9d2c5; display: block;">
+              <rect width="100%" height="100%" fill="#d6cebe" />
+              <circle cx="180" cy="140" r="70" fill="#b8ac95" opacity="0.3" />
+              <circle cx="420" cy="250" r="90" fill="#b8ac95" opacity="0.2" />
+              <rect x="230" y="180" width="160" height="120" rx="18" fill="#a3927a" opacity="0.25" />
+              <text x="180" y="220" font-family="Poppins, sans-serif" font-size="26" font-weight="600" fill="#453a2e" opacity="0.8">Dhaniram</text>
+              <text x="160" y="260" font-family="Poppins, sans-serif" font-size="18" fill="#5a4d3d" opacity="0.7">Ayurveda Hospital</text>
+              <circle cx="500" cy="80" r="30" fill="#7b8736" opacity="0.15" />
+              <circle cx="80" cy="340" r="45" fill="#b44d2b" opacity="0.1" />
+            </svg>
+          </div>
+          <div class="floating-card">
+            <i class="fa-regular fa-flask"></i>
+            <div class="fc-text">
+              Authentic Therapies
+              <small>Classical Ayurveda</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TREATMENT CATEGORIES ===== -->
+    <section class="categories-section">
+      <div class="container">
+        <div style="text-align:center;">
+          <div class="section-tag"><i class="fa-regular fa-list"></i> What We Offer</div>
+          <h2 class="section-title">Our <span>Treatment</span> Categories</h2>
+          <p class="section-subtitle" style="margin:12px auto 0; text-align:center;">Specialized therapies for every health concern, rooted in classical Ayurveda.</p>
+        </div>
+
+        <div class="categories-grid">
+          <div class="category-card">
+            <div class="cat-icon"><i class="fa-regular fa-droplet"></i></div>
+            <h4>Panchakarma Therapies</h4>
+            <p>Deep detoxification and rejuvenation through five classical purification procedures.</p>
+            <ul class="treatment-list">
+              <li><i class="fa-regular fa-circle-check"></i> Vamana (Therapeutic Emesis)</li>
+              <li><i class="fa-regular fa-circle-check"></i> Virechana (Purgation)</li>
+              <li><i class="fa-regular fa-circle-check"></i> Basti (Medicated Enema)</li>
+              <li><i class="fa-regular fa-circle-check"></i> Nasya (Nasal Administration)</li>
+              <li><i class="fa-regular fa-circle-check"></i> Raktamokshana (Bloodletting)</li>
+            </ul>
+          </div>
+
+          <div class="category-card">
+            <div class="cat-icon"><i class="fa-regular fa-spa"></i></div>
+            <h4>Rejuvenation &amp; Wellness</h4>
+            <p>Restore vitality, slow aging, and enhance overall well-being with Rasayana therapies.</p>
+            <ul class="treatment-list">
+              <li><i class="fa-regular fa-circle-check"></i> Rasayana (Rejuvenation)</li>
+              <li><i class="fa-regular fa-circle-check"></i> Abhyanga (Oil Massage)</li>
+              <li><i class="fa-regular fa-circle-check"></i> Shirodhara (Oil Drip Therapy)</li>
+              <li><i class="fa-regular fa-circle-check"></i> Pizhichil (Oil Bath)</li>
+              <li><i class="fa-regular fa-circle-check"></i> Njavarakizhi (Rice Bundle Massage)</li>
+            </ul>
+          </div>
+
+          <div class="category-card">
+            <div class="cat-icon"><i class="fa-regular fa-bone"></i></div>
+            <h4>Chronic Disease Management</h4>
+            <p>Specialized treatments for long-term conditions using classical Ayurvedic approaches.</p>
+            <ul class="treatment-list">
+              <li><i class="fa-regular fa-circle-check"></i> Arthritis &amp; Joint Pain</li>
+              <li><i class="fa-regular fa-circle-check"></i> Diabetes Management</li>
+              <li><i class="fa-regular fa-circle-check"></i> Paralysis &amp; Stroke Recovery</li>
+              <li><i class="fa-regular fa-circle-check"></i> Spondylosis &amp; Back Pain</li>
+              <li><i class="fa-regular fa-circle-check"></i> Respiratory Disorders</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PANCHAKARMA DETAIL ===== -->
+    <section class="panchakarma-section">
+      <div class="container panchakarma-grid">
+        <div>
+          <div class="section-tag"><i class="fa-regular fa-leaf"></i> The Gold Standard</div>
+          <h2 class="section-title">Panchakarma — <span>Complete Detoxification</span></h2>
+          <p style="color:#3d3d3d; line-height:1.9; font-size:1.05rem; margin-top:16px;">
+            Panchakarma is the cornerstone of Ayurvedic healing — a comprehensive detoxification and rejuvenation program that cleanses the body of accumulated toxins (Ama) and restores the natural balance of doshas.
+          </p>
+          <ul class="panchakarma-list">
+            <li>
+              <i class="fa-regular fa-circle-check"></i>
+              <div><strong>Vamana</strong> — Therapeutic emesis to eliminate excess Kapha dosha, effective for respiratory and skin conditions.</div>
+            </li>
+            <li>
+              <i class="fa-regular fa-circle-check"></i>
+              <div><strong>Virechana</strong> — Purgation therapy to cleanse Pitta dosha, beneficial for liver, gallbladder, and digestive disorders.</div>
+            </li>
+            <li>
+              <i class="fa-regular fa-circle-check"></i>
+              <div><strong>Basti</strong> — Medicated enema therapy for Vata-related conditions like joint pain, arthritis, and neurological issues.</div>
+            </li>
+            <li>
+              <i class="fa-regular fa-circle-check"></i>
+              <div><strong>Nasya</strong> — Nasal administration of medicated oils to clear sinus, improve memory, and treat head &amp; neck disorders.</div>
+            </li>
+            <li>
+              <i class="fa-regular fa-circle-check"></i>
+              <div><strong>Raktamokshana</strong> — Blood purification therapy for skin disorders, gout, and chronic inflammatory conditions.</div>
+            </li>
+          </ul>
+        </div>
+        <div class="panchakarma-image">
+          <svg width="100%" height="320" viewBox="0 0 500 320" preserveAspectRatio="xMidYMid slice" style="background: #d6cebe;">
+            <rect width="100%" height="100%" fill="#d6cebe" />
+            <circle cx="250" cy="160" r="80" fill="#b8ac95" opacity="0.3" />
+            <rect x="150" y="110" width="200" height="100" rx="16" fill="#a3927a" opacity="0.25" />
+            <text x="170" y="180" font-family="Poppins, sans-serif" font-size="24" font-weight="600" fill="#453a2e" opacity="0.8">Panchakarma</text>
+            <text x="155" y="215" font-family="Poppins, sans-serif" font-size="16" fill="#5a4d3d" opacity="0.7">5-Step Detox</text>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONDITIONS TREATED ===== -->
+    <section class="conditions-section">
+      <div class="container">
+        <div class="section-tag"><i class="fa-regular fa-stethoscope"></i> We Treat</div>
+        <h2 class="section-title">Conditions We <span>Treat</span></h2>
+        <p class="section-subtitle" style="margin:12px auto 0; text-align:center;">From acute to chronic, we offer holistic Ayurvedic care for a wide range of health conditions.</p>
+
+        <div class="conditions-grid">
+          <div class="condition-item">
+            <i class="fa-regular fa-bone"></i>
+            <h5>Arthritis &amp; Joint Pain</h5>
+          </div>
+          <div class="condition-item">
+            <i class="fa-regular fa-lungs"></i>
+            <h5>Asthma &amp; Respiratory</h5>
+          </div>
+          <div class="condition-item">
+            <i class="fa-regular fa-brain"></i>
+            <h5>Paralysis &amp; Stroke</h5>
+          </div>
+          <div class="condition-item">
+            <i class="fa-regular fa-spine"></i>
+            <h5>Spondylosis &amp; Back Pain</h5>
+          </div>
+          <div class="condition-item">
+            <i class="fa-regular fa-droplet"></i>
+            <h5>Diabetes &amp; Metabolic</h5>
+          </div>
+          <div class="condition-item">
+            <i class="fa-regular fa-weight-scale"></i>
+            <h5>Obesity &amp; Weight Loss</h5>
+          </div>
+          <div class="condition-item">
+            <i class="fa-regular fa-face-frown"></i>
+            <h5>Skin Disorders</h5>
+          </div>
+          <div class="condition-item">
+            <i class="fa-regular fa-stomach"></i>
+            <h5>Digestive Issues</h5>
+          </div>
+          <div class="condition-item">
+            <i class="fa-regular fa-baby"></i>
+            <h5>Infertility</h5>
+          </div>
+          <div class="condition-item">
+            <i class="fa-regular fa-head-side-cough"></i>
+            <h5>Piles &amp; Fistula</h5>
+          </div>
+          <div class="condition-item">
+            <i class="fa-regular fa-heart"></i>
+            <h5>Stress &amp; Anxiety</h5>
+          </div>
+          <div class="condition-item">
+            <i class="fa-regular fa-moon"></i>
+            <h5>Insomnia &amp; Sleep</h5>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS ===== -->
+    <section class="testimonials-section">
+      <div class="container">
+        <div style="text-align:center;">
+          <div class="section-tag"><i class="fa-regular fa-comment"></i> Patient Stories</div>
+          <h2 class="section-title">What Our <span>Patients Say</span></h2>
+          <p class="section-subtitle" style="margin:12px auto 0; text-align:center;">Real experiences from people who found healing at Dhaniram.</p>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            <p>"I came to Dhaniram with severe arthritis pain. After a 21-day Panchakarma program, my pain reduced significantly. The doctors and therapists were incredibly caring and professional."</p>
+            <div class="patient-name">— Rajesh Kumar <span>(Delhi)</span></div>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            <p>"I had been struggling with diabetes for years. The Ayurvedic treatment at Dhaniram helped me manage my blood sugar naturally. I'm grateful for their holistic approach."</p>
+            <div class="patient-name">— Priya Sharma <span>(Hapur)</span></div>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            <p>"The Shirodhara and Abhyanga therapies at Dhaniram transformed my mental health. I feel more balanced, calm, and energized. Highly recommend this place."</p>
+            <div class="patient-name">— Ananya Reddy <span>(Hyderabad)</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== QUOTE ===== -->
+    <section class="quote-block">
+      <div class="container">
+        <div class="big-quote">
+          <i class="fa-solid fa-quote-left"></i>
+          Ayurveda is not just a treatment, it is a way of life.
+          <i class="fa-solid fa-quote-right"></i>
+        </div>
+        <div class="author">— Dr. Sajna <span>· Chief Ayurvedic Physician</span></div>
+        <a href="#" class="btn-premium">
+          Book a consultation <i class="fa-regular fa-arrow-right"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+      <div class="overlay">
+        <h2>Need Help ? Get in touch with us</h2>
+        <div class="line"></div>
+        <div class="contact-row">
+          <div class="contact-box">
+            <div class="icon">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div class="text">
+              <h3>Address</h3>
+              <p>Ved Dhaniram Wellness Center</p>
+              <p>Kishan Ganj, Garh Road Hapur - 245101</p>
+            </div>
+          </div>
+          <div class="contact-box">
+            <div class="icon">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <div class="text">
+              <h3>Call us</h3>
+              <p>+91 9045887854</p>
+            </div>
+          </div>
+          <div class="contact-box">
+            <div class="icon">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="text">
+              <h3>Email</h3>
+              <p>info@Dhaniram.com</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-extra">
+          <div>
+            <h4>Quick Links</h4>
+            <ul>
+              <li><i class="fa-regular fa-circle-right"></i> Home</li>
+              <li><i class="fa-regular fa-circle-right"></i> About Us</li>
+              <li><i class="fa-regular fa-circle-right"></i> Treatments</li>
+              <li><i class="fa-regular fa-circle-right"></i> Panchakarma</li>
+              <li><i class="fa-regular fa-circle-right"></i> Retreats</li>
+              <li><i class="fa-regular fa-circle-right"></i> Contact</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Treatments</h4>
+            <ul>
+              <li><i class="fa-regular fa-circle-check"></i> Back Pain &amp; Arthritis</li>
+              <li><i class="fa-regular fa-circle-check"></i> Diabetes &amp; Asthma</li>
+              <li><i class="fa-regular fa-circle-check"></i> Paralysis &amp; Spondylosis</li>
+              <li><i class="fa-regular fa-circle-check"></i> Weight Loss &amp; Detox</li>
+              <li><i class="fa-regular fa-circle-check"></i> Skin &amp; Digestive Disorders</li>
+              <li><i class="fa-regular fa-circle-check"></i> Infertility &amp; Piles</li>
+            </ul>
+          </div>
+          <div class="newsletter">
+            <h4>Subscribe to our Newsletter</h4>
+            <p>Get the latest updates on Ayurveda, health tips, and exclusive retreat offers.</p>
+            <input type="email" placeholder="Enter your email" />
+            <button><i class="fa-regular fa-paper-plane"></i> Subscribe</button>
+          </div>
+        </div>
+
+        <div class="line bottom-line"></div>
+        <div class="social-icons">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fa-brands fa-x-twitter"></i>
+          <i class="fab fa-youtube"></i>
+          <i class="fab fa-linkedin-in"></i>
+        </div>
+        <div class="copyright">
+          <p>© 2026 all rights reserved Ved Dhaniram Wellness Center Hapur</p>
+          <p>Site by Hockmad</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ===== SCRIPTS ===== -->
+    <script>
+      const header = document.getElementById('header');
+      const topbar = document.getElementById('topbar');
+      const navbar = document.getElementById('navbar');
+
+      window.addEventListener('scroll', function () {
+        const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+        if (currentScroll > 80) {
+          topbar.classList.add('hidden');
+          navbar.classList.add('shrink');
+        } else {
+          topbar.classList.remove('hidden');
+          navbar.classList.remove('shrink');
+        }
+      });
+
+      const toggle = document.getElementById('menuToggle');
+      const navLeft = document.getElementById('navLeft');
+      const navRight = document.getElementById('navRight');
+
+      toggle.addEventListener('click', function () {
+        this.classList.toggle('active');
+        navLeft.classList.toggle('open');
+        navRight.classList.toggle('open');
+      });
+
+      document.querySelectorAll('.nav-left a, .nav-right a').forEach(link => {
+        link.addEventListener('click', () => {
+          toggle.classList.remove('active');
+          navLeft.classList.remove('open');
+          navRight.classList.remove('open');
+        });
+      });
+    </script>
+  </body>
+</html>
