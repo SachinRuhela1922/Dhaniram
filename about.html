@@ -36,74 +36,100 @@
         width: 100%;
         background: #fff;
         border-bottom: 1px solid #eee;
-        position: sticky;
+        position: fixed;
         top: 0;
+        left: 0;
         z-index: 999;
+        transition: all 0.3s ease;
       }
 
+      /* Top Bar - hides on scroll */
       .topbar {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 18px 45px;
+        padding: 12px 45px;
+        transition: all 0.3s ease;
+        overflow: hidden;
+        max-height: 80px;
+        opacity: 1;
+      }
+
+      .topbar.hidden {
+        max-height: 0;
+        padding: 0 45px;
+        opacity: 0;
+        border-bottom: none;
       }
 
       .left-info,
       .right-info {
         display: flex;
-        gap: 60px;
+        gap: 50px;
       }
 
       .info-box {
         display: flex;
         align-items: center;
-        gap: 14px;
+        gap: 12px;
       }
 
       .info-box i {
-        font-size: 34px;
+        font-size: 28px;
         color: #8a9434;
+        transition: 0.3s;
       }
 
       .info-box h4 {
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 600;
         color: #b24d2c;
         line-height: 1.1;
       }
 
       .info-box p {
-        font-size: 14px;
+        font-size: 13px;
         color: #444;
       }
 
+      /* Navbar */
       .navbar {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 10px 55px;
         position: relative;
+        transition: all 0.3s ease;
+      }
+
+      .navbar.shrink {
+        padding: 6px 55px;
       }
 
       .nav-left,
       .nav-right {
         display: flex;
         align-items: center;
-        gap: 55px;
+        gap: 45px;
         list-style: none;
       }
 
       .logo img {
-        width: 170px;
+        width: 160px;
         display: block;
+        transition: all 0.3s ease;
+      }
+
+      .navbar.shrink .logo img {
+        width: 100px;
       }
 
       .navbar a {
         text-decoration: none;
-        font-size: 17px;
+        font-size: 16px;
         font-weight: 600;
         color: #222;
-        letter-spacing: 1px;
+        letter-spacing: 0.8px;
         transition: 0.3s;
         white-space: nowrap;
       }
@@ -112,6 +138,7 @@
         color: #8a9434;
       }
 
+      /* Mobile menu button */
       .menu-toggle {
         display: none;
         flex-direction: column;
@@ -142,51 +169,69 @@
         transform: rotate(-45deg) translate(6px, -6px);
       }
 
+      /* ===== RESPONSIVE NAV ===== */
       @media (max-width: 1100px) {
         .topbar {
-          display: none;
+          display: none !important;
         }
+
         .menu-toggle {
           display: flex;
         }
+
         .navbar {
-          padding: 15px 25px;
+          padding: 12px 25px;
           flex-wrap: wrap;
         }
+
+        .navbar.shrink {
+          padding: 8px 25px;
+        }
+
         .nav-left,
         .nav-right {
           display: none;
           flex-direction: column;
           width: 100%;
-          gap: 12px;
-          padding: 20px 0 10px;
+          gap: 10px;
+          padding: 15px 0 10px;
           background: #fff;
           border-top: 1px solid #eee;
           order: 10;
         }
+
         .nav-left.open,
         .nav-right.open {
           display: flex;
         }
+
         .nav-left li,
         .nav-right li {
           width: 100%;
           text-align: center;
         }
+
         .nav-left a,
         .nav-right a {
           display: block;
-          padding: 8px 0;
-          font-size: 16px;
+          padding: 6px 0;
+          font-size: 15px;
         }
+
         .logo {
           order: 0;
           flex: 1;
           text-align: center;
         }
+
         .logo img {
-          width: 140px;
+          width: 130px;
         }
+
+        .navbar.shrink .logo img {
+          width: 90px;
+        }
+
         .menu-toggle {
           order: 1;
         }
@@ -194,14 +239,24 @@
 
       @media (max-width: 768px) {
         .navbar {
-          padding: 12px 18px;
+          padding: 10px 16px;
         }
+
+        .navbar.shrink {
+          padding: 6px 16px;
+        }
+
         .logo img {
-          width: 120px;
+          width: 110px;
         }
+
+        .navbar.shrink .logo img {
+          width: 80px;
+        }
+
         .nav-left a,
         .nav-right a {
-          font-size: 15px;
+          font-size: 14px;
         }
       }
 
@@ -246,7 +301,7 @@
 
       /* ===== ABOUT HERO ===== */
       .about-hero {
-        padding: 80px 0 60px;
+        padding: 140px 0 60px;
         background: #fbfaf8;
       }
 
@@ -327,12 +382,6 @@
 
       .img-wrapper:hover {
         transform: scale(1.01);
-      }
-
-      .img-wrapper img {
-        width: 100%;
-        height: auto;
-        display: block;
       }
 
       .floating-card {
@@ -817,6 +866,9 @@
         .overlay {
           min-height: auto;
         }
+        .about-hero {
+          padding-top: 120px;
+        }
       }
 
       @media (max-width: 768px) {
@@ -847,6 +899,9 @@
         .story-grid {
           grid-template-columns: 1fr;
         }
+        .about-hero {
+          padding-top: 100px;
+        }
       }
 
       @media (max-width: 600px) {
@@ -864,16 +919,17 @@
           font-size: 15px;
           line-height: 28px;
         }
-        .topbar {
-          display: none;
+        .about-hero {
+          padding-top: 90px;
         }
       }
     </style>
   </head>
   <body>
     <!-- ===== HEADER ===== -->
-    <header>
-      <div class="topbar">
+    <header id="header">
+      <!-- Top Bar -->
+      <div class="topbar" id="topbar">
         <div class="left-info">
           <div class="info-box">
             <i class="fa-regular fa-calendar-days"></i>
@@ -908,7 +964,8 @@
         </div>
       </div>
 
-      <nav class="navbar">
+      <!-- Navbar -->
+      <nav class="navbar" id="navbar">
         <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
           <span></span>
           <span></span>
@@ -922,7 +979,7 @@
         </ul>
 
         <div class="logo">
-          <img src="https://res.cloudinary.com/kgqfbt78/image/upload/v1784277802/WhatsApp_Image_2026-07-16_at_21.31.47_lyb95e.jpg" alt="Dhaniram Ayurveda Logo" />
+          <img src="https://res.cloudinary.com/kgqfbt78/image/upload/v1784277802/WhatsApp_Image_2026-07-16_at_21.31.47_lyb95e.jpg" alt="Dhaniram Ayurveda Logo" id="logoImg" />
         </div>
 
         <ul class="nav-right" id="navRight">
@@ -1174,7 +1231,32 @@
       </div>
     </footer>
 
+    <!-- ===== SCROLL SCRIPT ===== -->
     <script>
+      const header = document.getElementById('header');
+      const topbar = document.getElementById('topbar');
+      const navbar = document.getElementById('navbar');
+      const logoImg = document.getElementById('logoImg');
+
+      let lastScroll = 0;
+
+      window.addEventListener('scroll', function () {
+        const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+        if (currentScroll > 80) {
+          // Hide topbar
+          topbar.classList.add('hidden');
+          // Shrink navbar
+          navbar.classList.add('shrink');
+        } else {
+          topbar.classList.remove('hidden');
+          navbar.classList.remove('shrink');
+        }
+
+        lastScroll = currentScroll;
+      });
+
+      // ===== MENU TOGGLE =====
       const toggle = document.getElementById('menuToggle');
       const navLeft = document.getElementById('navLeft');
       const navRight = document.getElementById('navRight');
