@@ -2,30 +2,16 @@
 <html lang="en">
 
 <head>
-    <!-- Google Tag Manager -->
-    <script>
-        (function(w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({
-                'gtm.start': new Date().getTime(),
-                event: 'gtm.js'
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src =
-                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-WTBFT28H');
-    </script>
-    <!-- End Google Tag Manager -->
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WTBFT28H" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <meta charset="utf-8">
     <title>Ayurveda Treatment Centre in Hapur, Hapur & Noida | Dhaniram Kerala Ayurveda Hospital</title>
-    <meta name="description" content="Dhaniram is a NABH Certified Kerala Ayurveda Hospital offering authentic Panchakarma, rejuvenation therapies, and specialized Ayurvedic treatments in Hapur, Hapur, Noida, and Hapur by experienced Kerala doctors." />
+    <meta name="description"
+        content="Dhaniram is a NABH Certified Kerala Ayurveda Hospital offering authentic Panchakarma, rejuvenation therapies, and specialized Ayurvedic treatments in Hapur, Hapur, Noida, and Hapur by experienced Kerala doctors." />
     <meta name="author" content="Dhaniram Ayurveda Centre">
     <link rel="shortcut icon" href="img/fav.ico">
-    <link rel="canonical" href="https://www.Dhaniram.com/" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <link href="css/main.css" rel="stylesheet" type="text/css">
     <link href="css/icofont.min.css" rel="stylesheet" type="text/css">
@@ -34,12 +20,9 @@
     <link href="css/lightslider.css" rel="stylesheet" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <meta property="og:title" content="Dhaniram Ayurveda" />
-    <meta property="og:site_name" content="Ayurveda" />
-    <meta property="og:url" content="https://www.Dhaniram.com" />
-    <meta property="og:image" content="https://www.Dhaniram.com/images/ayurveda-hospital-Hapur.webp" />
-    <meta property="og:type" content="website" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 
     <!-- Google tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-247515665-1">
@@ -51,20 +34,18 @@
             dataLayer.push(arguments);
         }
         gtag('js', new Date());
-
         gtag('config', 'UA-247515665-1');
     </script>
 
     <!--fix nav -->
-
-    <script type="text/javascript" src="js/fix_nav.js"></script>
+    <script type="text/javascript" src="js/fix_nav.js">
+    </script>
     <script type="text/javascript">
-        $(document).ready(function() {
-
+        $(document).ready(function () {
             var sidebar = $('.logowrap');
             var top = sidebar.offset().top - parseFloat(sidebar.css('marginTop'));
 
-            $(window).scroll(function(event) {
+            $(window).scroll(function (event) {
                 var ypos = $(this).scrollTop();
                 if (ypos >= top) {
                     sidebar.addClass('fixed');
@@ -72,54 +53,18 @@
                     sidebar.removeClass('fixed');
                 }
             });
-
-
-
-        });
-    </script>
-
-    <!--fix nav end -->
-
-
-    <script>
-        $(document).ready(function() {
-
-            // hide #back-top first
-            $("#back-top").hide();
-
-            // fade in #back-top
-            $(function() {
-                $(window).scroll(function() {
-                    if ($(this).scrollTop() > 100) {
-                        $('#back-top').fadeIn();
-                    } else {
-                        $('#back-top').fadeOut();
-                    }
-                });
-
-                // scroll body to 0px on click
-                $('#back-top a').click(function() {
-                    $('body,html').animate({
-                        scrollTop: 0
-                    }, 800);
-                    return false;
-                });
-            });
-
         });
     </script>
 
     <!--menu -->
-
     <script>
-        $(function() {
+        $(function () {
             var html = $('html, body'),
                 navContainer = $('.nav-container'),
                 navToggle = $('.nav-toggle'),
                 navDropdownToggle = $('.has-dropdown');
 
-            // Nav toggle
-            navToggle.on('click', function(e) {
+            navToggle.on('click', function (e) {
                 var $this = $(this);
                 e.preventDefault();
                 $this.toggleClass('is-active');
@@ -127,71 +72,1041 @@
                 html.toggleClass('nav-open');
             });
 
-            // Nav dropdown toggle
-            navDropdownToggle.on('click', function() {
+            navDropdownToggle.on('click', function () {
                 var $this = $(this);
                 $this.toggleClass('is-active').children('ul').toggleClass('is-visible');
             });
 
-            // Prevent click events from firing on children of navDropdownToggle
-            navDropdownToggle.on('click', '*', function(e) {
+            navDropdownToggle.on('click', '*', function (e) {
                 e.stopPropagation();
             });
         });
     </script>
-
     <!--menu end -->
 
-    <!-- Google Tag Manager -->
-    <script>
-        (function(w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({
-                'gtm.start': new Date().getTime(),
-                event: 'gtm.js'
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src =
-                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-WTBFT28H');
-    </script>
-    <!-- End Google Tag Manager -->
+    <style>
+        /* ============================================
+           MODERN EDITORIAL FOUNDER SECTION - WHITE
+           ============================================ */
+        .founder-editorial {
+            max-width: 1380px;
+            width: 100%;
+            background: #ffffff;
+            border-radius: 40px;
+            padding: 0;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 20px 80px rgba(30, 23, 19, 0.06);
+            border: 1px solid rgba(30, 23, 19, 0.04);
+        }
 
+        /* Decorative Background Pattern */
+        .founder-editorial::before {
+            content: '';
+            position: absolute;
+            top: -200px;
+            right: -200px;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(139, 63, 43, 0.02) 0%, transparent 70%);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+
+        .founder-editorial::after {
+            content: '';
+            position: absolute;
+            bottom: -100px;
+            left: -100px;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(139, 63, 43, 0.015) 0%, transparent 70%);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+
+        .editorial-inner {
+            padding: 64px 68px 56px;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* ===== TOP SECTION WITH DIVIDER ===== */
+        .editorial-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 48px;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .editorial-tag {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .editorial-tag .line {
+            width: 40px;
+            height: 2px;
+            background: #8b3f2b;
+            opacity: 0.3;
+        }
+
+        .editorial-tag .label {
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #8b3f2b;
+        }
+
+        .editorial-badge {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            background: #f8f4f0;
+            padding: 10px 24px 10px 20px;
+            border-radius: 100px;
+            border: 1px solid #e8e0d8;
+        }
+
+        .editorial-badge .icon {
+            font-size: 16px;
+            color: #8b3f2b;
+        }
+
+        .editorial-badge .text {
+            font-size: 13px;
+            font-weight: 400;
+            color: #5f4c3e;
+        }
+
+        .editorial-badge .text strong {
+            color: #8b3f2b;
+            font-weight: 600;
+        }
+
+        /* ===== HERO HEADER ===== */
+        .editorial-hero {
+            display: grid;
+            grid-template-columns: 1.6fr 1fr;
+            gap: 40px;
+            margin-bottom: 52px;
+            align-items: end;
+        }
+
+        .editorial-hero-left {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .editorial-hero-left .pre-title {
+            font-size: 14px;
+            font-weight: 400;
+            color: #8b3f2b;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            opacity: 0.6;
+        }
+
+        .editorial-hero-left h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 62px;
+            font-weight: 700;
+            line-height: 1.05;
+            color: #1a1410;
+            letter-spacing: -1.5px;
+        }
+
+        .editorial-hero-left h1 .highlight {
+            color: #8b3f2b;
+            position: relative;
+        }
+
+        .editorial-hero-left h1 .highlight::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 6px;
+            width: 100%;
+            height: 8px;
+            background: rgba(139, 63, 43, 0.08);
+            border-radius: 4px;
+            z-index: -1;
+        }
+
+        .editorial-hero-left .hero-desc {
+            font-size: 18px;
+            color: #6b5444;
+            font-weight: 300;
+            font-style: italic;
+            letter-spacing: 0.2px;
+            padding-left: 20px;
+            border-left: 3px solid rgba(139, 63, 43, 0.15);
+        }
+
+        .editorial-hero-right {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 4px;
+            padding-bottom: 6px;
+        }
+
+        .editorial-hero-right .big-stat {
+            display: flex;
+            align-items: baseline;
+            gap: 6px;
+        }
+
+        .editorial-hero-right .big-stat .number {
+            font-family: 'Playfair Display', serif;
+            font-size: 64px;
+            font-weight: 700;
+            color: #1a1410;
+            line-height: 1;
+            letter-spacing: -2px;
+        }
+
+        .editorial-hero-right .big-stat .plus {
+            font-size: 32px;
+            color: #8b3f2b;
+            font-weight: 300;
+        }
+
+        .editorial-hero-right .stat-label {
+            font-size: 12px;
+            color: #6b5444;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-weight: 400;
+        }
+
+        /* ===== MAIN GRID ===== */
+        .editorial-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.3fr;
+            gap: 56px;
+            align-items: start;
+        }
+
+        /* ===== IMAGE WITH MODERN FRAME ===== */
+        .editorial-image-wrapper {
+            position: relative;
+        }
+
+        .editorial-image-frame {
+            position: relative;
+            border-radius: 24px;
+            overflow: hidden;
+            background: #f0ebe6;
+            transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            box-shadow: 0 16px 48px rgba(30, 23, 19, 0.06);
+        }
+
+        .editorial-image-frame:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 24px 64px rgba(30, 23, 19, 0.1);
+        }
+
+        .editorial-image-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.6s ease;
+        }
+
+        .editorial-image-frame:hover img {
+            transform: scale(1.02);
+        }
+
+        /* Image Border Accent */
+        .image-border-accent {
+            position: absolute;
+            top: 12px;
+            left: 12px;
+            right: 12px;
+            bottom: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 18px;
+            pointer-events: none;
+            transition: all 0.4s ease;
+        }
+
+        .editorial-image-frame:hover .image-border-accent {
+            border-color: rgba(139, 63, 43, 0.15);
+            top: 8px;
+            left: 8px;
+            right: 8px;
+            bottom: 8px;
+        }
+
+        /* Floating Tag - New Style */
+        .editorial-float-tag {
+            position: absolute;
+            bottom: 24px;
+            right: 24px;
+            background: rgba(255, 255, 255, 0.92);
+            backdrop-filter: blur(12px);
+            padding: 12px 22px;
+            border-radius: 16px;
+            border: 1px solid rgba(30, 23, 19, 0.04);
+            box-shadow: 0 8px 32px rgba(30, 23, 19, 0.06);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            transition: all 0.4s ease;
+        }
+
+        .editorial-float-tag .dot-icon {
+            width: 8px;
+            height: 8px;
+            background: #8b3f2b;
+            border-radius: 50%;
+            flex-shrink: 0;
+            animation: float-pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes float-pulse {
+            0%,
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+            50% {
+                opacity: 0.3;
+                transform: scale(0.7);
+            }
+        }
+
+        .editorial-float-tag .tag-text {
+            font-size: 12px;
+            font-weight: 500;
+            color: #1a1410;
+            letter-spacing: 0.2px;
+        }
+
+        .editorial-float-tag .tag-text strong {
+            color: #8b3f2b;
+            font-weight: 600;
+        }
+
+        .editorial-image-frame:hover .editorial-float-tag {
+            background: #ffffff;
+            border-color: rgba(139, 63, 43, 0.08);
+            transform: translateY(-2px);
+        }
+
+        /* ===== CONTENT ===== */
+        .editorial-content {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+        }
+
+        .editorial-name {
+            font-family: 'Playfair Display', serif;
+            font-size: 40px;
+            font-weight: 700;
+            color: #1a1410;
+            line-height: 1.1;
+            letter-spacing: -0.5px;
+        }
+
+        .editorial-name .highlight {
+            color: #8b3f2b;
+        }
+
+        .editorial-title-row {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 12px 18px;
+            margin-bottom: 2px;
+        }
+
+        .editorial-title-row .primary {
+            font-size: 13px;
+            font-weight: 500;
+            color: #8b3f2b;
+            letter-spacing: 0.3px;
+            background: rgba(139, 63, 43, 0.04);
+            padding: 4px 16px;
+            border-radius: 20px;
+            border: 1px solid rgba(139, 63, 43, 0.06);
+        }
+
+        .editorial-title-row .dot-divider {
+            width: 4px;
+            height: 4px;
+            background: #d6c9be;
+            border-radius: 50%;
+        }
+
+        .editorial-title-row .secondary {
+            font-size: 13px;
+            color: #6b5444;
+            font-weight: 300;
+        }
+
+        /* Bio - Clean Style */
+        .editorial-bio {
+            padding: 16px 0 8px 20px;
+            border-left: 3px solid rgba(139, 63, 43, 0.08);
+            position: relative;
+        }
+
+        .editorial-bio .quote-mark {
+            position: absolute;
+            top: -4px;
+            left: -6px;
+            font-size: 36px;
+            font-family: 'Playfair Display', serif;
+            color: #8b3f2b;
+            opacity: 0.08;
+            line-height: 1;
+        }
+
+        .editorial-bio p {
+            font-size: 15px;
+            line-height: 1.85;
+            color: #3b2e26;
+            font-weight: 350;
+            margin-bottom: 12px;
+        }
+
+        .editorial-bio p:last-child {
+            margin-bottom: 0;
+        }
+
+        .editorial-bio p strong {
+            color: #1a1410;
+            font-weight: 500;
+        }
+
+        .editorial-bio .accent {
+            color: #8b3f2b;
+            font-weight: 400;
+        }
+
+        /* Stats - Clean Minimal */
+        .editorial-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin: 8px 0 2px;
+        }
+
+        .editorial-stat {
+            background: #faf8f6;
+            border-radius: 14px;
+            padding: 18px 10px;
+            text-align: center;
+            border: 1px solid #efe8e2;
+            transition: all 0.3s ease;
+        }
+
+        .editorial-stat:hover {
+            border-color: #8b3f2b;
+            background: #ffffff;
+            box-shadow: 0 6px 20px rgba(139, 63, 43, 0.04);
+            transform: translateY(-2px);
+        }
+
+        .editorial-stat .number {
+            font-family: 'Playfair Display', serif;
+            font-size: 28px;
+            font-weight: 700;
+            color: #8b3f2b;
+            display: block;
+            line-height: 1.1;
+        }
+
+        .editorial-stat .label {
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #6b5444;
+            font-weight: 400;
+            margin-top: 6px;
+            display: block;
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 1100px) {
+            .editorial-hero {
+                grid-template-columns: 1fr;
+                gap: 16px;
+            }
+
+            .editorial-hero-right {
+                align-items: flex-start;
+                flex-direction: row;
+                gap: 16px;
+            }
+
+            .editorial-hero-right .big-stat .number {
+                font-size: 44px;
+            }
+        }
+
+        @media (max-width: 1024px) {
+            .editorial-grid {
+                grid-template-columns: 1fr 1.1fr;
+                gap: 36px;
+            }
+
+            .editorial-hero-left h1 {
+                font-size: 48px;
+            }
+
+            .editorial-inner {
+                padding: 44px 36px 40px;
+            }
+        }
+
+        @media (max-width: 820px) {
+            .editorial-grid {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+
+            .editorial-inner {
+                padding: 32px 24px 28px;
+            }
+
+            .editorial-hero-left h1 {
+                font-size: 38px;
+            }
+
+            .editorial-name {
+                font-size: 32px;
+            }
+
+            .editorial-hero-right .big-stat .number {
+                font-size: 38px;
+            }
+
+            .editorial-top {
+                margin-bottom: 32px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .editorial-inner {
+                padding: 24px 14px 20px;
+                border-radius: 24px;
+            }
+
+            .editorial-hero-left h1 {
+                font-size: 28px;
+                letter-spacing: -0.5px;
+            }
+
+            .editorial-hero-left .hero-desc {
+                font-size: 15px;
+                padding-left: 12px;
+            }
+
+            .editorial-name {
+                font-size: 26px;
+            }
+
+            .editorial-stats {
+                grid-template-columns: 1fr 1fr;
+                gap: 8px;
+            }
+
+            .editorial-stats .editorial-stat:last-child {
+                grid-column: span 2;
+            }
+
+            .editorial-float-tag {
+                bottom: 16px;
+                right: 16px;
+                padding: 8px 14px;
+                gap: 8px;
+            }
+
+            .editorial-float-tag .tag-text {
+                font-size: 10px;
+            }
+
+            .editorial-float-tag .dot-icon {
+                width: 6px;
+                height: 6px;
+            }
+
+            .editorial-hero-right .big-stat .number {
+                font-size: 30px;
+            }
+
+            .editorial-hero-right .big-stat .plus {
+                font-size: 22px;
+            }
+
+            .editorial-tag .line {
+                width: 24px;
+            }
+
+            .editorial-tag .label {
+                font-size: 9px;
+                letter-spacing: 2px;
+            }
+
+            .editorial-badge {
+                padding: 6px 14px;
+            }
+
+            .editorial-badge .text {
+                font-size: 11px;
+            }
+        }
+
+
+
+        .history {
+            background: #f7f4f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: 'Poppins', sans-serif;
+            padding: 40px 20px;
+        }
+            .history-wrapper {
+            max-width: 1200px;
+            width: 100%;
+            background: #ffffff;
+            border-radius: 32px;
+            padding: 60px 70px 50px;
+            box-shadow: 0 20px 80px rgba(30, 23, 19, 0.08);
+            border: 1px solid rgba(30, 23, 19, 0.04);
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Decorative Background */
+        .history-wrapper::before {
+            content: '';
+            position: absolute;
+            top: -150px;
+            right: -150px;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(139, 63, 43, 0.02) 0%, transparent 70%);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+
+        .history-wrapper::after {
+            content: '';
+            position: absolute;
+            bottom: -100px;
+            left: -100px;
+            width: 350px;
+            height: 350px;
+            background: radial-gradient(circle, rgba(139, 63, 43, 0.015) 0%, transparent 70%);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+
+        /* ===== HEADER ===== */
+        .history-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 48px;
+            flex-wrap: wrap;
+            gap: 16px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .history-header-left {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+        }
+
+        .history-header-left .line {
+            width: 48px;
+            height: 3px;
+            background: #8b3f2b;
+            border-radius: 4px;
+            opacity: 0.4;
+        }
+
+        .history-header-left .label {
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 3.5px;
+            text-transform: uppercase;
+            color: #8b3f2b;
+        }
+
+        .history-header-right {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            background: #f8f4f0;
+            padding: 10px 24px 10px 20px;
+            border-radius: 100px;
+            border: 1px solid #e8e0d8;
+            transition: all 0.3s ease;
+        }
+
+        .history-header-right:hover {
+            border-color: #8b3f2b;
+            background: #ffffff;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(139, 63, 43, 0.06);
+        }
+
+        .history-header-right .icon {
+            font-size: 18px;
+            color: #8b3f2b;
+        }
+
+        .history-header-right .text {
+            font-size: 13px;
+            color: #5f4c3e;
+            font-weight: 400;
+        }
+
+        .history-header-right .text strong {
+            color: #8b3f2b;
+            font-weight: 600;
+        }
+
+        /* ===== TITLE ===== */
+        .history-title {
+            margin-bottom: 48px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .history-title h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 42px;
+            font-weight: 700;
+            color: #1a1410;
+            letter-spacing: -0.5px;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .history-title h2 .accent {
+            color: #8b3f2b;
+        }
+
+        .history-title h2 .badge {
+            font-family: 'Poppins', sans-serif;
+            font-size: 11px;
+            font-weight: 500;
+            background: #f0ebe6;
+            color: #5f4c3e;
+            padding: 4px 16px;
+            border-radius: 20px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .history-title p {
+            font-size: 16px;
+            color: #6b5444;
+            font-weight: 300;
+            margin-top: 6px;
+            padding-left: 8px;
+            border-left: 3px solid rgba(139, 63, 43, 0.12);
+            padding-left: 18px;
+        }
+
+        /* ===== TIMELINE GRID ===== */
+        .timeline-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* ===== TIMELINE CARD ===== */
+        .timeline-card {
+            background: #faf8f6;
+            border-radius: 20px;
+            padding: 28px 26px 22px;
+            border: 1px solid #efe8e2;
+            transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            cursor: default;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Hover Effect */
+        .timeline-card:hover {
+            transform: translateY(-8px);
+            border-color: #8b3f2b;
+            background: #ffffff;
+            box-shadow: 0 16px 48px rgba(139, 63, 43, 0.08);
+        }
+
+        /* Decorative Accent Line on Hover */
+        .timeline-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: #8b3f2b;
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            border-radius: 20px 20px 0 0;
+        }
+
+        .timeline-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        /* Year */
+        .timeline-card .year {
+            font-family: 'Playfair Display', serif;
+            font-size: 34px;
+            font-weight: 700;
+            color: #8b3f2b;
+            line-height: 1;
+            margin-bottom: 6px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            transition: all 0.3s ease;
+        }
+
+        .timeline-card:hover .year {
+            transform: scale(1.02);
+        }
+
+        .timeline-card .year .dash {
+            display: inline-block;
+            width: 6px;
+            height: 6px;
+            background: #8b3f2b;
+            border-radius: 50%;
+            opacity: 0.2;
+            transition: all 0.4s ease;
+        }
+
+        .timeline-card:hover .year .dash {
+            opacity: 1;
+            transform: scale(1.8);
+            background: #6b3a2a;
+        }
+
+        /* Icon */
+        .timeline-card .icon-wrap {
+            width: 44px;
+            height: 44px;
+            background: rgba(139, 63, 43, 0.04);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+            color: #8b3f2b;
+            margin-bottom: 14px;
+            transition: all 0.4s ease;
+            border: 1px solid rgba(139, 63, 43, 0.04);
+        }
+
+        .timeline-card:hover .icon-wrap {
+            background: rgba(139, 63, 43, 0.08);
+            border-color: rgba(139, 63, 43, 0.12);
+            transform: rotate(-5deg) scale(1.05);
+        }
+
+        /* Title */
+        .timeline-card .card-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #1a1410;
+            margin-bottom: 6px;
+            transition: all 0.3s ease;
+        }
+
+        .timeline-card:hover .card-title {
+            color: #8b3f2b;
+        }
+
+        /* Description */
+        .timeline-card .card-desc {
+            font-size: 14px;
+            line-height: 1.7;
+            color: #5f4c3e;
+            font-weight: 350;
+            transition: all 0.3s ease;
+        }
+
+        .timeline-card .card-desc strong {
+            color: #1a1410;
+            font-weight: 500;
+        }
+
+        .timeline-card:hover .card-desc {
+            color: #3b2e26;
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 1024px) {
+            .history-wrapper {
+                padding: 44px 40px 36px;
+            }
+
+            .timeline-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+
+            .history-title h2 {
+                font-size: 34px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .history-wrapper {
+                padding: 32px 20px 28px;
+                border-radius: 24px;
+            }
+
+            .history-title h2 {
+                font-size: 28px;
+                flex-wrap: wrap;
+            }
+
+            .history-title h2 .badge {
+                font-size: 10px;
+            }
+
+            .timeline-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 16px;
+            }
+
+            .timeline-card {
+                padding: 22px 20px 18px;
+            }
+
+            .timeline-card .year {
+                font-size: 28px;
+            }
+
+            .history-header-left .label {
+                font-size: 10px;
+                letter-spacing: 2.5px;
+            }
+
+            .history-header-left .line {
+                width: 32px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 16px 10px;
+            }
+
+            .history-wrapper {
+                padding: 24px 14px 20px;
+                border-radius: 20px;
+            }
+
+            .history-title h2 {
+                font-size: 22px;
+            }
+
+            .history-title p {
+                font-size: 14px;
+                padding-left: 12px;
+            }
+
+            .timeline-grid {
+                grid-template-columns: 1fr;
+                gap: 14px;
+            }
+
+            .timeline-card {
+                padding: 18px 16px 14px;
+            }
+
+            .timeline-card .year {
+                font-size: 24px;
+            }
+
+            .timeline-card .card-title {
+                font-size: 16px;
+            }
+
+            .timeline-card .card-desc {
+                font-size: 13px;
+            }
+
+            .history-header-right {
+                padding: 6px 14px;
+            }
+
+            .history-header-right .text {
+                font-size: 11px;
+            }
+
+            .history-header-left .label {
+                font-size: 9px;
+                letter-spacing: 2px;
+            }
+
+            .history-header-left .line {
+                width: 24px;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WTBFT28H"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
+
     <div class="top1bar">
-        <div class="top1bar-cells"><i class="icofont-ui-calendar"></i><strong>Online Booking</strong> Book Appointment</div>
+        <div class="top1bar-cells"><i class="icofont-ui-calendar"></i><strong>Online Booking</strong> Book Appointment
+        </div>
         <div class="top1bar-cells"><i class="icofont-cop-badge"></i><strong>Accreditation</strong>NABH Certified</div>
         <div class="top1bar-cells"><i class="icofont-ui-call"></i><strong>Call</strong>+91 90458 87854</div>
         <div class="top1bar-cells"><i class="icofont-ui-message"></i><strong>Email</strong>info@Dhaniram.com</div>
     </div>
+
     <div class="logowrap">
-        <div class="mob-logo"><a href="http://www.Dhaniram.com"><img src="https://res.cloudinary.com/kgqfbt78/image/upload/v1784277802/WhatsApp_Image_2026-07-16_at_21.31.47_lyb95e.jpg" width="145" height="121" alt="Dhaniram ayurveda hospital logo"></a></div>
+        <div class="mob-logo"><a href="http://www.vdrwc.in"><img
+                    src="https://res.cloudinary.com/kgqfbt78/image/upload/v1784277802/WhatsApp_Image_2026-07-16_at_21.31.47_lyb95e.jpg"
+                    width="145" height="121" alt="Dhaniram ayurveda hospital logo"></a></div>
         <div class="callbtn"><a href="tel:+917042350500"></a></div>
         <div id="menu">
             <nav class="nav is-fixed" role="navigation">
                 <div class="wrapper wrapper-flush">
                     <button class="nav-toggle">
-        <div class="icon-menu"> <span class="line line-1"></span> <span class="line line-2"></span> <span class="line line-3"></span> </div>
-        </button>
+                        <div class="icon-menu"> <span class="line line-1"></span> <span class="line line-2"></span>
+                            <span class="line line-3"></span> </div>
+                    </button>
                     <div class="nav-container">
                         <ul class="nav-menu menu">
                             <li class="menu-item"> <a href="index.html" class="menu-link">Home</a> </li>
                             <li class="menu-item"> <a href="about.html" class="menu-link">About Dhaniram</a> </li>
                             <li class="menu-item"> <a href="dhaniram.html" class="menu-link">Why Dhaniram</a> </li>
-                            <li class="logo"><img src="https://res.cloudinary.com/kgqfbt78/image/upload/v1784277802/WhatsApp_Image_2026-07-16_at_21.31.47_lyb95e.jpg" alt="Dhaniram Ayurveda Hospital"> </li>
+                            <li class="logo"><img
+                                    src="https://res.cloudinary.com/kgqfbt78/image/upload/v1784277802/WhatsApp_Image_2026-07-16_at_21.31.47_lyb95e.jpg"
+                                    alt="Dhaniram Ayurveda Hospital"> </li>
                             <li class="menu-item"> <a href="#" class="menu-link">Ayurveda Treatments</a></li>
-                                
-                            
                             <li class="menu-item"> <a href="packages.html" class="menu-link">Retreats</a> </li>
                             <li class="menu-item"> <a href="contact-us.html" class="menu-link">Contact</a> </li>
                         </ul>
@@ -200,14 +1115,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </nav>
         </div>
     </div>
+
     <div class="sliderwrap">
         <div class="slider-text"><span>Dhaniram Ayurveda Hospital</span>
             <h1>Best Ayurveda Hospital in Hapur, Hapur for Panchakarma & Chronic Diseases</h1>
         </div>
-        <div class="banner-social"> <a href="tel:+918448946500"><i class="icofont-ui-call"></i></a> <a href="https://res.cloudinary.com/kgqfbt78/image/upload/v1784278260/pic2_i2nydi.jpg" target="_blank"><i class="icofont-whatsapp"></i></a> </div>
+        <div class="banner-social"> <a href="tel:+918448946500"><i class="icofont-ui-call"></i></a> <a
+                href="https://res.cloudinary.com/kgqfbt78/image/upload/v1784278260/pic2_i2nydi.jpg" target="_blank"><i
+                    class="icofont-whatsapp"></i></a> </div>
         <div class="camera_wrap camera_emboss" id="camera_wrap_3">
-
-            <!--slide01 -->
             <div data-src="https://res.cloudinary.com/kgqfbt78/image/upload/v1784278260/pic1_as47kx.jpg"></div>
             <div data-src="https://res.cloudinary.com/kgqfbt78/image/upload/v1784278261/pic3_dv4cub.jpg"></div>
             <div data-src="https://res.cloudinary.com/kgqfbt78/image/upload/v1784278262/pic4_aufhpr.jpg"></div>
@@ -216,137 +1132,338 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
     </div>
 
-    <!--slideend -->
+    <!-- ============================================================
+    MODERN EDITORIAL FOUNDER SECTION - CLEAN WHITE (HISTORY REMOVED)
+    ============================================================ -->
+    <section class="founder-editorial">
+        <div class="editorial-inner">
+
+            <!-- Top Bar -->
+            <div class="editorial-top">
+                <div class="editorial-tag">
+                    <span class="line"></span>
+                    <span class="label">Founder's Story</span>
+                </div>
+                <div class="editorial-badge">
+                    <span class="icon">✦</span>
+                    <span class="text"><strong>25+</strong> Years of Healing Tradition</span>
+                </div>
+            </div>
+
+            <!-- Hero Header -->
+            <div class="editorial-hero">
+                <div class="editorial-hero-left">
+                    <span class="pre-title">— The Visionary Behind Dhaniram</span>
+                    <h1>
+                        The soul of <br><span class="highlight">Dhaniram</span>
+                    </h1>
+                    <p class="hero-desc">
+                        A legacy of authentic Ayurveda, carried forward with reverence.
+                    </p>
+                </div>
+                <div class="editorial-hero-right">
+                    <div class="big-stat">
+                        <span class="number">25</span>
+                        <span class="plus">+</span>
+                    </div>
+                    <span class="stat-label">Years of Excellence</span>
+                </div>
+            </div>
+
+            <!-- Main Grid -->
+            <div class="editorial-grid">
+
+                <!-- Image -->
+                <div class="editorial-image-wrapper">
+                    <div class="editorial-image-frame">
+                        <img
+                        src="https://res.cloudinary.com/kgqfbt78/image/upload/v1784281741/doctor4_flq5jp.jpg"
+                        alt="Dr. Ashutosh Singh - Founder of Dhaniram Ayurveda"
+                        />
+                        <div class="image-border-accent"></div>
+                        <div class="editorial-float-tag">
+                            <span class="dot-icon"></span>
+                            <span class="tag-text"><strong>25+</strong> Years of Healing</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Content -->
+                <div class="editorial-content">
+
+                    <h2 class="editorial-name">
+                        Dr. <span class="highlight">Ashutosh</span> Singh
+                    </h2>
+
+                    <div class="editorial-title-row">
+                        <span class="primary">Founder &amp; Medical Director</span>
+                        <span class="dot-divider"></span>
+                        <span class="secondary">BAMS · PG Neuro Rehab (Ayu)</span>
+                    </div>
+
+                    <div class="editorial-bio">
+                        <span class="quote-mark">"</span>
+                        <p>
+                            <strong>Dr. Ashutosh Singh</strong> is a distinguished Ayurvedic physician
+                            with over <strong>25 years</strong> of experience in traditional healing.
+                            Born into a family of Ayurvedic practitioners, he inherited the ancient
+                            wisdom of <span class="accent">Kerala Ayurveda</span> and dedicated
+                            his life to preserving and spreading this sacred knowledge.
+                        </p>
+                        <p>
+                            After completing his <strong>BAMS</strong> and
+                            <strong>Post Graduate in Neuro Rehabilitation (Ayu)</strong>,
+                            Dr. Singh realized that authentic Ayurveda was being lost in commercialization.
+                            With a mission to bring back the true essence of Ayurveda, he established
+                            <strong>Dhaniram Ayurveda Hospital</strong> — a place where ancient wisdom
+                            meets modern healthcare without compromising on the quality prescribed in
+                            the ancient texts.
+                        </p>
+                    </div>
+
+                    <!-- Stats -->
+                    <div class="editorial-stats">
+                        <div class="editorial-stat">
+                            <span class="number">25+</span>
+                            <span class="label">Years of Experience</span>
+                        </div>
+                        <div class="editorial-stat">
+                            <span class="number">15K+</span>
+                            <span class="label">Happy Patients</span>
+                        </div>
+                        <div class="editorial-stat">
+                            <span class="number">50+</span>
+                            <span class="label">Experts Trained</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="history">
+
+        <div class="history-wrapper">
+
+        <!-- ===== HEADER ===== -->
+        <div class="history-header">
+            <div class="history-header-left">
+                <span class="line"></span>
+                <span class="label">Founder's Journey</span>
+            </div>
+            <div class="history-header-right">
+                <span class="icon">✦</span>
+                <span class="text"><strong>25+</strong> Years of Legacy</span>
+            </div>
+        </div>
+
+        <!-- ===== TITLE ===== -->
+        <div class="history-title">
+            <h2>
+                The <span class="accent">History</span> of Dhaniram
+                <span class="badge">6 Milestones</span>
+            </h2>
+            <p>From a single clinic to a trusted name in authentic Ayurveda</p>
+        </div>
+
+        <!-- ===== TIMELINE GRID ===== -->
+        <div class="timeline-grid">
+
+            <!-- Card 1 -->
+            <div class="timeline-card">
+                <div class="year">
+                    1998
+                    <span class="dash"></span>
+                </div>
+                <div class="icon-wrap">🌿</div>
+                <div class="card-title">Started Practice</div>
+                <div class="card-desc">
+                    <strong>Began his journey</strong> in Kerala, training under traditional <strong>Vaidyas</strong> and mastering classical Ayurvedic healing methods.
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="timeline-card">
+                <div class="year">
+                    2003
+                    <span class="dash"></span>
+                </div>
+                <div class="icon-wrap">🧠</div>
+                <div class="card-title">PG Neuro Rehab</div>
+                <div class="card-desc">
+                    Completed <strong>Post Graduate in Neuro Rehabilitation (Ayu)</strong>, specializing in neurological disorders through Ayurveda.
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="timeline-card">
+                <div class="year">
+                    2010
+                    <span class="dash"></span>
+                </div>
+                <div class="icon-wrap">🏥</div>
+                <div class="card-title">Founded Dhaniram</div>
+                <div class="card-desc">
+                    Established <strong>Dhaniram Ayurveda Hospital</strong> in Hapur with a mission to deliver authentic, uncompromised Ayurvedic care.
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="timeline-card">
+                <div class="year">
+                    2015
+                    <span class="dash"></span>
+                </div>
+                <div class="icon-wrap">✅</div>
+                <div class="card-title">NABH Certified</div>
+                <div class="card-desc">
+                    Achieved <strong>NABH certification</strong>, setting top-quality healthcare standards and gaining national recognition.
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="timeline-card">
+                <div class="year">
+                    2018
+                    <span class="dash"></span>
+                </div>
+                <div class="icon-wrap">🏆</div>
+                <div class="card-title">National Award</div>
+                <div class="card-desc">
+                    Received the <strong>National Healthcare Award</strong> for Excellence in Ayurveda, honoring his contributions to holistic healing.
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="timeline-card">
+                <div class="year">
+                    2023
+                    <span class="dash"></span>
+                </div>
+                <div class="icon-wrap">❤️</div>
+                <div class="card-title">10,000+ Lives</div>
+                <div class="card-desc">
+                    Transformed <strong>10,000+ lives</strong> through authentic Ayurveda, building a legacy of trust and healing.
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+    
+    <!-- Rest of the website continues here -->
+    <div class="wrap55 padbottombig">
+        <div class="fixwrap">
+            <div class="ayurveda-hospital">
+                <img src="https://res.cloudinary.com/kgqfbt78/image/upload/v1784282887/office1_nri4tl.jpg"
+                    alt="Ayurveda Hospital Hapur" title="Dhaniram Ayurveda Hospital Hapur" width="800" height="860">
+            </div>
+            <h3>Biggest Ayurveda Hospital in Hapur</h3>
+            <p>
+                Dhaniram Ayurveda Hospital welcomes you to the world of authentic Ayurveda.
+                Dhaniram is a traditional
+                <a href="hospital.html" title="Ayurveda Hospital">Ayurvedic Hospital</a>
+                where ancient wisdom meets modern comfort without compromising on the quality
+                prescribed in the ancient texts. This Ayurveda Hospital is a blessing for
+                those seeking Ayurvedic treatment for various illnesses. Dhaniram also
+                operates Ayurvedic clinics across the Hapur NCR region.
+            </p>
+            <h5>Dhaniram Vision</h5>
+            <p>
+                The objective of Ayurveda is to help healthy individuals maintain good health
+                and help diseased individuals regain good health. The practice of Ayurveda
+                is designed to promote human happiness at the physical, mental, and spiritual levels.
+            </p>
+            <div class="awards">
+                <img src="images/awards.jpg" alt="Awards" width="1086" height="115">
+            </div>
+            <h3 class="titlewrap">Facilities at Dhaniram</h3>
+            <div class="facilitywrap">
+                <div class="f-3-col">
+                    <div class="f-micro">
+                        <div class="f-text">Admission</div>
+                        <img src="https://res.cloudinary.com/kgqfbt78/image/upload/v1784278795/treat5_kdarcl.jpg"
+                            alt="Admission" width="421" height="260">
+                    </div>
+                    <div class="f-micro">
+                        <div class="f-text">Operation Theater</div>
+                        <img src="https://res.cloudinary.com/kgqfbt78/image/upload/v1784278746/treat2_syoexc.jpg"
+                            alt="Operation Theater" width="421" height="290">
+                    </div>
+                </div>
+                <div class="f-3-col">
+                    <video autoplay muted loop playsinline width="503" height="520"
+                        style="width:100%; height:580px; object-fit:cover; display:block; border-radius:8px;">
+                        <source src="https://res.cloudinary.com/kgqfbt78/video/upload/v1784278749/treat4_mzctej.mp4"
+                            type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="f-3-col">
+                    <div class="f-micro">
+                        <div class="f-text">Therapy Room</div>
+                        <img src="https://res.cloudinary.com/kgqfbt78/image/upload/v1784278745/treat1_scki4p.jpg"
+                            alt="Ayurveda Therapy Room" width="421" height="260">
+                    </div>
+                    <div class="f-micro">
+                        <div class="f-text">Yoga Hall</div>
+                        <img src="https://res.cloudinary.com/kgqfbt78/image/upload/v1784278745/treat3_xrt2hz.jpg"
+                            alt="Yoga Hall" width="421" height="260">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <div class="wrap22">
+        <div class="fixwrap">
+            <h3>Award Winner, National Healthcare Award for Excellence in Ayurveda</h3>
+            <div class="split">Dhaniram is a traditional Ayurvedic treatment centre (authorized dealer of Ayurvedic
+                medicines) where ancient healing wisdom meets modern healthcare without compromising the authenticity of
+                classical Ayurvedic principles. Located in <strong>Hapur, Uttar Pradesh</strong>, Dhaniram Ayurveda
+                Hospital offers genuine Ayurvedic treatments for a wide range of health conditions through experienced
+                Ayurvedic doctors, skilled therapists, and personalized treatment plans. We specialize in treating back
+                pain, arthritis, diabetes, asthma, cervical and lumbar spondylosis, knee pain, piles, infertility,
+                paralysis, obesity, skin disorders, digestive problems, and many other chronic diseases using
+                time-tested Ayurvedic therapies. Our hospital also provides authentic Panchakarma treatments,
+                rejuvenation therapies, detoxification programs, and wellness therapies to restore the body's natural
+                balance and vitality. With a commitment to quality care, traditional Ayurvedic practices, and patient
+                satisfaction, Dhaniram has become one of the trusted Ayurveda hospitals in Dwarka, Delhi, helping
+                thousands of patients achieve better health naturally.</div>
+            <strong>NABH Certified Ayurveda Panchakarma Centre</strong> with Cashless & Reimbursement Insurance Options.
+        </div>
+    </div>
 
     <div class="wrap4">
         <div class="fixwrap"> <span class="heading">Welcome to Dhaniram </span>
             <h2>Ayurvedic Treatment Centre Hapur</h2>
             <span class="heading2">NABH & ISO Certified Ayurveda & Panchakarma Centre</span>
-            <section>Dhaniram - the authentic & ISO certified Ayurveda treatment center and clinic located in Hapur Uttar Pradesh - Welcomes you to the world of authentic Ayurveda. Dhaniram is a traditional healing Ayurveda hospital</section>
-            <div class="linkwrap"><a class="aa" href="tel:+919045887854">Book Appointment</a> <a class="vv" href="tel:+918826786437">Online Consultation</a></div>
+            <section>Dhaniram - the authentic & ISO certified Ayurveda treatment center and clinic located in Hapur
+                Uttar Pradesh - Welcomes you to the world of authentic Ayurveda. Dhaniram is a traditional healing
+                Ayurveda hospital</section>
+            <div class="linkwrap"><a class="aa" href="tel:+919045887854">Book Appointment</a> <a class="vv"
+                    href="tel:+918826786437">Online Consultation</a></div>
             <div class="iconwrap">
-                <div class="iconcells"><img src="images/yoga.png" width="161" height="161" alt="yoga treatment" /> <strong>Yoga</strong></div>
-                <div class="iconcells"><img src="images/ayurveda-treatment-for-stroke.png" width="161" height="161" alt="stroke treatment" /><strong> Stroke</strong></div>
-                <div class="iconcells"><img src="images/ayurveda-diet.png" width="161" height="161" alt="ayurveda Weight Loss" /><strong>Weight Loss</strong></div>
-                <div class="iconcells"><img src="images/ayurveda-for-backpain.png" width="161" height="161" alt="Ayurveda Backpain" /><strong>Back Pain</strong></div>
-                <div class="iconcells"><img src="images/beauty-care.png" width="161" height="161" alt="Ayurveda Beauty Care" /><strong>Beauty Care</strong></div>
-                <div class="iconcells"><img src="images/panjakarma-icon.png" width="161" height="161" alt="Ayurveda Beauty Care" /><strong>Retreats</strong></div>
+                <div class="iconcells"><img src="images/yoga.png" width="161" height="161" alt="yoga treatment" />
+                    <strong>Yoga</strong></div>
+                <div class="iconcells"><img src="images/ayurveda-treatment-for-stroke.png" width="161" height="161"
+                        alt="stroke treatment" /><strong> Stroke</strong></div>
+                <div class="iconcells"><img src="images/ayurveda-diet.png" width="161" height="161"
+                        alt="ayurveda Weight Loss" /><strong>Weight Loss</strong></div>
+                <div class="iconcells"><img src="images/ayurveda-for-backpain.png" width="161" height="161"
+                        alt="Ayurveda Backpain" /><strong>Back Pain</strong></div>
+                <div class="iconcells"><img src="images/beauty-care.png" width="161" height="161"
+                        alt="Ayurveda Beauty Care" /><strong>Beauty Care</strong></div>
+                <div class="iconcells"><img src="images/panjakarma-icon.png" width="161" height="161"
+                        alt="Ayurveda Beauty Care" /><strong>Retreats</strong></div>
             </div>
         </div>
     </div>
-   <div class="wrap55 padbottombig">
-    <div class="fixwrap">
 
-        <div class="ayurveda-hospital">
-            <img src="https://res.cloudinary.com/kgqfbt78/image/upload/v1784282887/office1_nri4tl.jpg"
-                 alt="Ayurveda Hospital Hapur"
-                 title="Dhaniram Ayurveda Hospital Hapur"
-                 width="800"
-                 height="860">
-        </div>
-
-        <h3>Biggest Ayurveda Hospital in Hapur</h3>
-
-        <p>
-            Dhaniram Ayurveda Hospital welcomes you to the world of authentic Ayurveda.
-            Dhaniram is a traditional
-            <a href="hospital.html" title="Ayurveda Hospital">Ayurvedic Hospital</a>
-            where ancient wisdom meets modern comfort without compromising on the quality
-            prescribed in the ancient texts. This Ayurveda Hospital is a blessing for
-            those seeking Ayurvedic treatment for various illnesses. Dhaniram also
-            operates Ayurvedic clinics across the Hapur NCR region.
-        </p>
-
-        <h5>Dhaniram Vision</h5>
-
-        <p>
-            The objective of Ayurveda is to help healthy individuals maintain good health
-            and help diseased individuals regain good health. The practice of Ayurveda
-            is designed to promote human happiness at the physical, mental, and spiritual levels.
-        </p>
-
-        <div class="awards">
-            <img src="images/awards.jpg"
-                 alt="Awards"
-                 width="1086"
-                 height="115">
-        </div>
-
-        <h3 class="titlewrap">Facilities at Dhaniram</h3>
-
-        <div class="facilitywrap">
-
-            <!-- Left Column -->
-            <div class="f-3-col">
-
-                <div class="f-micro">
-                    <div class="f-text">Admission</div>
-                    <img src="https://res.cloudinary.com/kgqfbt78/image/upload/v1784278795/treat5_kdarcl.jpg"
-                         alt="Admission"
-                         width="421"
-                         height="260">
-                </div>
-
-                <div class="f-micro">
-                    <div class="f-text">Operation Theater</div>
-                    <img src="https://res.cloudinary.com/kgqfbt78/image/upload/v1784278746/treat2_syoexc.jpg"
-                         alt="Operation Theater"
-                         width="421"
-                         height="290">
-                </div>
-
-            </div>
-
-            <!-- Center Column -->
-            <div class="f-3-col">
-
-    <video
-        autoplay
-        muted
-        loop
-        playsinline
-        width="503"
-        height="520"
-        style="width:100%; height:580px; object-fit:cover; display:block; border-radius:8px;">
-        
-        <source src="https://res.cloudinary.com/kgqfbt78/video/upload/v1784278749/treat4_mzctej.mp4" type="video/mp4">
-
-        Your browser does not support the video tag.
-    </video>
-
-</div>
-
-            <!-- Right Column -->
-            <div class="f-3-col">
-
-                <div class="f-micro">
-                    <div class="f-text">Therapy Room</div>
-                    <img src="https://res.cloudinary.com/kgqfbt78/image/upload/v1784278745/treat1_scki4p.jpg"
-                         alt="Ayurveda Therapy Room"
-                         width="421"
-                         height="260">
-                </div>
-
-                <div class="f-micro">
-                    <div class="f-text">Yoga Hall</div>
-                    <img src="https://res.cloudinary.com/kgqfbt78/image/upload/v1784278745/treat3_xrt2hz.jpg"
-                         alt="Yoga Hall"
-                         width="421"
-                         height="260">
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-</div>
-    <div class="wrap22">
-        <div class="fixwrap">
-            <h3>Award Winner, National Healthcare Award for Excellence in Ayurveda</h3>
-            <div class="split">Dhaniram is a traditional Ayurvedic treatment centre (authorized dealer of Ayurvedic medicines) where ancient healing wisdom meets modern healthcare without compromising the authenticity of classical Ayurvedic principles. Located in <strong>Hapur, Uttar Pradesh</strong>, Dhaniram Ayurveda Hospital offers genuine Ayurvedic treatments for a wide range of health conditions through experienced Ayurvedic doctors, skilled therapists, and personalized treatment plans. We specialize in treating back pain, arthritis, diabetes, asthma, cervical and lumbar spondylosis, knee pain, piles, infertility, paralysis, obesity, skin disorders, digestive problems, and many other chronic diseases using time-tested Ayurvedic therapies. Our hospital also provides authentic Panchakarma treatments, rejuvenation therapies, detoxification programs, and wellness therapies to restore the body's natural balance and vitality. With a commitment to quality care, traditional Ayurvedic practices, and patient satisfaction, Dhaniram has become one of the trusted Ayurveda hospitals in Dwarka, Delhi, helping thousands of patients achieve better health naturally.</div>
-            <strong>NABH Certified Ayurveda Panchakarma Centre</strong> with Cashless & Reimbursement Insurance Options. </div>
-    </div>
     <div class="wrap2">
         <div class="fixwrap">
             <div class="titlewrap2">Treatments at Dhaniram </div>
@@ -356,37 +1473,53 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <ul id="testimonials">
                             <li>
                                 <a href="ayurveda-treatments.html">
-                                    <div class="testi-cell"> <img src="https://res.cloudinary.com/kgqfbt78/image/upload/v1784278745/treat3_xrt2hz.jpg" width="490" height="423" alt="Dhaniram treatments" />
+                                    <div class="testi-cell"> <img
+                                            src="https://res.cloudinary.com/kgqfbt78/image/upload/v1784278745/treat3_xrt2hz.jpg"
+                                            width="490" height="423" alt="Dhaniram treatments" />
                                         <div class="testidesc">
                                             <h2>Sirodhara</h2>
-                                            Shirodhara In shirodhara, medicated oil is poured gently on the forehead as a continuous stream in between the temples. </div>
+                                            Shirodhara In shirodhara, medicated oil is poured gently on the forehead as
+                                            a continuous stream in between the temples.
+                                        </div>
                                     </div>
                                 </a>
                             </li>
                             <li>
                                 <a href="ayurveda-treatments.html">
-                                    <div class="testi-cell"> <img src="https://res.cloudinary.com/kgqfbt78/image/upload/v1784280526/treat7_l4g4rr.jpg" width="490" height="423" alt="Dhaniram treatments" />
+                                    <div class="testi-cell"> <img
+                                            src="https://res.cloudinary.com/kgqfbt78/image/upload/v1784280526/treat7_l4g4rr.jpg"
+                                            width="490" height="423" alt="Dhaniram treatments" />
                                         <div class="testidesc">
                                             <h2>Rejuvanation</h2>
-                                            Abhyangam means massage. Warm Medicated oil is gently applied all over the body. </div>
+                                            Abhyangam means massage. Warm Medicated oil is gently applied all over the
+                                            body.
+                                        </div>
                                     </div>
                                 </a>
                             </li>
                             <li>
                                 <a href="ayurveda-treatments.html">
-                                    <div class="testi-cell"> <img src="https://res.cloudinary.com/kgqfbt78/image/upload/v1784280527/treat9_icczcy.jpg" width="490" height="423" alt="Dhaniram treatments" />
+                                    <div class="testi-cell"> <img
+                                            src="https://res.cloudinary.com/kgqfbt78/image/upload/v1784280527/treat9_icczcy.jpg"
+                                            width="490" height="423" alt="Dhaniram treatments" />
                                         <div class="testidesc">
                                             <h2>Panchakarma</h2>
-                                            Dhaniram is an authentic and traditional Ayurvedic Panchakarma Treatment Center with specialized doctors and therapists </div>
+                                            Dhaniram is an authentic and traditional Ayurvedic Panchakarma Treatment
+                                            Center with specialized doctors and therapists
+                                        </div>
                                     </div>
                                 </a>
                             </li>
                             <li>
                                 <a href="ayurveda-treatments.html">
-                                    <div class="testi-cell"> <img src="https://res.cloudinary.com/kgqfbt78/image/upload/v1784280526/treat6_ofct8g.jpg" width="490" height="423" alt="Dhaniram treatments" />
+                                    <div class="testi-cell"> <img
+                                            src="https://res.cloudinary.com/kgqfbt78/image/upload/v1784280526/treat6_ofct8g.jpg"
+                                            width="490" height="423" alt="Dhaniram treatments" />
                                         <div class="testidesc">
                                             <h2>Janu Vasti</h2>
-                                            A circular receptacle made out of black gram dough is fixed on or behind the knee joint.Lukewarm medicated oil is slowly poured in to it. </div>
+                                            A circular receptacle made out of black gram dough is fixed on or behind the
+                                            knee joint.Lukewarm medicated oil is slowly poured in to it.
+                                        </div>
                                     </div>
                                 </a>
                             </li>
@@ -395,24 +1528,37 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </div>
             </div>
             <div class="titles2"><a class="aa" href="ayurveda-treatments.html">View All Treatments</a></div>
-            <div class="titles3">We only use genuine & approved ayurveda products (medicines and oils) <br> to ensure quality and your well-being.</div>
+            <div class="titles3">We only use genuine & approved ayurveda products (medicines and oils) <br> to ensure
+                quality and your well-being.</div>
         </div>
     </div>
+
     <div class="wrap66">
         <div class="fixwrap">
             <div class="div100 marginbtm parentflex">
                 <div class="Dhaniram-3-col">
                     <h3>Best Ayurvedic Doctors in Hapur</h3>
-                    Dhaniram Doctors are vastly experienced, highly qualified & best ayurvedic doctors in Hapur. All of our Ayurveda treatments are supervised and monitored by our highly talented Ayurveda doctors in Hapur.</div>
+                    Dhaniram Doctors are vastly experienced, highly qualified & best ayurvedic doctors in Hapur. All of
+                    our Ayurveda treatments are supervised and monitored by our highly talented Ayurveda doctors in
+                    Hapur.
+                </div>
                 <div class="Dhaniram-3-col">
                     <h3>Why Ayurveda ?</h3>
-                    Ayurveda is more practiced like a ritual and business rather than an ancient medical science. Modern Ayurveda is highly commercialized and traditional Ayurveda is slowly disappearing. Several renowned Ayurvedic centers specialize in the practice.</div>
+                    Ayurveda is more practiced like a ritual and business rather than an ancient medical science. Modern
+                    Ayurveda is highly commercialized and traditional Ayurveda is slowly disappearing. Several renowned
+                    Ayurvedic centers specialize in the practice.
+                </div>
             </div>
             <div class="chinjuwrap">
-                <div class="chinju"><img src="https://res.cloudinary.com/kgqfbt78/image/upload/v1784278260/pic2_i2nydi.jpg" width="1087" height="581" alt="Doctors of Dhaniram" /></div>
+                <div class="chinju"><img
+                        src="https://res.cloudinary.com/kgqfbt78/image/upload/v1784278260/pic2_i2nydi.jpg" width="1087"
+                        height="581" alt="Doctors of Dhaniram" /></div>
                 <div class="red">
                     <h3>Why Choose Dhaniram</h3>
-                    We have the best ayurvedic doctors in Hapur. All of our Ayurveda treatments are supervised and monitored by our highly experienced Ayurveda doctors, they are the members of Ayurveda Medical Association of India (AMAI) </div>
+                    We have the best ayurvedic doctors in Hapur. All of our Ayurveda treatments are supervised and
+                    monitored by our highly experienced Ayurveda doctors, they are the members of Ayurveda Medical
+                    Association of India (AMAI)
+                </div>
             </div>
             <div class="titles">
                 <h2>Ayurveda Panchakarma Packages</h2>
@@ -420,196 +1566,211 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="a-wrap">
                 <div class="a-3-col">
                     <h3><strong>Ojusvridhi</strong> - 7 Days PanchaKarma Retreat </h3>
-                    Purifies your soul and spirit, detox your body, increase your life span, disease free. Live long with balanced doshas, mindful and eternal bliss includes Ayurveda Panchakarma therapy which help to detox the body, Rasayana therapy helps in Rejuvenation
-                    of the body and anti-ageing. Yoga and mediation programme helps to balance your senses and purifies the soul.</div>
-                <div class="a-3-col nopad"><img src="images/ayurveda-panjakarma.jpg" width="684" height="261" alt="panchakarma" /></div>
-                <div class="a-3-col nopad"><img src="images/panjakarma.jpg" width="684" height="261" alt="ayurveda treatment Hapur" /></div>
+                    Purifies your soul and spirit, detox your body, increase your life span, disease free. Live long
+                    with balanced doshas, mindful and eternal bliss includes Ayurveda Panchakarma therapy which help to
+                    detox the body, Rasayana therapy helps in Rejuvenation
+                    of the body and anti-ageing. Yoga and mediation programme helps to balance your senses and purifies
+                    the soul.
+                </div>
+                <div class="a-3-col nopad"><img src="images/ayurveda-panjakarma.jpg" width="684" height="261"
+                        alt="panchakarma" /></div>
+                <div class="a-3-col nopad"><img src="images/panjakarma.jpg" width="684" height="261"
+                        alt="ayurveda treatment Hapur" /></div>
                 <div class="a-3-col">
                     <h3><strong>Tejasvi </strong>- 15 Days PanchaKarma Retreat</h3>
-                    Help to detox, fight against chronic diseases, helps in slimming, helps in nidhra nasam (Insomnia) helps in anti-ageing and revitalize the body, mind and soul. Programme includes:- Panchakarma, Kerala Ayurveda therapy, Yoga, Meditation, Herbal diet<br>
+                    Help to detox, fight against chronic diseases, helps in slimming, helps in nidhra nasam (Insomnia)
+                    helps in anti-ageing and revitalize the body, mind and soul. Programme includes:- Panchakarma,
+                    Kerala Ayurveda therapy, Yoga, Meditation, Herbal diet<br>
                 </div>
             </div>
             <div class="titles2">
                 <h2>Best Ayurveda Doctors in Hapur </h2>
             </div>
             <div class="teamwrap">
-    <div class="item">
-        <ul id="team">
+                <div class="item">
+                    <ul id="team">
 
-            <li>
-                <a href="#" style="display:block;width:250px;height:250px;border-radius:50%;overflow:hidden;margin:0 auto;">
-                    <img src="https://res.cloudinary.com/kgqfbt78/image/upload/v1784281268/doctor4_bwdzwc.jpg"
-                         alt="Dr. Varun Sharma"
-                         style="width:100%;height:100%;object-fit:cover;display:block;">
-                </a>
-                <div class="drname">
-                    <strong>Dr. Varun Sharma</strong><br>
-                    BAMS | Panchakarma Specialist & Nadi Pariksha Vaidya<br>
-                    Expert in holistic Ayurvedic diagnosis, Panchakarma therapies and personalized wellness care.
+                        <li>
+                            <a href="#"
+                                style="display:block;width:250px;height:250px;border-radius:50%;overflow:hidden;margin:0 auto;">
+                                <img src="https://res.cloudinary.com/kgqfbt78/image/upload/v1784281268/doctor4_bwdzwc.jpg"
+                                    alt="Dr. Varun Sharma"
+                                    style="width:100%;height:100%;object-fit:cover;display:block;">
+                            </a>
+                            <div class="drname">
+                                <strong>Dr. Varun Sharma</strong><br>
+                                BAMS | Panchakarma Specialist & Nadi Pariksha Vaidya<br>
+                                Expert in holistic Ayurvedic diagnosis, Panchakarma therapies and personalized wellness
+                                care.
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="#"
+                                style="display:block;width:250px;height:250px;border-radius:50%;overflow:hidden;margin:0 auto;">
+                                <img src="https://res.cloudinary.com/kgqfbt78/image/upload/v1784281268/doctor3_ahp5kx.jpg"
+                                    alt="Dr. Karun Sharma"
+                                    style="width:100%;height:100%;object-fit:cover;display:block;">
+                            </a>
+                            <div class="drname">
+                                <strong>Dr. Karun Sharma</strong><br>
+                                Ayurvedic Physician | Specialist in Sports Rehabilitation and Pain Management.<br>
+                                Dedicated to restoring bone health and muscle strength through Ayurveda.<br>
+                                Fellowship in Sports Rehabilitation – Medvarsity University.
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="#"
+                                style="display:block;width:250px;height:250px;border-radius:50%;overflow:hidden;margin:0 auto;">
+                                <img src="https://res.cloudinary.com/kgqfbt78/image/upload/v1784281268/doctor1_mozckg.jpg"
+                                    alt="Dr. Juhi Singh" style="width:100%;height:100%;object-fit:cover;display:block;">
+                            </a>
+                            <div class="drname">
+                                <strong>Dr. Juhi Singh</strong><br>
+                                Ayurvedic Physician with expertise in Stress Management, Counseling, Adolescent Health,
+                                Skin Disorders and Mental Wellness.<br>
+                                Provides holistic Ayurvedic care through personalized treatment plans, lifestyle
+                                guidance and counseling.
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="#"
+                                style="display:block;width:250px;height:250px;border-radius:50%;overflow:hidden;margin:0 auto;">
+                                <img src="https://res.cloudinary.com/kgqfbt78/image/upload/v1784281741/doctor4_flq5jp.jpg"
+                                    alt="Dr. Ashutosh Singh"
+                                    style="width:100%;height:100%;object-fit:cover;display:block;">
+                            </a>
+                            <div class="drname">
+                                <strong>Dr. Ashutosh Singh</strong><br>
+                                Medical Director<br>
+                                BAMS, PG Neuro Rehabilitation (Ayu)<br>
+                                Specialised in Panchakarma<br>
+                                Speciality in Diabetes Reversal Program and Cardiac Care.
+                            </div>
+                        </li>
+
+                    </ul>
                 </div>
-            </li>
-
-            <li>
-                <a href="#" style="display:block;width:250px;height:250px;border-radius:50%;overflow:hidden;margin:0 auto;">
-                    <img src="https://res.cloudinary.com/kgqfbt78/image/upload/v1784281268/doctor3_ahp5kx.jpg"
-                         alt="Dr. Karun Sharma"
-                         style="width:100%;height:100%;object-fit:cover;display:block;">
-                </a>
-                <div class="drname">
-                    <strong>Dr. Karun Sharma</strong><br>
-                    Ayurvedic Physician | Specialist in Sports Rehabilitation and Pain Management.<br>
-                    Dedicated to restoring bone health and muscle strength through Ayurveda.<br>
-                    Fellowship in Sports Rehabilitation – Medvarsity University.
-                </div>
-            </li>
-
-            <li>
-                <a href="#" style="display:block;width:250px;height:250px;border-radius:50%;overflow:hidden;margin:0 auto;">
-                    <img src="https://res.cloudinary.com/kgqfbt78/image/upload/v1784281268/doctor1_mozckg.jpg"
-                         alt="Dr. Juhi Singh"
-                         style="width:100%;height:100%;object-fit:cover;display:block;">
-                </a>
-                <div class="drname">
-                    <strong>Dr. Juhi Singh</strong><br>
-                    Ayurvedic Physician with expertise in Stress Management, Counseling, Adolescent Health, Skin Disorders and Mental Wellness.<br>
-                    Provides holistic Ayurvedic care through personalized treatment plans, lifestyle guidance and counseling.
-                </div>
-            </li>
-
-            <li>
-                <a href="#" style="display:block;width:250px;height:250px;border-radius:50%;overflow:hidden;margin:0 auto;">
-                    <img src="https://res.cloudinary.com/kgqfbt78/image/upload/v1784281741/doctor4_flq5jp.jpg"
-                         alt="Dr. Ashutosh Singh"
-                         style="width:100%;height:100%;object-fit:cover;display:block;">
-                </a>
-                <div class="drname">
-                    <strong>Dr. Ashutosh Singh</strong><br>
-                    Medical Director<br>
-                    BAMS, PG Neuro Rehabilitation (Ayu)<br>
-                    Specialised in Panchakarma<br>
-                    Speciality in Diabetes Reversal Program and Cardiac Care.
-                </div>
-            </li>
-
-        </ul>
-    </div>
-</div>      <div class="linkwrap"><a class="aa" href="packages.html">View All Packages</a> <a class="vv" href="https://wa.me/917042350500?text=Hello%20Doctor">Talk to Doctor</a></div>
-            <div class="insurance-wrap"> <img src="images/partners.jpg" width="237" height="83" alt="insurance partners" /> <img src="images/in1.jpg" width="217" height="67" alt="Universal Sompo Insurance accepted at Dhaniram" /> <img src="images/in2.jpg" width="115" height="55"
-                    alt="IFFCO Insurance accepted at Dhaniram" /> <img src="images/in3.jpg" width="114" height="67" alt="NIVA Insurance accepted" /> <img src="images/in4.jpg" width="203" height="42" alt="Ericson Insurance accepted at Dhaniram" /> <img src="images/in5.jpg"
-                    width="96" height="53" alt="HDFC Insurance accepted" /> <img src="images/in6.jpg" width="188" height="62" alt="ICICI Lombard Insurance accepted" /> <img src="images/in7.jpg" width="169" height="39" alt="Medi Assist Insurance accepted"
-                /> <img src="images/in8.jpg" width="43" height="53" alt="KK Insurance accepted" /> <img src="images/in9.jpg" width="69" height="61" alt="Paramount Health Insurance accepted" /> </div>
+            </div>
+            <div class="linkwrap"><a class="aa" href="packages.html">View All Packages</a> <a class="vv"
+                    href="https://wa.me/917042350500?text=Hello%20Doctor">Talk to Doctor</a></div>
+            <div class="insurance-wrap"> <img src="images/partners.jpg" width="237" height="83"
+                    alt="insurance partners" /> <img src="images/in1.jpg" width="217" height="67"
+                    alt="Universal Sompo Insurance accepted at Dhaniram" /> <img src="images/in2.jpg" width="115"
+                    height="55" alt="IFFCO Insurance accepted at Dhaniram" /> <img src="images/in3.jpg" width="114"
+                    height="67" alt="NIVA Insurance accepted" /> <img src="images/in4.jpg" width="203" height="42"
+                    alt="Ericson Insurance accepted at Dhaniram" /> <img src="images/in5.jpg" width="96" height="53"
+                    alt="HDFC Insurance accepted" /> <img src="images/in6.jpg" width="188" height="62"
+                    alt="ICICI Lombard Insurance accepted" /> <img src="images/in7.jpg" width="169" height="39"
+                    alt="Medi Assist Insurance accepted" /> <img src="images/in8.jpg" width="43" height="53"
+                    alt="KK Insurance accepted" /> <img src="images/in9.jpg" width="69" height="61"
+                    alt="Paramount Health Insurance accepted" /> </div>
             <div class="titles2">
                 <h5>Awards & Recognitions for excellence in Ayurveda</h5>
             </div>
             <div class="award-wrap">
-                <div class="award-cell"><img src="https://res.cloudinary.com/kgqfbt78/image/upload/v1784282021/award3_idhqmr.jpg" width="658" height="390" alt="Dr Sajna received award for best ayurveda doctor  in India" /></div>
-                <div class="award-cell"><img src="https://res.cloudinary.com/kgqfbt78/image/upload/v1784282019/award1_u7hdx0.jpg" width="658" height="390" alt="Ayurveda Dr Sajna Receving award for excellence in ayurveda" /></div>
+                <div class="award-cell"><img
+                        src="https://res.cloudinary.com/kgqfbt78/image/upload/v1784282021/award3_idhqmr.jpg" width="658"
+                        height="390" alt="Dr Sajna received award for best ayurveda doctor  in India" /></div>
+                <div class="award-cell"><img
+                        src="https://res.cloudinary.com/kgqfbt78/image/upload/v1784282019/award1_u7hdx0.jpg" width="658"
+                        height="390" alt="Ayurveda Dr Sajna Receving award for excellence in ayurveda" /></div>
             </div>
             <div class="titles2">
                 <h2>Our Branches</h2>
             </div>
             <div class="brachwrap">
-
-                
-
                 <div class="branches">
-                    <strong>Dhaniram Wellness Center, Hapur</strong><br> Kishan Ganj, Garh Road<br>  245101<br> Phone: 9045887854<br> Email: info@Dhaniram.com
+                    <strong>Dhaniram Wellness Center, Hapur</strong><br> Kishan Ganj, Garh Road<br> 245101<br> Phone:
+                    9045887854<br> Email: info@Dhaniram.com
                 </div>
-
                 <div class="branches">
-                    <strong>Dhaniram Wellness Center, Garh Mukteshwar</strong><br> 19/2, Ground Floor<br> Uttar Pradesh 245205<br> Phone: +91 9045887854<br> Opening Soon ! ....
+                    <strong>Dhaniram Wellness Center, Garh Mukteshwar</strong><br> 19/2, Ground Floor<br> Uttar Pradesh
+                    245205<br> Phone: +91 9045887854<br> Opening Soon ! ....
                 </div>
-
             </div>
             <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3803.808483762922!2d77.78036297571225!3d28.73171547956936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390c85ac09555555%3A0x9839765cb2d7d24d!2sVaidhya%20Dhaniram%20Sharma%20kishan%20ganj%20Hapur%20245101!5e1!3m2!1sen!2sin!4v1784283319432!5m2!1sen!2sin"
-                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3803.808483762922!2d77.78036297571225!3d28.73171547956936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390c85ac09555555%3A0x9839765cb2d7d24d!2sVaidhya%20Dhaniram%20Sharma%20kishan%20ganj%20Hapur%20245101!5e1!3m2!1sen!2sin!4v1784283319432!5m2!1sen!2sin"
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </div>
+
     <div class="footer-top">
         <div class="fixwrap">
             <div class="page-caption2">Need Help ? Get in touch with us</div>
             <div class="footer">
-                <div class="footer-3-col"><i class="icofont-location-pin"></i><strong>Address</strong>Ved Dhaniram Wellness Center<br> Kishan Ganj, Garh Road Hapur - 245101</div>
+                <div class="footer-3-col"><i class="icofont-location-pin"></i><strong>Address</strong>Ved Dhaniram
+                    Wellness Center<br> Kishan Ganj, Garh Road Hapur - 245101</div>
                 <div class="footer-3-col"><i class="icofont-ui-call"></i><strong>Call us</strong>+91 9045887854</div>
-                <div class="footer-3-col"><i class="icofont-ui-message"></i><strong>Email</strong> info@Dhaniram.com</div>
+                <div class="footer-3-col"><i class="icofont-ui-message"></i><strong>Email</strong> info@Dhaniram.com
+                </div>
             </div>
-            <div class="social"> <a href="https://www.facebook.com/DhaniramAyurvedic/" target="_blank"><i class="icofont-facebook"></i></a><a href="https://www.instagram.com/Dhaniramayurveda/" target="_blank"><i class="icofont-instagram"></i></a><a href="https://x.com/Dhaniram1"
+            <div class="social"> <a href="https://www.facebook.com/DhaniramAyurvedic/" target="_blank"><i
+                        class="icofont-facebook"></i></a><a href="https://www.instagram.com/Dhaniramayurveda/"
+                    target="_blank"><i class="icofont-instagram"></i></a><a href="https://x.com/Dhaniram1"
                     target="_blank"><i class="icofont-x"></i></a></div>
-            <br> © 2026 all rights reserved Ved Dhaniram Wellness Center Hapur<br> Site by <a href="https://www.hockmad.in" title="Best Web Designer in India" target="_blank">Hockmad</a> </div>
+            <br> © 2026 all rights reserved Ved Dhaniram Wellness Center Hapur<br> Site by <a
+                href="https://www.hockmad.in" title="Best Web Designer in India" target="_blank">Hockmad</a>
+        </div>
     </div>
+
     <div id="back-top"><a href="#top"><i class="icofont-rounded-up"></i></a></div>
 
     <!-- slider jQuery -->
-    <script type="text/javascript" src="js/slider/jquery.min.js"></script>
-    <script type="text/javascript" src="js/slider/jquery.mobile.customized.min.js"></script>
-    <script type="text/javascript" src="js/slider/jquery.easing.1.3.js"></script>
-    <script type="text/javascript" src="js/slider/camera.js"></script>
+    <script type="text/javascript" src="js/slider/jquery.min.js">
+    </script>
+    <script type="text/javascript" src="js/slider/jquery.mobile.customized.min.js">
+    </script>
+    <script type="text/javascript" src="js/slider/jquery.easing.1.3.js">
+    </script>
+    <script type="text/javascript" src="js/slider/camera.js">
+    </script>
     <script>
-        jQuery(function() {
-
+        jQuery(function () {
             jQuery('#camera_wrap_3').camera({
-
                 height: 'auto',
                 pagination: true,
                 thumbnails: false,
-
-
             });
-
         });
     </script>
 
     <!-- thumbslider jQuery -->
-    <!-- services start-->
-
-    <script src="js/lightslider/lightslider.js"></script>
+    <script src="js/lightslider/lightslider.js">
+    </script>
     <script>
-        $(document).ready(function() {
-
+        $(document).ready(function () {
             $('#testimonials').lightSlider({
                 gallery: false,
-
                 item: 3,
                 slideMargin: 20,
                 speed: 1000,
                 auto: true,
                 loop: true,
                 rtl: false,
-                responsive: [
-
-
-                    {
-                        breakpoint: 1030,
-                        settings: {
-                            item: 2,
-
-                        }
-                    },
-
-
-                    {
-                        breakpoint: 840,
-                        settings: {
-                            item: 2,
-
-                        }
-                    },
-
-                    {
-                        breakpoint: 540,
-                        settings: {
-                            item: 1,
-
-                            slideMargin: 0
-                        }
+                responsive: [{
+                    breakpoint: 1030,
+                    settings: {
+                        item: 2,
                     }
-
-
-                ],
-
-                onSliderLoad: function() {
+                }, {
+                    breakpoint: 840,
+                    settings: {
+                        item: 2,
+                    }
+                }, {
+                    breakpoint: 540,
+                    settings: {
+                        item: 1,
+                        slideMargin: 0
+                    }
+                }],
+                onSliderLoad: function () {
                     $('#testimonials').removeClass('cS-hidden');
                 }
             });
@@ -617,10 +1778,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </script>
 
     <!--Team-->
-
     <script>
-        $(document).ready(function() {
-
+        $(document).ready(function () {
             $('#team').lightSlider({
                 gallery: false,
                 item: 3,
@@ -628,7 +1787,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 speed: 1000,
                 auto: true,
                 loop: true,
-                onSliderLoad: function() {
+                onSliderLoad: function () {
                     $('#team').removeClass('cS-hidden');
                 }
             });
@@ -636,9 +1795,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </script>
 
     <!--gallerylightbox-->
-
-    <script src="js-lightbox/valde.min.js"></script>
-    <script src="js-lightbox/glightbox.js"></script>
+    <script src="js-lightbox/valde.min.js">
+    </script>
+    <script src="js-lightbox/glightbox.js">
+    </script>
     <script>
         var lightbox = GLightbox();
         lightbox.on('open', (target) => {
@@ -656,351 +1816,31 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         }) => {
             console.log("Prev slide", prev);
             console.log("Current slide", current);
-
             const {
                 index,
                 slide,
                 player
             } = current;
-
             if (player) {
                 if (!player.ready) {
-                    // If player is not ready
-                    player.on('ready', event => {
-                        // Do something when video is ready
-                    });
+                    player.on('ready', event => {});
                 }
-
                 player.on('play', event => {
                     console.log("Started play");
                 });
-
                 player.on('volumechange', event => {
                     console.log("Volume change");
                 });
-
                 player.on('ended', event => {
                     console.log("Video ended");
                 });
             }
         });
-
         var lightboxInlineIframe = GLightbox({
             'selector': '.glightbox4'
         });
     </script><br>
 
-
-
-    <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "Hospital",
-            "name": "Dhaniram Kerala Ayurveda Hospital",
-            "description": "Authentic Kerala Ayurveda treatment centre and hospital offering Panchakarma, Rejuvenation, and treatments for chronic ailments.",
-            "image": [
-                "https://www.Dhaniram.com/images/Dhaniram-logo.svg",
-                "https://www.Dhaniram.com/images/ayurveda-hospital-Hapur.webp"
-            ],
-            "@id": "https://www.Dhaniram.com",
-            "url": "https://www.Dhaniram.com",
-            "telephone": "+918448946500",
-            "priceRange": "$$",
-            "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "Plot Number 59, Opposite Sector 11 Metro Station, Sector 11, Hapur",
-                "addressLocality": "New Hapur",
-                "postalCode": "110075",
-                "addressCountry": "IN"
-            },
-            "geo": {
-                "@type": "GeoCoordinates",
-                "latitude": "28.583804",
-                "longitude": "77.056804"
-            },
-            "openingHoursSpecification": [{
-                "@type": "OpeningHoursSpecification",
-                "dayOfWeek": [
-                    "Monday",
-                    "Tuesday",
-                    "Wednesday",
-                    "Thursday",
-                    "Friday",
-                    "Saturday",
-                    "Sunday"
-                ],
-                "opens": "09:00",
-                "closes": "20:00"
-            }],
-            "sameAs": [
-                "https://www.facebook.com/DhaniramAyurvedic/",
-                "https://www.instagram.com/Dhaniramayurveda/",
-                "https://x.com/Dhaniram1"
-            ],
-            "department": [{
-                    "@type": "MedicalClinic",
-                    "name": "Dhaniram Kerala Ayurveda Sohna Road",
-                    "telephone": "+918448683500",
-                    "address": {
-                        "@type": "PostalAddress",
-                        "streetAddress": "Plot No #P 108, Uppal Southend, Near Meditree Policlinic, Sohna Road",
-                        "addressLocality": "Gurugram",
-                        "postalCode": "122018",
-                        "addressRegion": "Haryana",
-                        "addressCountry": "IN"
-                    }
-                },
-                {
-                    "@type": "MedicalClinic",
-                    "name": "Dhaniram Kerala Ayurveda DLF Branch",
-                    "telephone": "+918448946500",
-                    "address": {
-                        "@type": "PostalAddress",
-                        "streetAddress": "Plot No. 823, Sector 42, Magnolias Road, Golf Course Rd",
-                        "addressLocality": "Gurugram",
-                        "postalCode": "122002",
-                        "addressRegion": "Haryana",
-                        "addressCountry": "IN"
-                    }
-                },
-                {
-                    "@type": "MedicalClinic",
-                    "name": "Keraleeyam - An Ayurveda and Panchakarma Centre by Dhaniram",
-                    "telephone": "+919818659761",
-                    "address": {
-                        "@type": "PostalAddress",
-                        "streetAddress": "D2-2210, Gate No 6, Near ILBS Hospital, Vasant Kunj",
-                        "addressLocality": "New Hapur",
-                        "postalCode": "110070",
-                        "addressCountry": "IN"
-                    }
-                },
-                {
-                    "@type": "MedicalClinic",
-                    "name": "Dhaniram Kerala Ayurveda Noida",
-                    "telephone": "+919205722500",
-                    "address": {
-                        "@type": "PostalAddress",
-                        "streetAddress": "E 141, Sector 20",
-                        "addressLocality": "Noida",
-                        "postalCode": "201301",
-                        "addressRegion": "Uttar Pradesh",
-                        "addressCountry": "IN"
-                    }
-                },
-                {
-                    "@type": "MedicalClinic",
-                    "name": "Dhaniram Kerala Ayurveda Kalkaji",
-                    "telephone": "+919953544500",
-                    "address": {
-                        "@type": "PostalAddress",
-                        "streetAddress": "19/2 Ground Floor, EPDP Road, Kalkaji",
-                        "addressLocality": "New Hapur",
-                        "postalCode": "110019",
-                        "addressCountry": "IN"
-                    }
-                }
-            ]
-        }
-    </script>
-
-    <!-- ================= WHATSAPP FLOAT BUTTON ================= -->
-    <style>
-        .whatsapp-float {
-            position: fixed;
-            width: 60px;
-            height: 60px;
-            bottom: 20px;
-            right: 20px;
-            background-color: #25D366;
-            border-radius: 50%;
-            text-align: center;
-            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
-            z-index: 9999;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-    </style>
-
-    <div class="whatsapp-float" onclick="openWhatsApp()">
-        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" style="width:30px;height:30px;">
-    </div>
-
-    <script>
-        function openWhatsApp() {
-            var phoneNumber = "917042350500"; // replace if needed
-            var message = "Hello, I would like to book an appointment.";
-            var url = "https://api.whatsapp.com/send?phone=" +
-                phoneNumber +
-                "&text=" +
-                encodeURIComponent(message);
-            window.open(url, "_blank");
-        }
-    </script>
-    <!-- ================= END WHATSAPP FLOAT ================= -->
-
-
-    <!-- ================= SCROLL LEAD POPUP ================= -->
-    <div id="leadPopup" class="popup-overlay">
-        <div class="popup-box">
-
-            <span class="popup-close" onclick="closePopup()">×</span>
-
-            <h3>Book Consultation</h3>
-
-            <input type="text" id="name" placeholder="Full Name *">
-            <input type="tel" id="mobile" placeholder="Mobile Number *">
-
-            <label class="check-row">
-      <input type="checkbox" id="related">
-      Related Treatment Enquiry
-    </label>
-
-            <textarea id="message" placeholder="Describe your problem (Optional)"></textarea>
-
-            <button onclick="submitLead()">Submit</button>
-
-        </div>
-    </div>
-
-    <style>
-        .popup-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.6);
-            display: none;
-            /* hidden by default */
-            align-items: center;
-            justify-content: center;
-            z-index: 99999;
-        }
-
-        /* Desktop ~1/4 width */
-
-        .popup-box {
-            width: 25vw;
-            max-width: 420px;
-            min-width: 300px;
-            background: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            position: relative;
-        }
-
-        /* Mobile full width */
-
-        @media(max-width:768px) {
-            .popup-box {
-                width: 90%;
-            }
-        }
-
-        .popup-box input,
-        .popup-box textarea {
-            width: 100%;
-            margin-bottom: 10px;
-            padding: 8px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            font-size: 14px;
-        }
-
-        .popup-box textarea {
-            height: 80px;
-            resize: none;
-        }
-
-        .popup-box button {
-            width: 100%;
-            background: #25D366;
-            color: #fff;
-            border: none;
-            padding: 10px;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-
-        .popup-close {
-            position: absolute;
-            top: 10px;
-            right: 15px;
-            font-size: 20px;
-            cursor: pointer;
-        }
-
-        .check-row {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            margin-bottom: 10px;
-            font-size: 14px;
-        }
-    </style>
-
-    <script>
-        /* ===== Scroll Trigger (Mobile Safe) ===== */
-
-        let popupShown = false;
-
-        window.addEventListener("scroll", function() {
-
-            if (popupShown) return;
-
-            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-            let windowHeight = window.innerHeight;
-            let docHeight = document.documentElement.scrollHeight;
-
-            if (scrollTop > (docHeight * 0.15)) { // triggers earlier for mobile safety
-                document.getElementById("leadPopup").style.display = "flex";
-                popupShown = true;
-            }
-
-        });
-
-
-        /* ===== Close Popup ===== */
-        function closePopup() {
-            document.getElementById("leadPopup").style.display = "none";
-        }
-
-
-        /* ===== Submit Form ===== */
-        function submitLead() {
-
-            let name = document.getElementById("name").value.trim();
-            let mobile = document.getElementById("mobile").value.trim();
-            let related = document.getElementById("related").checked ? "Yes" : "No";
-            let message = document.getElementById("message").value.trim();
-
-            if (name === "" || mobile === "") {
-                alert("Please fill Name and Mobile");
-                return;
-            }
-
-            fetch("send-lead.php", {
-                    method: "POST",
-                    headers: {
-                        "Content-Type": "application/x-www-form-urlencoded"
-                    },
-                    body: "name=" + encodeURIComponent(name) +
-                        "&mobile=" + encodeURIComponent(mobile) +
-                        "&related=" + encodeURIComponent(related) +
-                        "&message=" + encodeURIComponent(message)
-                })
-                .then(response => response.text())
-                .then(data => {
-                    alert("Thank you. We will contact you shortly.");
-                    closePopup();
-                });
-
-        }
-    </script>
-    <!-- ================= END POPUP ================= -->
 </body>
 
 </html>
