@@ -1,0 +1,1168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- End Google Tag Manager -->
+    <meta charset="utf-8">
+    <title>Ayurveda Treatments - Dhaniram Kerala Ayurveda Hospital | Panchakarma & Therapies</title>
+    <meta name="description"
+        content="Dhaniram is a NABH Certified Kerala Ayurveda Hospital offering authentic Panchakarma, rejuvenation therapies, and specialized Ayurvedic treatments in Hapur, Hapur, Noida, and Hapur by experienced Kerala doctors." />
+    <meta name="author" content="Dhaniram Ayurveda Centre">
+    <link rel="shortcut icon" href="img/fav.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link href="css/icofont.min.css" rel="stylesheet" type="text/css">
+    <link href="css/navigation.css" rel="stylesheet" type="text/css">
+    <link href="css/image-video-lightbox.css" rel="stylesheet" type="text/css">
+    <link href="css/lightslider.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Google tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-247515665-1">
+    </script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-247515665-1');
+    </script>
+
+    <!--fix nav -->
+    <script type="text/javascript" src="js/fix_nav.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            var sidebar = $('.logowrap');
+            var top = sidebar.offset().top - parseFloat(sidebar.css('marginTop'));
+
+            $(window).scroll(function (event) {
+                var ypos = $(this).scrollTop();
+                if (ypos >= top) {
+                    sidebar.addClass('fixed');
+                } else {
+                    sidebar.removeClass('fixed');
+                }
+            });
+
+
+
+        });
+    </script>
+
+    <!--menu -->
+    <script>
+        $(function () {
+            var html = $('html, body'),
+                navContainer = $('.nav-container'),
+                navToggle = $('.nav-toggle'),
+                navDropdownToggle = $('.has-dropdown');
+
+            // Nav toggle
+            navToggle.on('click', function (e) {
+                var $this = $(this);
+                e.preventDefault();
+                $this.toggleClass('is-active');
+                navContainer.toggleClass('is-visible');
+                html.toggleClass('nav-open');
+            });
+
+            // Nav dropdown toggle
+            navDropdownToggle.on('click', function () {
+                var $this = $(this);
+                $this.toggleClass('is-active').children('ul').toggleClass('is-visible');
+            });
+
+            // Prevent click events from firing on children of navDropdownToggle
+            navDropdownToggle.on('click', '*', function (e) {
+                e.stopPropagation();
+            });
+        });
+    </script>
+    <!--menu end -->
+
+    <style>
+        /* ===== TREATMENTS PAGE CUSTOM STYLES ===== */
+        .treatments-hero {
+            padding: 120px 0 60px 0;
+            background: linear-gradient(135deg, #f8f4f0 0%, #e8e0d8 100%);
+            border-bottom: 4px solid #8b1a1a;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .treatments-hero .fixwrap {
+            position: relative;
+            z-index: 2;
+        }
+
+        .treatments-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('https://res.cloudinary.com/kgqfbt78/image/upload/v1784278260/pic1_as47kx.jpg') center/cover no-repeat;
+            opacity: 0.06;
+            z-index: 0;
+        }
+
+        .treatments-hero .heading {
+            font-size: 18px;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: #8b1a1a;
+            font-weight: 600;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .treatments-hero h1 {
+            font-size: 48px;
+            font-weight: 700;
+            color: #2d1f14;
+            font-family: 'Playfair Display', serif;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .treatments-hero h1 span {
+            color: #8b1a1a;
+        }
+
+        .treatments-hero .subtitle {
+            font-size: 20px;
+            color: #5a3d2e;
+            max-width: 700px;
+            line-height: 1.8;
+            font-weight: 300;
+        }
+
+        /* Filter Buttons */
+        .filter-section {
+            padding: 30px 0 20px 0;
+            background: white;
+            border-bottom: 1px solid #f0e6df;
+        }
+
+        .filter-section .filter-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            justify-content: center;
+        }
+
+        .filter-section .filter-btn {
+            padding: 10px 25px;
+            border: 2px solid #e8e0d8;
+            background: white;
+            border-radius: 30px;
+            color: #5a3d2e;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 14px;
+        }
+
+        .filter-section .filter-btn:hover {
+            border-color: #8b1a1a;
+            color: #8b1a1a;
+        }
+
+        .filter-section .filter-btn.active {
+            background: #8b1a1a;
+            color: white;
+            border-color: #8b1a1a;
+        }
+
+        /* Treatments Grid */
+        .treatments-grid-section {
+            padding: 50px 0 70px 0;
+            background: white;
+        }
+
+        .treatments-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .treatments-grid .treatment-card {
+            background: #faf8f6;
+            border-radius: 16px;
+            overflow: hidden;
+            border: 1px solid #f0e6df;
+            transition: all 0.4s ease;
+            cursor: pointer;
+        }
+
+        .treatments-grid .treatment-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 45px rgba(139, 26, 26, 0.1);
+        }
+
+        .treatments-grid .treatment-card .card-img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .treatments-grid .treatment-card .card-body {
+            padding: 20px 20px 25px;
+        }
+
+        .treatments-grid .treatment-card .card-body h3 {
+            font-size: 20px;
+            color: #2d1f14;
+            font-family: 'Playfair Display', serif;
+            margin-bottom: 8px;
+        }
+
+        .treatments-grid .treatment-card .card-body .category-tag {
+            display: inline-block;
+            background: #8b1a1a;
+            color: white;
+            font-size: 11px;
+            padding: 3px 12px;
+            border-radius: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+
+        .treatments-grid .treatment-card .card-body p {
+            color: #5a3d2e;
+            line-height: 1.7;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        .treatments-grid .treatment-card .card-body .read-more {
+            color: #8b1a1a;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .treatments-grid .treatment-card .card-body .read-more:hover {
+            gap: 12px;
+        }
+
+        /* Modal / Popup */
+        .treatment-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.7);
+            z-index: 9999;
+            overflow-y: auto;
+            padding: 30px 15px;
+        }
+
+        .treatment-modal.active {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .treatment-modal .modal-content {
+            background: white;
+            max-width: 900px;
+            width: 100%;
+            border-radius: 20px;
+            overflow: hidden;
+            position: relative;
+            animation: modalSlideIn 0.4s ease;
+            max-height: 90vh;
+            overflow-y: auto;
+        }
+
+        @keyframes modalSlideIn {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .treatment-modal .modal-close {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            font-size: 32px;
+            color: #fff;
+            background: rgba(0,0,0,0.5);
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            z-index: 10;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .treatment-modal .modal-close:hover {
+            background: #8b1a1a;
+            transform: rotate(90deg);
+        }
+
+        .treatment-modal .modal-img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+        }
+
+        .treatment-modal .modal-body {
+            padding: 35px 40px;
+        }
+
+        .treatment-modal .modal-body .modal-category {
+            display: inline-block;
+            background: #8b1a1a;
+            color: white;
+            font-size: 12px;
+            padding: 4px 16px;
+            border-radius: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+        }
+
+        .treatment-modal .modal-body h2 {
+            font-size: 32px;
+            color: #2d1f14;
+            font-family: 'Playfair Display', serif;
+            margin-bottom: 15px;
+        }
+
+        .treatment-modal .modal-body .modal-description {
+            color: #5a3d2e;
+            line-height: 1.9;
+            font-size: 16px;
+            margin-bottom: 25px;
+        }
+
+        .treatment-modal .modal-body .modal-benefits {
+            background: #f8f4f0;
+            padding: 20px 25px;
+            border-radius: 12px;
+            margin-bottom: 25px;
+        }
+
+        .treatment-modal .modal-body .modal-benefits h4 {
+            color: #2d1f14;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        .treatment-modal .modal-body .modal-benefits ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+        }
+
+        .treatment-modal .modal-body .modal-benefits ul li {
+            padding: 5px 0;
+            color: #5a3d2e;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .treatment-modal .modal-body .modal-benefits ul li::before {
+            content: '✓';
+            color: #8b1a1a;
+            font-weight: 700;
+            font-size: 18px;
+        }
+
+        .treatment-modal .modal-body .consult-btn {
+            display: inline-block;
+            background: #8b1a1a;
+            color: white;
+            padding: 14px 40px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .treatment-modal .modal-body .consult-btn:hover {
+            background: #6b1414;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(139, 26, 26, 0.3);
+        }
+
+        /* Consultation Form */
+        .consult-form-section {
+            display: none;
+            padding: 40px 0;
+            background: #f8f4f0;
+        }
+
+        .consult-form-section.active {
+            display: block;
+        }
+
+        .consult-form-section .form-wrapper {
+            max-width: 700px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px 45px;
+            border-radius: 16px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+        }
+
+        .consult-form-section .form-wrapper h2 {
+            font-size: 28px;
+            font-family: 'Playfair Display', serif;
+            color: #2d1f14;
+            text-align: center;
+            margin-bottom: 8px;
+        }
+
+        .consult-form-section .form-wrapper .form-subtitle {
+            text-align: center;
+            color: #5a3d2e;
+            margin-bottom: 25px;
+        }
+
+        .consult-form-section .form-wrapper .form-group {
+            margin-bottom: 20px;
+        }
+
+        .consult-form-section .form-wrapper .form-group label {
+            display: block;
+            color: #2d1f14;
+            font-weight: 500;
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+
+        .consult-form-section .form-wrapper .form-group input,
+        .consult-form-section .form-wrapper .form-group select,
+        .consult-form-section .form-wrapper .form-group textarea {
+            width: 100%;
+            padding: 12px 18px;
+            border: 2px solid #e8e0d8;
+            border-radius: 8px;
+            font-size: 15px;
+            transition: border-color 0.3s ease;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .consult-form-section .form-wrapper .form-group input:focus,
+        .consult-form-section .form-wrapper .form-group select:focus,
+        .consult-form-section .form-wrapper .form-group textarea:focus {
+            outline: none;
+            border-color: #8b1a1a;
+        }
+
+        .consult-form-section .form-wrapper .form-group textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .consult-form-section .form-wrapper .submit-btn {
+            width: 100%;
+            padding: 14px;
+            background: #8b1a1a;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .consult-form-section .form-wrapper .submit-btn:hover {
+            background: #6b1414;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(139, 26, 26, 0.3);
+        }
+
+        .consult-form-section .form-wrapper .close-form-btn {
+            display: block;
+            margin: 15px auto 0;
+            background: transparent;
+            border: none;
+            color: #5a3d2e;
+            cursor: pointer;
+            font-size: 14px;
+            text-decoration: underline;
+        }
+
+        .consult-form-section .form-wrapper .close-form-btn:hover {
+            color: #8b1a1a;
+        }
+
+        /* Animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .fade-in.delay-1 { transition-delay: 0.1s; }
+        .fade-in.delay-2 { transition-delay: 0.2s; }
+        .fade-in.delay-3 { transition-delay: 0.3s; }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .treatments-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+
+        @media (max-width: 768px) {
+            .treatments-hero { padding: 100px 0 40px 0; }
+            .treatments-hero h1 { font-size: 32px; }
+            .treatments-grid { grid-template-columns: 1fr; }
+            .treatment-modal .modal-body { padding: 25px 20px; }
+            .treatment-modal .modal-img { height: 220px; }
+            .treatment-modal .modal-body .modal-benefits ul { grid-template-columns: 1fr; }
+            .consult-form-section .form-wrapper { padding: 25px 20px; }
+            .treatments-hero .subtitle { font-size: 16px; }
+            .filter-section .filter-btn { padding: 8px 18px; font-size: 12px; }
+        }
+
+        @media (max-width: 480px) {
+            .treatments-hero h1 { font-size: 26px; }
+            .treatment-modal .modal-body h2 { font-size: 24px; }
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WTBFT28H" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- ====== TOP BAR ====== -->
+    <div class="top1bar">
+        <div class="top1bar-cells"><i class="icofont-ui-calendar"></i><strong>Online Booking</strong> Book Appointment
+        </div>
+        <div class="top1bar-cells"><i class="icofont-cop-badge"></i><strong>Accreditation</strong>NABH Certified</div>
+        <div class="top1bar-cells"><i class="icofont-ui-call"></i><strong>Call</strong>+91 90458 87854</div>
+        <div class="top1bar-cells"><i class="icofont-ui-message"></i><strong>Email</strong>info@Dhaniram.com</div>
+    </div>
+
+    <!-- ====== NAVBAR / LOGO ====== -->
+    <div class="logowrap">
+        <div class="mob-logo"><a href="http://www.Dhaniram.com"><img
+                    src="https://res.cloudinary.com/kgqfbt78/image/upload/v1784277802/WhatsApp_Image_2026-07-16_at_21.31.47_lyb95e.jpg"
+                    width="145" height="121" alt="Dhaniram ayurveda hospital logo"></a></div>
+        <div class="callbtn"><a href="tel:+917042350500"></a></div>
+        <div id="menu">
+            <nav class="nav is-fixed" role="navigation">
+                <div class="wrapper wrapper-flush">
+                    <button class="nav-toggle">
+                        <div class="icon-menu"> <span class="line line-1"></span> <span class="line line-2"></span>
+                            <span class="line line-3"></span> </div>
+                    </button>
+                    <div class="nav-container">
+                        <ul class="nav-menu menu">
+                            <li class="menu-item"> <a href="index.html" class="menu-link">Home</a> </li>
+                            <li class="menu-item"> <a href="about.html" class="menu-link">About Dhaniram</a> </li>
+                            <li class="menu-item"> <a href="dhaniram.html" class="menu-link">Why Dhaniram</a> </li>
+                            <li class="logo"><img
+                                    src="https://res.cloudinary.com/kgqfbt78/image/upload/v1784277802/WhatsApp_Image_2026-07-16_at_21.31.47_lyb95e.jpg"
+                                    alt="Dhaniram Ayurveda Hospital"> </li>
+                            <li class="menu-item"> <a href="treatments.html" class="menu-link">Ayurveda Treatments</a></li>
+                            <li class="menu-item"> <a href="packages.html" class="menu-link">Retreats</a> </li>
+                            <li class="menu-item"> <a href="contact-us.html" class="menu-link">Contact</a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- ====== TREATMENTS PAGE CONTENT ====== -->
+    
+    <!-- HERO SECTION -->
+    <div class="treatments-hero">
+        <div class="fixwrap">
+            <span class="heading fade-in visible">Our Treatments</span>
+            <h1 class="fade-in visible delay-1">Ayurveda <span>Treatments</span></h1>
+            <p class="subtitle fade-in visible delay-2">
+                Explore our comprehensive range of authentic Kerala Ayurveda treatments designed to heal, 
+                rejuvenate, and restore balance to your body, mind, and spirit.
+            </p>
+        </div>
+    </div>
+
+    <!-- FILTER SECTION -->
+    <div class="filter-section">
+        <div class="fixwrap">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Treatments</button>
+                <button class="filter-btn" data-filter="panchakarma">Panchakarma</button>
+                <button class="filter-btn" data-filter="rejuvenation">Rejuvenation</button>
+                <button class="filter-btn" data-filter="pain">Pain Management</button>
+                <button class="filter-btn" data-filter="beauty">Beauty & Wellness</button>
+                <button class="filter-btn" data-filter="chronic">Chronic Diseases</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- TREATMENTS GRID -->
+    <div class="treatments-grid-section">
+        <div class="fixwrap">
+            <div class="treatments-grid" id="treatmentsGrid">
+                <!-- Cards will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- TREATMENT MODAL -->
+    <div class="treatment-modal" id="treatmentModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <img class="modal-img" id="modalImg" src="" alt="Treatment">
+            <div class="modal-body">
+                <span class="modal-category" id="modalCategory">Category</span>
+                <h2 id="modalTitle">Treatment Name</h2>
+                <p class="modal-description" id="modalDescription">Description goes here</p>
+                <div class="modal-benefits" id="modalBenefits">
+                    <h4>Key Benefits</h4>
+                    <ul id="modalBenefitsList">
+                        <li>Benefit 1</li>
+                        <li>Benefit 2</li>
+                        <li>Benefit 3</li>
+                    </ul>
+                </div>
+                <button class="consult-btn" id="consultBtn">Book Consultation</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONSULTATION FORM -->
+    <div class="consult-form-section" id="consultForm">
+        <div class="fixwrap">
+            <div class="form-wrapper">
+                <h2>Book Consultation</h2>
+                <p class="form-subtitle">Fill the form below and our expert will get back to you within 24 hours</p>
+                <form id="consultationForm" onsubmit="return handleFormSubmit(event)">
+                    <div class="form-group">
+                        <label for="formName">Full Name *</label>
+                        <input type="text" id="formName" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="formPhone">Phone Number *</label>
+                        <input type="tel" id="formPhone" placeholder="Enter your phone number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="formEmail">Email Address</label>
+                        <input type="email" id="formEmail" placeholder="Enter your email address">
+                    </div>
+                    <div class="form-group">
+                        <label for="formTreatment">Treatment Interested In</label>
+                        <input type="text" id="formTreatment" placeholder="e.g., Panchakarma, Shirodhara" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="formMessage">Message</label>
+                        <textarea id="formMessage" placeholder="Tell us about your health concerns..."></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Submit Consultation Request</button>
+                    <button type="button" class="close-form-btn" id="closeFormBtn">Close Form</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- ====== FOOTER ====== -->
+    <div class="footer-top">
+        <div class="fixwrap">
+            <div class="page-caption2">Need Help ? Get in touch with us</div>
+            <div class="footer">
+                <div class="footer-3-col"><i class="icofont-location-pin"></i><strong>Address</strong>Ved Dhaniram
+                    Wellness Center<br> Kishan Ganj, Garh Road Hapur - 245101</div>
+                <div class="footer-3-col"><i class="icofont-ui-call"></i><strong>Call us</strong>+91 9045887854</div>
+                <div class="footer-3-col"><i class="icofont-ui-message"></i><strong>Email</strong> info@Dhaniram.com
+                </div>
+            </div>
+            <div class="social"> <a href="https://www.facebook.com/DhaniramAyurvedic/" target="_blank"><i
+                        class="icofont-facebook"></i></a><a href="https://www.instagram.com/Dhaniramayurveda/"
+                    target="_blank"><i class="icofont-instagram"></i></a><a href="https://x.com/Dhaniram1"
+                    target="_blank"><i class="icofont-x"></i></a></div>
+            <br> © 2026 all rights reserved Ved Dhaniram Wellness Center Hapur<br> Site by <a
+                href="https://www.hockmad.in" title="Best Web Designer in India" target="_blank">Hockmad</a>
+        </div>
+    </div>
+
+    <!-- ====== BACK TO TOP ====== -->
+    <div id="back-top"><a href="#top"><i class="icofont-rounded-up"></i></a></div>
+
+    <!-- ====== JAVASCRIPT FILES ====== -->
+    <!-- slider jQuery -->
+    <script type="text/javascript" src="js/slider/jquery.min.js"></script>
+    <script type="text/javascript" src="js/slider/jquery.mobile.customized.min.js"></script>
+    <script type="text/javascript" src="js/slider/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="js/slider/camera.js"></script>
+
+    <!-- thumbslider jQuery -->
+    <script src="js/lightslider/lightslider.js"></script>
+
+    <!-- gallery lightbox -->
+    <script src="js-lightbox/valde.min.js"></script>
+    <script src="js-lightbox/glightbox.js"></script>
+    <script>
+        var lightbox = GLightbox();
+        lightbox.on('open', (target) => {
+            console.log("lightbox opened");
+        });
+        var lightboxDescription = GLightbox({
+            selector: '.glightbox2',
+        });
+        var lightboxVideo = GLightbox({
+            selector: '.glightbox3'
+        });
+        lightboxVideo.on('slide_changed', ({
+            prev,
+            current
+        }) => {
+            console.log("Prev slide", prev);
+            console.log("Current slide", current);
+
+            const {
+                index,
+                slide,
+                player
+            } = current;
+
+            if (player) {
+                if (!player.ready) {
+                    player.on('ready', event => {});
+                }
+                player.on('play', event => {
+                    console.log("Started play");
+                });
+                player.on('volumechange', event => {
+                    console.log("Volume change");
+                });
+                player.on('ended', event => {
+                    console.log("Video ended");
+                });
+            }
+        });
+
+        var lightboxInlineIframe = GLightbox({
+            'selector': '.glightbox4'
+        });
+    </script>
+
+    <!-- ====== TREATMENTS DATA & SCRIPTS ====== -->
+    <script>
+        // ===== TREATMENTS DATA =====
+        const treatmentsData = [
+            // Panchakarma (7)
+            {
+                id: 1,
+                name: 'Panchakarma Detox',
+                category: 'panchakarma',
+                image: 'https://res.cloudinary.com/kgqfbt78/image/upload/v1784280527/treat9_icczcy.jpg',
+                description: 'Panchakarma is a comprehensive detoxification therapy that purifies the body of toxins (Ama) and restores the natural balance of doshas. It includes five therapeutic procedures.',
+                benefits: ['Deep detoxification', 'Removes toxins from tissues', 'Boosts immunity', 'Improves digestion', 'Restores dosha balance']
+            },
+            {
+                id: 2,
+                name: 'Vamana (Therapeutic Emesis)',
+                category: 'panchakarma',
+                image: 'https://res.cloudinary.com/kgqfbt78/image/upload/v1784278746/treat2_syoexc.jpg',
+                description: 'Vamana is a medicated emesis therapy primarily used to treat Kapha-related disorders. It eliminates excess mucus and toxins from the respiratory and digestive systems.',
+                benefits: ['Clears respiratory tract', 'Treats asthma & allergies', 'Improves digestion', 'Reduces Kapha dosha']
+            },
+            {
+                id: 3,
+                name: 'Virechana (Purgation Therapy)',
+                category: 'panchakarma',
+                image: 'https://res.cloudinary.com/kgqfbt78/image/upload/v1784278795/treat5_kdarcl.jpg',
+                description: 'Virechana is a therapeutic purgation therapy that eliminates Pitta-related toxins from the body. It is highly effective for liver, gallbladder, and skin disorders.',
+                benefits: ['Purifies blood', 'Treats skin diseases', 'Improves liver function', 'Balances Pitta dosha']
+            },
+            {
+                id: 4,
+                name: 'Basti (Enema Therapy)',
+                category: 'panchakarma',
+                image: 'https://res.cloudinary.com/kgqfbt78/image/upload/v1784280526/treat6_ofct8g.jpg',
+                description: 'Basti is the administration of medicated oils or decoctions through the rectum. It is the most effective treatment for Vata-related disorders.',
+                benefits: ['Treats Vata disorders', 'Relieves joint pain', 'Improves nervous system', 'Nourishes tissues']
+            },
+            {
+                id: 5,
+                name: 'Nasya (Nasal Therapy)',
+                category: 'panchakarma',
+                image: 'https://res.cloudinary.com/kgqfbt78/image/upload/v1784278261/pic3_dv4cub.jpg',
+                description: 'Nasya involves the administration of medicated oils or powders through the nasal passages. It effectively treats head, neck, and neurological disorders.',
+                benefits: ['Clears sinus congestion', 'Treats migraines', 'Improves memory', 'Relieves neck stiffness']
+            },
+            {
+                id: 6,
+                name: 'Raktamokshana (Bloodletting)',
+                category: 'panchakarma',
+                image: 'https://res.cloudinary.com/kgqfbt78/image/upload/v1784280526/treat6_ofct8g.jpg',
+                description: 'Raktamokshana is a blood purification therapy that removes vitiated blood from the body. It is highly effective for skin disorders and chronic infections.',
+                benefits: ['Purifies blood', 'Treats skin diseases', 'Reduces inflammation', 'Removes toxins']
+            },
+            {
+                id: 7,
+                name: 'Kizhi (Herbal Bolus Massage)',
+                category: 'panchakarma',
+                image: 'https://res.cloudinary.com/kgqfbt78/image/upload/v1784278745/treat1_scki4p.jpg',
+                description: 'Kizhi is a therapeutic massage using herbal bolus bags filled with medicinal herbs and oils. It provides deep relaxation and pain relief.',
+                benefits: ['Relieves muscle pain', 'Improves circulation', 'Reduces inflammation', 'Relaxes nervous system']
+            },
+            // Rejuvenation (6)
+            {
+                id: 8,
+                name: 'Shirodhara',
+                category: 'rejuvenation',
+                image: 'https://res.cloudinary.com/kgqfbt78/image/upload/v1784278745/treat3_xrt2hz.jpg',
+                description: 'Shirodhara is a therapeutic technique where medicated oil is poured gently on the forehead in a continuous stream. It deeply relaxes the nervous system.',
+                benefits: ['Relieves stress & anxiety', 'Improves sleep', 'Reduces headaches', 'Enhances mental clarity']
+            },
+            {
+                id: 9,
+                name: 'Abhyanga (Ayurvedic Massage)',
+                category: 'rejuvenation',
+                image: 'https://res.cloudinary.com/kgqfbt78/image/upload/v1784280526/treat7_l4g4rr.jpg',
+                description: 'Abhyanga is a full-body massage using warm medicated oils. It nourishes the skin, improves blood circulation, and promotes overall well-being.',
+                benefits: ['Improves circulation', 'Nourishes skin', 'Relieves fatigue', 'Promotes sound sleep']
+            },
+            {
+                id: 10,
+                name: 'Udvartana (Powder Massage)',
+                category: 'rejuvenation',
+                image: 'https://res.cloudinary.com/kgqfbt78/image/upload/v1784280527/treat9_icczcy.jpg',
+                description: 'Udvartana is a therapeutic massage using herbal powders. It is highly effective for weight loss, cellulite reduction, and skin toning.',
+                benefits: ['Reduces cellulite', 'Aids weight loss', 'Exfoliates skin', 'Improves circulation']
+            },
+            {
+                id: 11,
+                name: 'Pizhichil (Oil Bath)',
+                category: 'rejuvenation',
+                image: 'https://res.cloudinary.com/kgqfbt78/image/upload/v1784280526/treat6_ofct8g.jpg',
+                description: 'Pizhichil involves pouring warm medicated oil over the body while performing a gentle massage. It is a luxurious and deeply relaxing therapy.',
+                benefits: ['Deep relaxation', 'Nourishes tissues', 'Relieves muscle stiffness', 'Improves joint mobility']
+            },
+            {
+                id: 12,
+                name: 'Rasayana Therapy',
+                category: 'rejuvenation',
+                image: 'https://res.cloudinary.com/kgqfbt78/image/upload/v1784278261/pic3_dv4cub.jpg',
+                description: 'Rasayana is a rejuvenation therapy that promotes longevity, vitality, and youthful health. It strengthens the immune system and enhances cellular regeneration.',
+                benefits: ['Promotes longevity', 'Boosts immunity', 'Enhances vitality', 'Improves skin health']
+            },
+            {
+                id: 13,
+                name: 'Yoga & Meditation',
+                category: 'rejuvenation',
+                image: 'https://res.cloudinary.com/kgqfbt78/image/upload/v1784278745/treat3_xrt2hz.jpg',
+                description: 'Yoga and meditation are integral parts of Ayurvedic treatment. They promote mental clarity, emotional balance, and physical flexibility.',
+                benefits: ['Reduces stress', 'Improves flexibility', 'Enhances mental clarity', 'Promotes emotional balance']
+            },
+            // Pain Management (6)
+            {
+                id: 14,
+                name: 'Janu Vasti (Knee Pain Treatment)',
+                category: 'pain',
+                image: 'https://res.cloudinary.com/kgqfbt78/image/upload/v1784280526/treat6_ofct8g.jpg',
+                description: 'Janu Vasti is a localized therapy where medicated oil is pooled over the knee joint using a dough ring. It is highly effective for knee pain and osteoarthritis.',
+                benefits: ['Relieves knee pain', 'Improves joint mobility', 'Reduces inflammation', 'Treats osteoarthritis']
+            },
+            {
+                id: 15,
+                name: 'Kati Vasti (Back Pain Treatment)',
+                category: 'pain',
+                image: 'https://res.cloudinary.com/kgqfbt78/image/upload/v1784280527/treat9_icczcy.jpg',
+                description: 'Kati Vasti involves pooling warm medicated oil over the lower back region. It provides deep relief from back pain, sciatica, and spinal disorders.',
+                benefits: ['Relieves back pain', 'Treats sciatica', 'Reduces stiffness', 'Strengthens spine']
+            },
+            {
+                id: 16,
+                name: 'Greeva Vasti (Neck Pain Treatment)',
+                category: 'pain',
+                image: 'https://res.cloudinary.com/kgqfbt78/image/upload/v1784278745/treat1_scki4p.jpg',
+                description: 'Greeva Vasti is a therapeutic procedure where medicated oil is pooled over the neck region. It effectively treats cervical spondylosis and neck stiffness.',
+                benefits: ['Relieves neck pain', 'Treats cervical spondylosis', 'Reduces stiffness', 'Improves mobility']
+            },
+            {
+                id: 17,
+                name: 'Shiro Vasti (Head Therapy)',
+                category: 'pain',
+                image: 'https://res.cloudinary.com/kgqfbt78/image/upload/v1784278745/treat3_xrt2hz.jpg',
+                description: 'Shiro Vasti involves pooling medicated oil over the head using a leather cap. It is highly effective for headaches, migraines, and neurological disorders.',
+                benefits: ['Relieves headaches', 'Treats migraines', 'Calms nervous system', 'Improves memory']
+            },
+            {
+                id: 18,
+                name: 'Nadi Swedana (Steam Therapy)',
+                category: 'pain',
+                image: 'https://res.cloudinary.com/kgqfbt78/image/upload/v1784278795/treat5_kdarcl.jpg',
+                description: 'Nadi Swedana is a localized steam therapy that provides deep relaxation and pain relief. It is effective for joint pain, muscle stiffness, and respiratory issues.',
+                benefits: ['Relieves muscle pain', 'Opens respiratory passages', 'Reduces joint stiffness', 'Promotes sweating']
+            },
+            {
+                id: 19,
+                name: 'Lepana (Herbal Paste Application)',
+                category: 'pain',
+                image: 'https://res.cloudinary.com/kgqfbt78/image/upload/v1784280526/treat7_l4g4rr.jpg',
+                description: 'Lepana involves applying a paste of medicinal herbs over affected areas. It reduces inflammation, relieves pain, and promotes healing.',
+                benefits: ['Reduces inflammation', 'Relieves joint pain', 'Promotes healing', 'Improves skin health']
+            },
+            // Beauty & Wellness (5)
+            {
+                id: 20,
+                name: 'Mukha Lepana (Facial Therapy)',
+                category: 'beauty',
+                image: 'https://res.cloudinary.com/kgqfbt78/image/upload/v1784280527/treat9_icczcy.jpg',
+                description: 'Mukha Lepana is a natural facial therapy using herbal pastes and oils. It nourishes the skin, reduces signs of aging, and promotes a healthy glow.',
+                benefits: ['Nourishes skin', 'Reduces wrinkles', 'Improves complexion', 'Promotes glowing skin']
+            },
+            {
+                id: 21,
+                name: 'Herbal Body Wrap',
+                category: 'beauty',
+                image: 'https://res.cloudinary.com/kgqfbt78/image/upload/v1784278746/treat2_syoexc.jpg',
+                description: 'Herbal body wraps use natural herbs and clay to detoxify, tone, and nourish the skin. It promotes weight loss and improves skin texture.',
+                benefits: ['Detoxifies skin', 'Aids weight loss', 'Improves skin texture', 'Reduces cellulite']
+            },
+            {
+                id: 22,
+                name: 'Hair Care Therapy',
+                category: 'beauty',
+                image: 'https://res.cloudinary.com/kgqfbt78/image/upload/v1784280526/treat6_ofct8g.jpg',
+                description: 'Ayurvedic hair care treatments nourish the scalp, prevent hair loss, and promote healthy hair growth using natural oils and herbs.',
+                benefits: ['Prevents hair loss', 'Promotes hair growth', 'Nourishes scalp', 'Reduces dandruff']
+            },
+            {
+                id: 23,
+                name: 'Weight Loss Program',
+                category: 'beauty',
+                image: 'https://res.cloudinary.com/kgqfbt78/image/upload/v1784280527/treat9_icczcy.jpg',
+                description: 'Our Ayurvedic weight loss program combines diet, exercise, and herbal therapies to achieve sustainable weight loss and improve overall health.',
+                benefits: ['Sustainable weight loss', 'Improves metabolism', 'Reduces appetite', 'Enhances energy']
+            },
+            {
+                id: 24,
+                name: 'Skin Care & Glow Therapy',
+                category: 'beauty',
+                image: 'https://res.cloudinary.com/kgqfbt78/image/upload/v1784278261/pic3_dv4cub.jpg',
+                description: 'Ayurvedic skin care therapies treat various skin conditions including acne, pigmentation, and premature aging using natural herbs and oils.',
+                benefits: ['Treats acne', 'Reduces pigmentation', 'Anti-aging', 'Improves skin tone']
+            },
+            // Chronic Diseases (6)
+            {
+                id: 25,
+                name: 'Diabetes Reversal Program',
+                category: 'chronic',
+                image: 'https://res.cloudinary.com/kgqfbt78/image/upload/v1784280527/treat9_icczcy.jpg',
+                description: 'Our comprehensive diabetes reversal program combines diet, medication, and lifestyle changes to manage and reverse Type 2 diabetes naturally.',
+                benefits: ['Reduces blood sugar', 'Improves insulin sensitivity', 'Reduces medication dependency', 'Prevents complications']
+            },
+            {
+                id: 26,
+                name: 'Arthritis & Joint Care',
+                category: 'chronic',
+                image: 'https://res.cloudinary.com/kgqfbt78/image/upload/v1784280526/treat6_ofct8g.jpg',
+                description: 'Ayurvedic treatments for arthritis focus on reducing inflammation, relieving pain, and improving joint mobility using natural therapies and herbs.',
+                benefits: ['Reduces joint pain', 'Improves mobility', 'Decreases inflammation', 'Prevents joint damage']
+            },
+            {
+                id: 27,
+                name: 'Asthma & Respiratory Care',
+                category: 'chronic',
+                image: 'https://res.cloudinary.com/kgqfbt78/image/upload/v1784278745/treat1_scki4p.jpg',
+                description: 'Ayurvedic respiratory therapies effectively manage asthma, bronchitis, and other respiratory conditions through herbal medicines and therapies.',
+                benefits: ['Improves breathing', 'Reduces allergy symptoms', 'Strengthens lungs', 'Reduces asthma attacks']
+            },
+            {
+                id: 28,
+                name: 'Cardiac Care & Hypertension',
+                category: 'chronic',
+                image: 'https://res.cloudinary.com/kgqfbt78/image/upload/v1784280527/treat9_icczcy.jpg',
+                description: 'Ayurvedic cardiac care focuses on managing hypertension, improving heart health, and preventing cardiovascular diseases through natural approaches.',
+                benefits: ['Controls blood pressure', 'Improves heart health', 'Reduces cholesterol', 'Prevents heart disease']
+            },
+            {
+                id: 29,
+                name: 'Piles & Fistula Treatment',
+                category: 'chronic',
+                image: 'https://res.cloudinary.com/kgqfbt78/image/upload/v1784278746/treat2_syoexc.jpg',
+                description: 'Ayurvedic treatments for piles and fistula use herbal medicines and therapies to reduce inflammation, heal tissues, and prevent recurrence.',
+                benefits: ['Relieves pain', 'Heals tissues', 'Reduces inflammation', 'Prevents recurrence']
+            },
+            {
+                id: 30,
+                name: 'Infertility Treatment',
+                category: 'chronic',
+                image: 'https://res.cloudinary.com/kgqfbt78/image/upload/v1784278261/pic3_dv4cub.jpg',
+                description: 'Ayurvedic infertility treatments address reproductive health issues through natural therapies, herbal medicines, and lifestyle modifications.',
+                benefits: ['Improves fertility', 'Balances hormones', 'Enhances reproductive health', 'Supports pregnancy']
+            }
+        ];
+
+        // ===== RENDER TREATMENTS =====
+        function renderTreatments(filter = 'all') {
+            const grid = document.getElementById('treatmentsGrid');
+            grid.innerHTML = '';
+            
+            const filtered = filter === 'all' ? treatmentsData : treatmentsData.filter(t => t.category === filter);
+            
+            filtered.forEach((treatment, index) => {
+                const card = document.createElement('div');
+                card.className = `treatment-card fade-in ${index < 3 ? 'visible' : ''}`;
+                card.style.transitionDelay = `${(index % 3) * 0.1}s`;
+                card.innerHTML = `
+                    <img class="card-img" src="${treatment.image}" alt="${treatment.name}" loading="lazy">
+                    <div class="card-body">
+                        <span class="category-tag">${treatment.category}</span>
+                        <h3>${treatment.name}</h3>
+                        <p>${treatment.description.substring(0, 80)}...</p>
+                        <a class="read-more" data-id="${treatment.id}">Read More →</a>
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+            
+            // Add click events
+            document.querySelectorAll('.read-more').forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const id = parseInt(this.getAttribute('data-id'));
+                    openModal(id);
+                });
+            });
+        }
+
+        // ===== OPEN MODAL =====
+        function openModal(id) {
+            const treatment = treatmentsData.find(t => t.id === id);
+            if (!treatment) return;
+            
+            document.getElementById('modalImg').src = treatment.image;
+            document.getElementById('modalCategory').textContent = treatment.category.toUpperCase();
+            document.getElementById('modalTitle').textContent = treatment.name;
+            document.getElementById('modalDescription').textContent = treatment.description;
+            
+            const benefitsList = document.getElementById('modalBenefitsList');
+            benefitsList.innerHTML = treatment.benefits.map(b => `<li>${b}</li>`).join('');
+            
+            document.getElementById('treatmentModal').classList.add('active');
+            document.body.style.overflow = 'hidden';
+            
+            // Store treatment name for form
+            document.getElementById('formTreatment').value = treatment.name;
+        }
+
+        // ===== CLOSE MODAL =====
+        document.getElementById('modalClose').addEventListener('click', function() {
+            document.getElementById('treatmentModal').classList.remove('active');
+            document.body.style.overflow = 'auto';
+        });
+
+        document.getElementById('treatmentModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                this.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        });
+
+        // ===== CONSULT BUTTON =====
+        document.getElementById('consultBtn').addEventListener('click', function() {
+            document.getElementById('treatmentModal').classList.remove('active');
+            document.body.style.overflow = 'auto';
+            setTimeout(() => {
+                document.getElementById('consultForm').classList.add('active');
+                document.getElementById('consultForm').scrollIntoView({ behavior: 'smooth' });
+            }, 300);
+        });
+
+        // ===== CLOSE FORM =====
+        document.getElementById('closeFormBtn').addEventListener('click', function() {
+            document.getElementById('consultForm').classList.remove('active');
+        });
+
+        // ===== FILTER BUTTONS =====
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                renderTreatments(this.getAttribute('data-filter'));
+            });
+        });
+
+        // ===== FORM SUBMIT =====
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            const name = document.getElementById('formName').value;
+            const phone = document.getElementById('formPhone').value;
+            const email = document.getElementById('formEmail').value;
+            const treatment = document.getElementById('formTreatment').value;
+            const message = document.getElementById('formMessage').value;
+            
+            if (!name || !phone) {
+                alert('Please fill in your name and phone number.');
+                return false;
+            }
+            
+            alert(`Thank you ${name}! We have received your consultation request for "${treatment}". Our team will contact you within 24 hours.`);
+            document.getElementById('consultationForm').reset();
+            document.getElementById('consultForm').classList.remove('active');
+            return false;
+        }
+
+        // ===== SCROLL ANIMATIONS =====
+        document.addEventListener('DOMContentLoaded', function() {
+            renderTreatments('all');
+            
+            const fadeElements = document.querySelectorAll('.fade-in:not(.visible)');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+            
+            fadeElements.forEach(el => observer.observe(el));
+        });
+    </script>
+
+</body>
+
+</html>

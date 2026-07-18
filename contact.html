@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- End Google Tag Manager -->
+    <meta charset="utf-8">
+    <title>Contact Us - Dhaniram Kerala Ayurveda Hospital | Best Ayurveda Treatment Centre in Hapur</title>
+    <meta name="description"
+        content="Dhaniram is a NABH Certified Kerala Ayurveda Hospital offering authentic Panchakarma, rejuvenation therapies, and specialized Ayurvedic treatments in Hapur, Hapur, Noida, and Hapur by experienced Kerala doctors." />
+    <meta name="author" content="Dhaniram Ayurveda Centre">
+    <link rel="shortcut icon" href="img/fav.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link href="css/icofont.min.css" rel="stylesheet" type="text/css">
+    <link href="css/navigation.css" rel="stylesheet" type="text/css">
+    <link href="css/image-video-lightbox.css" rel="stylesheet" type="text/css">
+    <link href="css/lightslider.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Google tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-247515665-1">
+    </script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-247515665-1');
+    </script>
+
+    <!--fix nav -->
+    <script type="text/javascript" src="js/fix_nav.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            var sidebar = $('.logowrap');
+            var top = sidebar.offset().top - parseFloat(sidebar.css('marginTop'));
+
+            $(window).scroll(function (event) {
+                var ypos = $(this).scrollTop();
+                if (ypos >= top) {
+                    sidebar.addClass('fixed');
+                } else {
+                    sidebar.removeClass('fixed');
+                }
+            });
+
+
+
+        });
+    </script>
+
+    <!--menu -->
+    <script>
+        $(function () {
+            var html = $('html, body'),
+                navContainer = $('.nav-container'),
+                navToggle = $('.nav-toggle'),
+                navDropdownToggle = $('.has-dropdown');
+
+            // Nav toggle
+            navToggle.on('click', function (e) {
+                var $this = $(this);
+                e.preventDefault();
+                $this.toggleClass('is-active');
+                navContainer.toggleClass('is-visible');
+                html.toggleClass('nav-open');
+            });
+
+            // Nav dropdown toggle
+            navDropdownToggle.on('click', function () {
+                var $this = $(this);
+                $this.toggleClass('is-active').children('ul').toggleClass('is-visible');
+            });
+
+            // Prevent click events from firing on children of navDropdownToggle
+            navDropdownToggle.on('click', '*', function (e) {
+                e.stopPropagation();
+            });
+        });
+    </script>
+    <!--menu end -->
+
+    <style>
+        /* ===== CONTACT PAGE CUSTOM STYLES ===== */
+        .contact-hero {
+            padding: 120px 0 50px 0;
+            background: linear-gradient(135deg, #f8f4f0 0%, #e8e0d8 100%);
+            border-bottom: 4px solid #8b1a1a;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact-hero .fixwrap {
+            position: relative;
+            z-index: 2;
+        }
+
+        .contact-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('https://res.cloudinary.com/kgqfbt78/image/upload/v1784278260/pic1_as47kx.jpg') center/cover no-repeat;
+            opacity: 0.06;
+            z-index: 0;
+        }
+
+        .contact-hero .heading {
+            font-size: 18px;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: #8b1a1a;
+            font-weight: 600;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .contact-hero h1 {
+            font-size: 48px;
+            font-weight: 700;
+            color: #2d1f14;
+            font-family: 'Playfair Display', serif;
+            margin-bottom: 15px;
+            line-height: 1.2;
+        }
+
+        .contact-hero h1 span {
+            color: #8b1a1a;
+        }
+
+        .contact-hero .subtitle {
+            font-size: 18px;
+            color: #5a3d2e;
+            max-width: 650px;
+            line-height: 1.8;
+            font-weight: 300;
+        }
+
+        /* Contact Info Cards */
+        .contact-info-section {
+            padding: 50px 0;
+            background: white;
+        }
+
+        .contact-info-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+        }
+
+        .contact-info-grid .info-card {
+            background: #faf8f6;
+            padding: 30px 20px;
+            border-radius: 12px;
+            text-align: center;
+            border: 1px solid #f0e6df;
+            transition: all 0.3s ease;
+        }
+
+        .contact-info-grid .info-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+            border-color: #8b1a1a;
+        }
+
+        .contact-info-grid .info-card .icon {
+            font-size: 36px;
+            color: #8b1a1a;
+            display: block;
+            margin-bottom: 12px;
+        }
+
+        .contact-info-grid .info-card h4 {
+            font-size: 16px;
+            color: #2d1f14;
+            margin-bottom: 5px;
+        }
+
+        .contact-info-grid .info-card p {
+            font-size: 14px;
+            color: #5a3d2e;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .contact-info-grid .info-card a {
+            color: #8b1a1a;
+            text-decoration: none;
+        }
+
+        .contact-info-grid .info-card a:hover {
+            text-decoration: underline;
+        }
+
+        /* Contact Form & Map */
+        .contact-form-section {
+            padding: 60px 0;
+            background: #f8f4f0;
+        }
+
+        .contact-form-section .section-title {
+            text-align: center;
+            font-size: 34px;
+            font-family: 'Playfair Display', serif;
+            color: #2d1f14;
+            margin-bottom: 15px;
+        }
+
+        .contact-form-section .section-subtitle {
+            text-align: center;
+            color: #5a3d2e;
+            max-width: 600px;
+            margin: 0 auto 40px auto;
+            font-size: 17px;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        .contact-grid .form-wrapper {
+            background: white;
+            padding: 35px 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.06);
+        }
+
+        .contact-grid .form-wrapper h3 {
+            font-size: 24px;
+            font-family: 'Playfair Display', serif;
+            color: #2d1f14;
+            margin-bottom: 8px;
+        }
+
+        .contact-grid .form-wrapper .form-sub {
+            color: #5a3d2e;
+            margin-bottom: 25px;
+            font-size: 15px;
+        }
+
+        .contact-grid .form-wrapper .form-group {
+            margin-bottom: 18px;
+        }
+
+        .contact-grid .form-wrapper .form-group label {
+            display: block;
+            color: #2d1f14;
+            font-weight: 500;
+            margin-bottom: 4px;
+            font-size: 14px;
+        }
+
+        .contact-grid .form-wrapper .form-group input,
+        .contact-grid .form-wrapper .form-group textarea {
+            width: 100%;
+            padding: 11px 16px;
+            border: 2px solid #e8e0d8;
+            border-radius: 8px;
+            font-size: 15px;
+            transition: border-color 0.3s ease;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .contact-grid .form-wrapper .form-group input:focus,
+        .contact-grid .form-wrapper .form-group textarea:focus {
+            outline: none;
+            border-color: #8b1a1a;
+        }
+
+        .contact-grid .form-wrapper .form-group textarea {
+            resize: vertical;
+            min-height: 110px;
+        }
+
+        .contact-grid .form-wrapper .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .contact-grid .form-wrapper .submit-btn {
+            width: 100%;
+            padding: 13px;
+            background: #8b1a1a;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 17px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .contact-grid .form-wrapper .submit-btn:hover {
+            background: #6b1414;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(139, 26, 26, 0.3);
+        }
+
+        .contact-grid .map-wrapper {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.06);
+            height: 100%;
+            min-height: 450px;
+        }
+
+        .contact-grid .map-wrapper iframe {
+            width: 100%;
+            height: 100%;
+            min-height: 450px;
+            border: none;
+            display: block;
+        }
+
+        /* Branches Section */
+        .branches-section {
+            padding: 60px 0 70px 0;
+            background: white;
+        }
+
+        .branches-section .section-title {
+            text-align: center;
+            font-size: 34px;
+            font-family: 'Playfair Display', serif;
+            color: #2d1f14;
+            margin-bottom: 15px;
+        }
+
+        .branches-section .section-subtitle {
+            text-align: center;
+            color: #5a3d2e;
+            max-width: 600px;
+            margin: 0 auto 40px auto;
+            font-size: 17px;
+        }
+
+        .branches-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .branches-grid .branch-card {
+            background: #faf8f6;
+            padding: 30px 25px;
+            border-radius: 12px;
+            border: 1px solid #f0e6df;
+            transition: all 0.3s ease;
+            border-left: 4px solid #8b1a1a;
+        }
+
+        .branches-grid .branch-card:hover {
+            transform: translateX(5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+        }
+
+        .branches-grid .branch-card .branch-icon {
+            font-size: 28px;
+            color: #8b1a1a;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .branches-grid .branch-card h4 {
+            font-size: 18px;
+            color: #2d1f14;
+            margin-bottom: 8px;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .branches-grid .branch-card p {
+            font-size: 14px;
+            color: #5a3d2e;
+            line-height: 1.8;
+            margin: 0;
+        }
+
+        .branches-grid .branch-card .branch-status {
+            display: inline-block;
+            padding: 3px 14px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+
+        .branches-grid .branch-card .branch-status.open {
+            background: #d4edda;
+            color: #155724;
+        }
+
+        .branches-grid .branch-card .branch-status.coming {
+            background: #fff3cd;
+            color: #856404;
+        }
+
+        /* Small Gallery Section */
+        .gallery-section {
+            padding: 50px 0 60px 0;
+            background: #f8f4f0;
+        }
+
+        .gallery-section .section-title {
+            text-align: center;
+            font-size: 34px;
+            font-family: 'Playfair Display', serif;
+            color: #2d1f14;
+            margin-bottom: 15px;
+        }
+
+        .gallery-section .section-subtitle {
+            text-align: center;
+            color: #5a3d2e;
+            max-width: 550px;
+            margin: 0 auto 35px auto;
+            font-size: 16px;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 15px;
+        }
+
+        .gallery-grid .gallery-item {
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+            transition: all 0.4s ease;
+            cursor: pointer;
+            aspect-ratio: 1/1;
+        }
+
+        .gallery-grid .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+            display: block;
+        }
+
+        .gallery-grid .gallery-item:hover img {
+            transform: scale(1.08);
+        }
+
+        .gallery-grid .gallery-item .gallery-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(139, 26, 26, 0.7));
+            padding: 15px 12px 12px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .gallery-grid .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+
+        .gallery-grid .gallery-item .gallery-overlay span {
+            color: white;
+            font-size: 12px;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+        }
+
+        .gallery-grid .gallery-item .gallery-overlay .icon {
+            color: white;
+            float: right;
+            font-size: 18px;
+        }
+
+        /* Lightbox Modal for Gallery */
+        .gallery-lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.85);
+            z-index: 10000;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+        }
+
+        .gallery-lightbox.active {
+            display: flex;
+        }
+
+        .gallery-lightbox .lightbox-content {
+            max-width: 800px;
+            max-height: 80vh;
+            border-radius: 12px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .gallery-lightbox .lightbox-content img {
+            width: 100%;
+            height: auto;
+            max-height: 80vh;
+            object-fit: contain;
+            display: block;
+        }
+
+        .gallery-lightbox .lightbox-close {
+            position: absolute;
+            top: -45px;
+            right: 0;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 36px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-lightbox .lightbox-close:hover {
+            transform: rotate(90deg);
+        }
+
+        /* Animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .fade-in.delay-1 { transition-delay: 0.1s; }
+        .fade-in.delay-2 { transition-delay: 0.2s; }
+        .fade-in.delay-3 { transition-delay: 0.3s; }
+        .fade-in.delay-4 { transition-delay: 0.4s; }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .contact-info-grid { grid-template-columns: repeat(2, 1fr); }
+            .branches-grid { grid-template-columns: repeat(2, 1fr); }
+            .gallery-grid { grid-template-columns: repeat(3, 1fr); }
+        }
+
+        @media (max-width: 768px) {
+            .contact-hero { padding: 100px 0 35px 0; }
+            .contact-hero h1 { font-size: 32px; }
+            .contact-info-grid { grid-template-columns: 1fr 1fr; }
+            .contact-grid { grid-template-columns: 1fr; }
+            .contact-grid .form-wrapper { padding: 25px 20px; }
+            .contact-grid .form-wrapper .form-row { grid-template-columns: 1fr; }
+            .branches-grid { grid-template-columns: 1fr; }
+            .gallery-grid { grid-template-columns: repeat(3, 1fr); }
+            .contact-hero .subtitle { font-size: 16px; }
+        }
+
+        @media (max-width: 480px) {
+            .contact-hero h1 { font-size: 26px; }
+            .contact-info-grid { grid-template-columns: 1fr; }
+            .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+            .contact-grid .map-wrapper { min-height: 300px; }
+            .contact-grid .map-wrapper iframe { min-height: 300px; }
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WTBFT28H" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- ====== TOP BAR ====== -->
+    <div class="top1bar">
+        <div class="top1bar-cells"><i class="icofont-ui-calendar"></i><strong>Online Booking</strong> Book Appointment
+        </div>
+        <div class="top1bar-cells"><i class="icofont-cop-badge"></i><strong>Accreditation</strong>NABH Certified</div>
+        <div class="top1bar-cells"><i class="icofont-ui-call"></i><strong>Call</strong>+91 90458 87854</div>
+        <div class="top1bar-cells"><i class="icofont-ui-message"></i><strong>Email</strong>info@Dhaniram.com</div>
+    </div>
+
+    <!-- ====== NAVBAR / LOGO ====== -->
+    <div class="logowrap">
+        <div class="mob-logo"><a href="http://www.Dhaniram.com"><img
+                    src="https://res.cloudinary.com/kgqfbt78/image/upload/v1784277802/WhatsApp_Image_2026-07-16_at_21.31.47_lyb95e.jpg"
+                    width="145" height="121" alt="Dhaniram ayurveda hospital logo"></a></div>
+        <div class="callbtn"><a href="tel:+917042350500"></a></div>
+        <div id="menu">
+            <nav class="nav is-fixed" role="navigation">
+                <div class="wrapper wrapper-flush">
+                    <button class="nav-toggle">
+                        <div class="icon-menu"> <span class="line line-1"></span> <span class="line line-2"></span>
+                            <span class="line line-3"></span> </div>
+                    </button>
+                    <div class="nav-container">
+                        <ul class="nav-menu menu">
+                            <li class="menu-item"> <a href="index.html" class="menu-link">Home</a> </li>
+                            <li class="menu-item"> <a href="about.html" class="menu-link">About Dhaniram</a> </li>
+                            <li class="menu-item"> <a href="dhaniram.html" class="menu-link">Why Dhaniram</a> </li>
+                            <li class="logo"><img
+                                    src="https://res.cloudinary.com/kgqfbt78/image/upload/v1784277802/WhatsApp_Image_2026-07-16_at_21.31.47_lyb95e.jpg"
+                                    alt="Dhaniram Ayurveda Hospital"> </li>
+                            <li class="menu-item"> <a href="treatments.html" class="menu-link">Ayurveda Treatments</a></li>
+                            <li class="menu-item"> <a href="packages.html" class="menu-link">Retreats</a> </li>
+                            <li class="menu-item"> <a href="contact-us.html" class="menu-link">Contact</a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- ====== CONTACT PAGE CONTENT ====== -->
+    
+    <!-- HERO SECTION -->
+    <div class="contact-hero">
+        <div class="fixwrap">
+            <span class="heading fade-in visible">Get In Touch</span>
+            <h1 class="fade-in visible delay-1">Contact <span>Us</span></h1>
+            <p class="subtitle fade-in visible delay-2">
+                We're here to help you on your journey to wellness. Reach out to us for appointments, 
+                inquiries, or any assistance you may need.
+            </p>
+        </div>
+    </div>
+
+    <!-- CONTACT INFO CARDS -->
+    <div class="contact-info-section">
+        <div class="fixwrap">
+            <div class="contact-info-grid">
+                <div class="info-card fade-in">
+                    <span class="icon">📍</span>
+                    <h4>Address</h4>
+                    <p>Ved Dhaniram Wellness Center<br>Kishan Ganj, Garh Road<br>Hapur - 245101</p>
+                </div>
+                <div class="info-card fade-in delay-1">
+                    <span class="icon">📞</span>
+                    <h4>Phone</h4>
+                    <p><a href="tel:+919045887854">+91 90458 87854</a><br><a href="tel:+918826786437">+91 88267 86437</a></p>
+                </div>
+                <div class="info-card fade-in delay-2">
+                    <span class="icon">✉️</span>
+                    <h4>Email</h4>
+                    <p><a href="mailto:info@Dhaniram.com">info@Dhaniram.com</a><br><a href="mailto:care@Dhaniram.com">care@Dhaniram.com</a></p>
+                </div>
+                <div class="info-card fade-in delay-3">
+                    <span class="icon">🕐</span>
+                    <h4>Working Hours</h4>
+                    <p>Mon - Sat: 7:00 AM - 8:00 PM<br>Sunday: 8:00 AM - 2:00 PM</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTACT FORM & MAP -->
+    <div class="contact-form-section">
+        <div class="fixwrap">
+            <h2 class="section-title fade-in">Send Us a Message</h2>
+            <p class="section-subtitle fade-in delay-1">
+                Have questions or want to book an appointment? Fill out the form below and we'll get back to you soon.
+            </p>
+            <div class="contact-grid">
+                <div class="form-wrapper fade-in">
+                    <h3>Get in Touch</h3>
+                    <p class="form-sub">We'd love to hear from you. Please fill out this form.</p>
+                    <form id="contactForm" onsubmit="return handleContactSubmit(event)">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contactName">Full Name *</label>
+                                <input type="text" id="contactName" placeholder="Your full name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactPhone">Phone Number *</label>
+                                <input type="tel" id="contactPhone" placeholder="Your phone number" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactEmail">Email Address</label>
+                            <input type="email" id="contactEmail" placeholder="Your email address">
+                        </div>
+                        <div class="form-group">
+                            <label for="contactSubject">Subject</label>
+                            <input type="text" id="contactSubject" placeholder="Subject of your message">
+                        </div>
+                        <div class="form-group">
+                            <label for="contactMessage">Message *</label>
+                            <textarea id="contactMessage" placeholder="Write your message here..." required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+                <div class="map-wrapper fade-in delay-1">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3803.808483762922!2d77.78036297571225!3d28.73171547956936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390c85ac09555555%3A0x9839765cb2d7d24d!2sVaidhya%20Dhaniram%20Sharma%20kishan%20ganj%20Hapur%20245101!5e1!3m2!1sen!2sin!4v1784283319432!5m2!1sen!2sin"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                        title="Dhaniram Ayurveda Hospital Location"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BRANCHES SECTION -->
+    <div class="branches-section">
+        <div class="fixwrap">
+            <h2 class="section-title fade-in">Our Branches</h2>
+            <p class="section-subtitle fade-in delay-1">
+                Visit us at our conveniently located branches across the region
+            </p>
+            <div class="branches-grid">
+                <div class="branch-card fade-in">
+                    <span class="branch-icon">🏥</span>
+                    <h4>Dhaniram Wellness Center, Hapur</h4>
+                    <p>Kishan Ganj, Garh Road<br>Hapur - 245101<br>Phone: +91 90458 87854<br>Email: info@Dhaniram.com</p>
+                    <span class="branch-status open">● Open Now</span>
+                </div>
+                <div class="branch-card fade-in delay-1">
+                    <span class="branch-icon">🏥</span>
+                    <h4>Dhaniram Wellness Center, Garh Mukteshwar</h4>
+                    <p>19/2, Ground Floor<br>Garh Mukteshwar - 245205<br>Phone: +91 90458 87854</p>
+                    <span class="branch-status coming">● Opening Soon</span>
+                </div>
+                <div class="branch-card fade-in delay-2">
+                    <span class="branch-icon">🏥</span>
+                    <h4>Dhaniram Wellness Center, Noida</h4>
+                    <p>Coming Soon in Sector 62<br>Noida - 201301<br>Phone: +91 90458 87854</p>
+                    <span class="branch-status coming">● Opening Soon</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SMALL GALLERY SECTION -->
+    <div class="gallery-section">
+        <div class="fixwrap">
+            <h2 class="section-title fade-in">Our Facility</h2>
+            <p class="section-subtitle fade-in delay-1">
+                A glimpse of our state-of-the-art Ayurveda hospital and wellness center
+            </p>
+            <div class="gallery-grid">
+                <div class="gallery-item fade-in" onclick="openLightbox(this)">
+                    <img src="https://res.cloudinary.com/kgqfbt78/image/upload/v1784282887/office1_nri4tl.jpg" alt="Dhaniram Hospital Front View" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span>Hospital Front View</span>
+                        <span class="icon">🔍</span>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in delay-1" onclick="openLightbox(this)">
+                    <img src="https://res.cloudinary.com/kgqfbt78/image/upload/v1784278745/treat1_scki4p.jpg" alt="Therapy Room" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span>Therapy Room</span>
+                        <span class="icon">🔍</span>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in delay-2" onclick="openLightbox(this)">
+                    <img src="https://res.cloudinary.com/kgqfbt78/image/upload/v1784278745/treat3_xrt2hz.jpg" alt="Yoga Hall" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span>Yoga Hall</span>
+                        <span class="icon">🔍</span>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in delay-3" onclick="openLightbox(this)">
+                    <img src="https://res.cloudinary.com/kgqfbt78/image/upload/v1784278746/treat2_syoexc.jpg" alt="Operation Theater" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span>Operation Theater</span>
+                        <span class="icon">🔍</span>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in delay-4" onclick="openLightbox(this)">
+                    <img src="https://res.cloudinary.com/kgqfbt78/image/upload/v1784278795/treat5_kdarcl.jpg" alt="Treatment Area" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span>Treatment Area</span>
+                        <span class="icon">🔍</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- GALLERY LIGHTBOX -->
+    <div class="gallery-lightbox" id="galleryLightbox" onclick="closeLightbox(event)">
+        <div class="lightbox-content">
+            <button class="lightbox-close" onclick="closeLightbox(event)">✕</button>
+            <img id="lightboxImg" src="" alt="Gallery Image">
+        </div>
+    </div>
+
+    <!-- ====== FOOTER ====== -->
+    <div class="footer-top">
+        <div class="fixwrap">
+            <div class="page-caption2">Need Help ? Get in touch with us</div>
+            <div class="footer">
+                <div class="footer-3-col"><i class="icofont-location-pin"></i><strong>Address</strong>Ved Dhaniram
+                    Wellness Center<br> Kishan Ganj, Garh Road Hapur - 245101</div>
+                <div class="footer-3-col"><i class="icofont-ui-call"></i><strong>Call us</strong>+91 9045887854</div>
+                <div class="footer-3-col"><i class="icofont-ui-message"></i><strong>Email</strong> info@Dhaniram.com
+                </div>
+            </div>
+            <div class="social"> <a href="https://www.facebook.com/DhaniramAyurvedic/" target="_blank"><i
+                        class="icofont-facebook"></i></a><a href="https://www.instagram.com/Dhaniramayurveda/"
+                    target="_blank"><i class="icofont-instagram"></i></a><a href="https://x.com/Dhaniram1"
+                    target="_blank"><i class="icofont-x"></i></a></div>
+            <br> © 2026 all rights reserved Ved Dhaniram Wellness Center Hapur<br> Site by <a
+                href="https://www.hockmad.in" title="Best Web Designer in India" target="_blank">Hockmad</a>
+        </div>
+    </div>
+
+    <!-- ====== BACK TO TOP ====== -->
+    <div id="back-top"><a href="#top"><i class="icofont-rounded-up"></i></a></div>
+
+    <!-- ====== JAVASCRIPT FILES ====== -->
+    <!-- slider jQuery -->
+    <script type="text/javascript" src="js/slider/jquery.min.js"></script>
+    <script type="text/javascript" src="js/slider/jquery.mobile.customized.min.js"></script>
+    <script type="text/javascript" src="js/slider/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="js/slider/camera.js"></script>
+
+    <!-- thumbslider jQuery -->
+    <script src="js/lightslider/lightslider.js"></script>
+
+    <!-- gallery lightbox -->
+    <script src="js-lightbox/valde.min.js"></script>
+    <script src="js-lightbox/glightbox.js"></script>
+    <script>
+        var lightbox = GLightbox();
+        lightbox.on('open', (target) => {
+            console.log("lightbox opened");
+        });
+        var lightboxDescription = GLightbox({
+            selector: '.glightbox2',
+        });
+        var lightboxVideo = GLightbox({
+            selector: '.glightbox3'
+        });
+        lightboxVideo.on('slide_changed', ({
+            prev,
+            current
+        }) => {
+            console.log("Prev slide", prev);
+            console.log("Current slide", current);
+
+            const {
+                index,
+                slide,
+                player
+            } = current;
+
+            if (player) {
+                if (!player.ready) {
+                    player.on('ready', event => {});
+                }
+                player.on('play', event => {
+                    console.log("Started play");
+                });
+                player.on('volumechange', event => {
+                    console.log("Volume change");
+                });
+                player.on('ended', event => {
+                    console.log("Video ended");
+                });
+            }
+        });
+
+        var lightboxInlineIframe = GLightbox({
+            'selector': '.glightbox4'
+        });
+    </script>
+
+    <!-- ====== CONTACT SCRIPTS ====== -->
+    <script>
+        // ===== HANDLE CONTACT FORM SUBMIT =====
+        function handleContactSubmit(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('contactName').value;
+            const phone = document.getElementById('contactPhone').value;
+            const message = document.getElementById('contactMessage').value;
+            
+            if (!name || !phone || !message) {
+                alert('Please fill in all required fields (Name, Phone, and Message).');
+                return false;
+            }
+            
+            alert(`Thank you ${name}! We have received your message. Our team will get back to you within 24 hours.`);
+            document.getElementById('contactForm').reset();
+            return false;
+        }
+
+        // ===== GALLERY LIGHTBOX =====
+        function openLightbox(element) {
+            const img = element.querySelector('img');
+            const lightbox = document.getElementById('galleryLightbox');
+            const lightboxImg = document.getElementById('lightboxImg');
+            
+            lightboxImg.src = img.src;
+            lightboxImg.alt = img.alt;
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox(e) {
+            if (e.target === document.getElementById('galleryLightbox') || e.target.className === 'lightbox-close') {
+                document.getElementById('galleryLightbox').classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        }
+
+        // Close lightbox with Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                document.getElementById('galleryLightbox').classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        });
+
+        // ===== SCROLL ANIMATIONS =====
+        document.addEventListener('DOMContentLoaded', function() {
+            const fadeElements = document.querySelectorAll('.fade-in:not(.visible)');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            });
+            
+            fadeElements.forEach(el => observer.observe(el));
+        });
+    </script>
+
+</body>
+
+</html>
