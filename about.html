@@ -2,11 +2,10 @@
 <html lang="en">
 
 <head>
-    <!-- End Google Tag Manager -->
     <meta charset="utf-8">
-    <title>About Us - Dhaniram Kerala Ayurveda Hospital | Best Ayurveda Treatment Centre in Hapur, Hapur & Noida</title>
+    <title>About Us - Dhaniram Kerala Ayurveda Hospital | 45 Years of Excellence</title>
     <meta name="description"
-        content="Dhaniram is a NABH Certified Kerala Ayurveda Hospital offering authentic Panchakarma, rejuvenation therapies, and specialized Ayurvedic treatments in Hapur, Hapur, Noida, and Hapur by experienced Kerala doctors." />
+        content="Dhaniram is a NABH Certified Kerala Ayurveda Hospital offering authentic Panchakarma, rejuvenation therapies, and specialized Ayurvedic treatments in Hapur, Noida, and Delhi NCR by experienced Kerala doctors." />
     <meta name="author" content="Dhaniram Ayurveda Centre">
     <link rel="shortcut icon" href="img/fav.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
@@ -21,27 +20,22 @@
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
 
-    <!-- Google tag (gtag.js) - Google Analytics -->
+    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-247515665-1">
     </script>
     <script>
         window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
+        function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
         gtag('config', 'UA-247515665-1');
     </script>
 
-    <!--fix nav -->
+    <!-- fix nav & menu (kept as original) -->
     <script type="text/javascript" src="js/fix_nav.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
-
             var sidebar = $('.logowrap');
             var top = sidebar.offset().top - parseFloat(sidebar.css('marginTop'));
-
             $(window).scroll(function (event) {
                 var ypos = $(this).scrollTop();
                 if (ypos >= top) {
@@ -50,21 +44,14 @@
                     sidebar.removeClass('fixed');
                 }
             });
-
-
-
         });
     </script>
-
-    <!--menu -->
     <script>
         $(function () {
             var html = $('html, body'),
                 navContainer = $('.nav-container'),
                 navToggle = $('.nav-toggle'),
                 navDropdownToggle = $('.has-dropdown');
-
-            // Nav toggle
             navToggle.on('click', function (e) {
                 var $this = $(this);
                 e.preventDefault();
@@ -72,368 +59,310 @@
                 navContainer.toggleClass('is-visible');
                 html.toggleClass('nav-open');
             });
-
-            // Nav dropdown toggle
             navDropdownToggle.on('click', function () {
                 var $this = $(this);
                 $this.toggleClass('is-active').children('ul').toggleClass('is-visible');
             });
-
-            // Prevent click events from firing on children of navDropdownToggle
             navDropdownToggle.on('click', '*', function (e) {
                 e.stopPropagation();
             });
         });
     </script>
-    <!--menu end -->
 
     <style>
         /* ===== ABOUT PAGE CUSTOM STYLES ===== */
         .about-hero {
-            padding: 100px 0 60px 0;
-            background: linear-gradient(135deg, #f8f4f0 0%, #e8e0d8 100%);
-            border-bottom: 4px solid #8b1a1a;
+            padding: 120px 0 70px 0;
+            background: linear-gradient(145deg, #f8f4f0 0%, #e8e0d8 100%);
+            border-bottom: 5px solid #8b1a1a;
             margin-top: 0;
-        }
-
-        .about-hero .fixwrap {
             position: relative;
-            z-index: 2;
+            overflow: hidden;
         }
-
+        .about-hero .fixwrap { position: relative; z-index: 2; }
         .about-hero::before {
             content: '';
             position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            /* background: url('https://res.cloudinary.com/kgqfbt78/image/upload/v1784278260/pic1_as47kx.jpg') center/cover no-repeat; */
-            opacity: 0.08;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: url('https://res.cloudinary.com/kgqfbt78/image/upload/v1784278260/pic1_as47kx.jpg') center/cover no-repeat;
+            opacity: 0.06;
             z-index: 0;
         }
-
         .about-hero .heading {
             font-size: 18px;
-            letter-spacing: 4px;
+            letter-spacing: 5px;
             text-transform: uppercase;
             color: #8b1a1a;
             font-weight: 600;
             display: block;
             margin-bottom: 10px;
         }
-
         .about-hero h1 {
-            font-size: 48px;
+            font-size: 52px;
             font-weight: 700;
             color: #2d1f14;
             font-family: 'Playfair Display', serif;
             margin-bottom: 20px;
             line-height: 1.2;
         }
-
-        .about-hero h1 span {
-            color: #8b1a1a;
-        }
-
+        .about-hero h1 span { color: #8b1a1a; }
         .about-hero .subtitle {
             font-size: 20px;
-            color: #5a3d2e;
-            max-width: 700px;
-            line-height: 1.8;
+            color: #4d3425;
+            max-width: 750px;
+            line-height: 1.9;
             font-weight: 300;
         }
-
         .about-stats {
             display: flex;
             gap: 30px;
-            margin-top: 40px;
+            margin-top: 45px;
             flex-wrap: wrap;
         }
-
         .about-stats .stat-item {
             background: white;
-            padding: 25px 35px;
-            border-radius: 12px;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+            padding: 25px 30px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.07);
             text-align: center;
             flex: 1;
-            min-width: 140px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            border-left: 4px solid #8b1a1a;
+            min-width: 130px;
+            transition: all 0.3s ease;
+            border-left: 5px solid #8b1a1a;
         }
-
         .about-stats .stat-item:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+            transform: translateY(-6px);
+            box-shadow: 0 18px 40px rgba(139,26,26,0.12);
         }
-
         .about-stats .stat-item .number {
-            font-size: 42px;
+            font-size: 44px;
             font-weight: 700;
             color: #8b1a1a;
             font-family: 'Playfair Display', serif;
             display: block;
+            line-height: 1.2;
         }
-
         .about-stats .stat-item .label {
             font-size: 14px;
-            color: #5a3d2e;
+            color: #4d3425;
             font-weight: 500;
             text-transform: uppercase;
             letter-spacing: 1px;
         }
 
-        /* Mission Vision Section */
-        .mission-vision {
-            padding: 70px 0;
-            background: white;
-        }
-
+        /* Mission Vision */
+        .mission-vision { padding: 80px 0; background: white; }
         .mission-vision .mv-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 40px;
             margin-top: 30px;
         }
-
         .mission-vision .mv-box {
-            padding: 40px 35px;
-            border-radius: 16px;
-            transition: all 0.4s ease;
+            padding: 45px 40px;
+            border-radius: 20px;
+            transition: all 0.3s ease;
             position: relative;
             overflow: hidden;
         }
-
         .mission-vision .mv-box::before {
             content: '';
             position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 4px;
+            top: 0; left: 0; right: 0;
+            height: 5px;
             background: #8b1a1a;
-            transition: height 0.4s ease;
+            transition: height 0.3s ease;
         }
+        .mission-vision .mv-box:hover::before { height: 7px; }
+        .mission-vision .mv-box.mission { background: #fdf8f5; border: 1px solid #f0e6df; }
+        .mission-vision .mv-box.vision { background: #f5f8fd; border: 1px solid #dfe6f0; }
+        .mission-vision .mv-box .icon { font-size: 52px; color: #8b1a1a; margin-bottom: 15px; display: block; }
+        .mission-vision .mv-box h3 { font-size: 30px; font-family: 'Playfair Display', serif; color: #2d1f14; margin-bottom: 15px; }
+        .mission-vision .mv-box p { color: #4d3425; line-height: 1.9; font-size: 16px; }
 
-        .mission-vision .mv-box:hover::before {
-            height: 6px;
+        /* Philosophy */
+        .philosophy-section { padding: 80px 0; background: #f8f4f0; }
+        .philosophy-section .section-title { text-align: center; font-size: 38px; font-family: 'Playfair Display', serif; color: #2d1f14; margin-bottom: 20px; }
+        .philosophy-section .section-subtitle { text-align: center; color: #4d3425; max-width: 700px; margin: 0 auto 50px auto; font-size: 18px; }
+        .philosophy-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
         }
-
-        .mission-vision .mv-box.mission {
-            background: #fdf8f5;
-            border: 1px solid #f0e6df;
-        }
-
-        .mission-vision .mv-box.vision {
-            background: #f5f8fd;
-            border: 1px solid #dfe6f0;
-        }
-
-        .mission-vision .mv-box .icon {
-            font-size: 48px;
-            color: #8b1a1a;
-            margin-bottom: 15px;
-            display: block;
-        }
-
-        .mission-vision .mv-box h3 {
-            font-size: 28px;
-            font-family: 'Playfair Display', serif;
-            color: #2d1f14;
-            margin-bottom: 15px;
-        }
-
-        .mission-vision .mv-box p {
-            color: #5a3d2e;
-            line-height: 1.9;
-            font-size: 16px;
-        }
-
-        /* Values Section */
-        .values-section {
-            padding: 70px 0;
-            background: #f8f4f0;
-        }
-
-        .values-section .section-title {
+        .philosophy-item {
+            background: white;
+            padding: 35px 25px;
+            border-radius: 16px;
             text-align: center;
-            font-size: 36px;
-            font-family: 'Playfair Display', serif;
-            color: #2d1f14;
-            margin-bottom: 15px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+            border-bottom: 4px solid transparent;
         }
+        .philosophy-item:hover { border-bottom-color: #8b1a1a; transform: translateY(-5px); box-shadow: 0 12px 35px rgba(0,0,0,0.08); }
+        .philosophy-item .icon { font-size: 44px; color: #8b1a1a; margin-bottom: 15px; display: block; }
+        .philosophy-item h4 { font-size: 22px; color: #2d1f14; margin-bottom: 10px; }
+        .philosophy-item p { font-size: 15px; color: #4d3425; line-height: 1.7; }
 
-        .values-section .section-subtitle {
+        /* Journey */
+        .journey-section { padding: 80px 0; background: white; }
+        .journey-section .section-title { text-align: center; font-size: 38px; font-family: 'Playfair Display', serif; color: #2d1f14; margin-bottom: 20px; }
+        .journey-section .section-subtitle { text-align: center; color: #4d3425; max-width: 700px; margin: 0 auto 50px auto; font-size: 18px; }
+        .journey-timeline {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+        .journey-item {
+            background: #faf8f6;
+            padding: 35px 25px;
+            border-radius: 16px;
             text-align: center;
-            color: #5a3d2e;
-            max-width: 600px;
-            margin: 0 auto 40px auto;
-            font-size: 17px;
+            transition: all 0.3s ease;
+            border-bottom: 4px solid transparent;
         }
+        .journey-item:hover { border-bottom-color: #8b1a1a; transform: translateY(-5px); box-shadow: 0 12px 35px rgba(0,0,0,0.05); }
+        .journey-item .year { font-size: 32px; font-weight: 700; color: #8b1a1a; font-family: 'Playfair Display', serif; }
+        .journey-item h4 { font-size: 20px; color: #2d1f14; margin: 10px 0; }
+        .journey-item p { font-size: 15px; color: #4d3425; line-height: 1.6; }
 
-        .values-grid {
+        /* The Dhaniram Promise */
+        .promise-section { padding: 80px 0; background: #f8f4f0; }
+        .promise-section .section-title { text-align: center; font-size: 38px; font-family: 'Playfair Display', serif; color: #2d1f14; margin-bottom: 20px; }
+        .promise-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+            margin-top: 30px;
+        }
+        .promise-item {
+            background: white;
+            padding: 30px 20px;
+            border-radius: 16px;
+            text-align: center;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+        }
+        .promise-item:hover { transform: translateY(-5px); box-shadow: 0 12px 30px rgba(0,0,0,0.08); }
+        .promise-item .icon { font-size: 40px; color: #8b1a1a; display: block; margin-bottom: 12px; }
+        .promise-item h4 { font-size: 18px; color: #2d1f14; margin-bottom: 8px; }
+        .promise-item p { font-size: 14px; color: #4d3425; line-height: 1.6; }
+
+        /* Facilities */
+        .facilities-section { padding: 80px 0; background: white; }
+        .facilities-section .section-title { text-align: center; font-size: 36px; font-family: 'Playfair Display', serif; color: #2d1f14; margin-bottom: 15px; }
+        .facilities-section .section-subtitle { text-align: center; color: #4d3425; max-width: 600px; margin: 0 auto 45px auto; font-size: 17px; }
+        .facilities-grid {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             gap: 25px;
         }
-
-        .values-grid .value-item {
-            background: white;
-            padding: 35px 25px;
-            text-align: center;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-            transition: all 0.3s ease;
-            border-bottom: 3px solid transparent;
-        }
-
-        .values-grid .value-item:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 12px 35px rgba(0,0,0,0.1);
-            border-bottom-color: #8b1a1a;
-        }
-
-        .values-grid .value-item .icon {
-            font-size: 40px;
-            color: #8b1a1a;
-            display: block;
-            margin-bottom: 15px;
-        }
-
-        .values-grid .value-item h4 {
-            font-size: 18px;
-            color: #2d1f14;
-            margin-bottom: 10px;
-        }
-
-        .values-grid .value-item p {
-            font-size: 14px;
-            color: #5a3d2e;
-            line-height: 1.7;
-        }
-
-        /* Team Section */
-        .team-about {
-            padding: 70px 0;
-            background: white;
-        }
-
-        .team-about .section-title {
-            text-align: center;
-            font-size: 36px;
-            font-family: 'Playfair Display', serif;
-            color: #2d1f14;
-            margin-bottom: 40px;
-        }
-
-        .team-about .team-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 30px;
-        }
-
-        .team-about .team-card {
-            text-align: center;
-            padding: 25px 20px;
-            border-radius: 12px;
-            transition: all 0.3s ease;
+        .facility-item {
             background: #faf8f6;
+            padding: 30px 20px;
+            border-radius: 16px;
+            text-align: center;
+            transition: all 0.3s ease;
             border: 1px solid #f0e6df;
         }
+        .facility-item:hover { transform: translateY(-5px); box-shadow: 0 12px 30px rgba(0,0,0,0.06); }
+        .facility-item .icon { font-size: 40px; color: #8b1a1a; display: block; margin-bottom: 12px; }
+        .facility-item h4 { font-size: 18px; color: #2d1f14; margin-bottom: 8px; }
+        .facility-item p { font-size: 14px; color: #4d3425; line-height: 1.6; }
 
-        .team-about .team-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+        /* Testimonials */
+        .testimonials-section { padding: 80px 0; background: #f8f4f0; }
+        .testimonials-section .section-title { text-align: center; font-size: 36px; font-family: 'Playfair Display', serif; color: #2d1f14; margin-bottom: 40px; }
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
         }
+        .testimonial-item {
+            background: white;
+            padding: 35px 30px;
+            border-radius: 16px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+            border-left: 5px solid #8b1a1a;
+        }
+        .testimonial-item .quote { font-size: 28px; color: #8b1a1a; opacity: 0.3; margin-bottom: 10px; }
+        .testimonial-item p { font-size: 16px; color: #4d3425; line-height: 1.8; font-style: italic; }
+        .testimonial-item .author { margin-top: 15px; font-weight: 600; color: #2d1f14; }
+        .testimonial-item .designation { font-size: 14px; color: #8b1a1a; }
 
-        .team-about .team-card img {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
+        /* Gallery */
+        .gallery-section { padding: 80px 0; background: white; }
+        .gallery-section .section-title { text-align: center; font-size: 36px; font-family: 'Playfair Display', serif; color: #2d1f14; margin-bottom: 40px; }
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+        .gallery-grid img {
+            width: 100%;
+            height: 200px;
             object-fit: cover;
-            border: 4px solid #8b1a1a;
-            margin-bottom: 15px;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
         }
-
-        .team-about .team-card h4 {
-            font-size: 18px;
-            color: #2d1f14;
-            margin-bottom: 5px;
-        }
-
-        .team-about .team-card .designation {
-            font-size: 13px;
-            color: #8b1a1a;
-            font-weight: 500;
-        }
-
-        .team-about .team-card p {
-            font-size: 13px;
-            color: #5a3d2e;
-            margin-top: 10px;
-            line-height: 1.6;
-        }
+        .gallery-grid img:hover { transform: scale(1.03); border-color: #8b1a1a; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
 
         /* Responsive */
         @media (max-width: 1024px) {
-            .values-grid { grid-template-columns: repeat(2, 1fr); }
-            .team-about .team-grid { grid-template-columns: repeat(2, 1fr); }
+            .philosophy-grid { grid-template-columns: repeat(2, 1fr); }
+            .journey-timeline { grid-template-columns: 1fr 1fr; }
+            .promise-grid { grid-template-columns: repeat(2, 1fr); }
+            .facilities-grid { grid-template-columns: repeat(2, 1fr); }
+            .testimonial-grid { grid-template-columns: 1fr 1fr; }
+            .gallery-grid { grid-template-columns: repeat(2, 1fr); }
         }
-
         @media (max-width: 768px) {
-            .about-hero { padding: 80px 0 40px 0; }
-            .about-hero h1 { font-size: 32px; }
+            .about-hero { padding: 90px 0 40px; }
+            .about-hero h1 { font-size: 34px; }
             .about-stats { flex-direction: column; }
             .about-stats .stat-item { min-width: auto; }
             .mission-vision .mv-grid { grid-template-columns: 1fr; }
-            .values-grid { grid-template-columns: 1fr 1fr; }
-            .team-about .team-grid { grid-template-columns: 1fr 1fr; }
+            .philosophy-grid { grid-template-columns: 1fr; }
+            .journey-timeline { grid-template-columns: 1fr; }
+            .promise-grid { grid-template-columns: 1fr; }
+            .facilities-grid { grid-template-columns: 1fr; }
+            .testimonial-grid { grid-template-columns: 1fr; }
+            .gallery-grid { grid-template-columns: 1fr; }
         }
-
         @media (max-width: 480px) {
-            .values-grid { grid-template-columns: 1fr; }
-            .team-about .team-grid { grid-template-columns: 1fr; }
-            .about-hero h1 { font-size: 26px; }
+            .about-hero h1 { font-size: 28px; }
             .about-hero .subtitle { font-size: 16px; }
         }
 
-        /* Animations */
+        /* animations */
         .fade-in {
             opacity: 0;
             transform: translateY(30px);
-            transition: opacity 0.6s ease, transform 0.6s ease;
+            transition: opacity 0.7s ease, transform 0.7s ease;
         }
-
-        .fade-in.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
+        .fade-in.visible { opacity: 1; transform: translateY(0); }
         .fade-in.delay-1 { transition-delay: 0.1s; }
         .fade-in.delay-2 { transition-delay: 0.2s; }
         .fade-in.delay-3 { transition-delay: 0.3s; }
         .fade-in.delay-4 { transition-delay: 0.4s; }
+        .fade-in.delay-5 { transition-delay: 0.5s; }
     </style>
-
 </head>
 
 <body>
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WTBFT28H" height="0" width="0"
             style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
 
     <!-- ====== TOP BAR ====== -->
     <div class="top1bar">
-        <div class="top1bar-cells"><i class="icofont-ui-calendar"></i><strong>Online Booking</strong> Book Appointment
-        </div>
+        <div class="top1bar-cells"><i class="icofont-ui-calendar"></i><strong>Online Booking</strong> Book Appointment</div>
         <div class="top1bar-cells"><i class="icofont-cop-badge"></i><strong>Accreditation</strong>NABH Certified</div>
         <div class="top1bar-cells"><i class="icofont-ui-call"></i><strong>Call</strong>+91 90458 87854</div>
         <div class="top1bar-cells"><i class="icofont-ui-message"></i><strong>Email</strong>info@Dhaniram.com</div>
     </div>
 
-    <!-- ====== NAVBAR / LOGO ====== -->
+    <!-- ====== NAVBAR ====== -->
     <div class="logowrap">
         <div class="mob-logo"><a href="http://www.Dhaniram.com"><img
                     src="https://res.cloudinary.com/kgqfbt78/image/upload/v1784277802/WhatsApp_Image_2026-07-16_at_21.31.47_lyb95e.jpg"
@@ -454,9 +383,9 @@
                             <li class="logo"><img
                                     src="https://res.cloudinary.com/kgqfbt78/image/upload/v1784277802/WhatsApp_Image_2026-07-16_at_21.31.47_lyb95e.jpg"
                                     alt="Dhaniram Ayurveda Hospital"> </li>
-                            <li class="menu-item"> <a href="#" class="menu-link">Ayurveda Treatments</a></li>
-                            <li class="menu-item"> <a href="packages.html" class="menu-link">Retreats</a> </li>
-                            <li class="menu-item"> <a href="contact-us.html" class="menu-link">Contact</a> </li>
+                            <li class="menu-item"> <a href="treatment.html" class="menu-link">Ayurveda Treatments</a></li>
+                            <li class="menu-item"> <a href="retreats.html" class="menu-link">Retreats</a> </li>
+                            <li class="menu-item"> <a href="contact.html" class="menu-link">Contact</a> </li>
                         </ul>
                     </div>
                 </div>
@@ -466,33 +395,31 @@
 
     <!-- ====== ABOUT PAGE CONTENT ====== -->
     
-    <!-- HERO SECTION -->
+    <!-- HERO -->
     <div class="about-hero">
         <div class="fixwrap">
             <span class="heading fade-in visible">About Dhaniram</span>
-            <h1 class="fade-in visible delay-1">Where Ancient Wisdom Meets <span>Modern Wellness</span></h1>
+            <h1 class="fade-in visible delay-1">45 Years of <span>Healing Legacy</span></h1>
             <p class="subtitle fade-in visible delay-2">
-                Dhaniram is a traditional healing Ayurveda hospital that combines authentic Kerala Ayurvedic 
-                treatments with modern healthcare standards. We are dedicated to restoring health and harmony 
-                through time-tested therapies and personalized care.
+                Dhaniram is a traditional Kerala Ayurveda hospital that has been restoring health and harmony 
+                for over four decades. Our legacy is built on authentic treatments, experienced physicians, 
+                and a deep commitment to holistic wellness.
             </p>
-
-            <!-- Stats -->
             <div class="about-stats fade-in visible delay-3">
                 <div class="stat-item">
-                    <span class="number" data-count="25">0</span>
+                    <span class="number" data-count="45">0</span>
                     <span class="label">Years of Excellence</span>
                 </div>
                 <div class="stat-item">
-                    <span class="number" data-count="15000">0</span>
+                    <span class="number" data-count="18000">0</span>
                     <span class="label">Happy Patients</span>
                 </div>
                 <div class="stat-item">
-                    <span class="number" data-count="50">0</span>
+                    <span class="number" data-count="65">0</span>
                     <span class="label">Expert Doctors</span>
                 </div>
                 <div class="stat-item">
-                    <span class="number" data-count="30">0</span>
+                    <span class="number" data-count="40">0</span>
                     <span class="label">Therapy Rooms</span>
                 </div>
             </div>
@@ -507,85 +434,189 @@
                     <span class="icon">🎯</span>
                     <h3>Our Mission</h3>
                     <p>
-                        To provide authentic Ayurvedic healthcare that addresses the root cause of diseases 
-                        and promotes holistic well-being. We are committed to preserving the ancient wisdom 
-                        of Kerala Ayurveda while ensuring accessibility and quality care for all.
+                        To deliver authentic, root-cause-focused Ayurvedic healthcare that integrates the wisdom 
+                        of Kerala tradition with modern diagnostic precision. We are dedicated to making Ayurveda 
+                        accessible, effective, and trusted for all.
                     </p>
                 </div>
                 <div class="mv-box vision fade-in delay-1">
                     <span class="icon">👁️</span>
                     <h3>Our Vision</h3>
                     <p>
-                        To be a global leader in Ayurvedic healthcare, setting benchmarks in treatment 
-                        excellence, patient care, and the preservation of traditional healing practices. 
-                        We envision a world where Ayurveda is the first choice for wellness.
+                        To be a global beacon of Ayurvedic excellence, setting benchmarks in treatment outcomes, 
+                        patient safety, and the preservation of ancient healing knowledge. We envision a world 
+                        where Ayurveda leads the path to wellness.
                     </p>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- VALUES -->
-    <div class="values-section">
+    <!-- OUR PHILOSOPHY (new) -->
+    <div class="philosophy-section">
         <div class="fixwrap">
-            <h2 class="section-title fade-in">Our Core Values</h2>
-            <p class="section-subtitle fade-in delay-1">
-                These principles guide everything we do at Dhaniram Ayurveda Hospital
-            </p>
-            <div class="values-grid">
-                <div class="value-item fade-in">
-                    <span class="icon">🌿</span>
-                    <h4>Authenticity</h4>
-                    <p>We practice Ayurveda exactly as prescribed in ancient texts, without compromise or shortcuts.</p>
+            <h2 class="section-title fade-in">Our Philosophy</h2>
+            <p class="section-subtitle fade-in delay-1">The timeless principles that form the bedrock of our healing system</p>
+            <div class="philosophy-grid">
+                <div class="philosophy-item fade-in">
+                    <span class="icon">⚖️</span>
+                    <h4>Tridosha Balance</h4>
+                    <p>We believe that health is a state of balance between Vata, Pitta, and Kapha. Our treatments are tailored to restore this equilibrium.</p>
                 </div>
-                <div class="value-item fade-in delay-1">
-                    <span class="icon">❤️</span>
-                    <h4>Compassion</h4>
-                    <p>Every patient is treated with kindness, respect, and genuine care for their well-being.</p>
+                <div class="philosophy-item fade-in delay-1">
+                    <span class="icon">🌱</span>
+                    <h4>Root-Cause Healing</h4>
+                    <p>Instead of suppressing symptoms, we address the root cause of the disease, ensuring lasting relief and prevention of recurrence.</p>
                 </div>
-                <div class="value-item fade-in delay-2">
-                    <span class="icon">🔬</span>
-                    <h4>Excellence</h4>
-                    <p>We continuously strive for the highest standards in treatments, facilities, and patient outcomes.</p>
-                </div>
-                <div class="value-item fade-in delay-3">
-                    <span class="icon">🤝</span>
-                    <h4>Integrity</h4>
-                    <p>We operate with transparency, honesty, and accountability in all our interactions.</p>
+                <div class="philosophy-item fade-in delay-2">
+                    <span class="icon">🧘</span>
+                    <h4>Mind-Body Connection</h4>
+                    <p>We treat the person as a whole — physical, mental, and emotional — understanding that true wellness comes from harmony within.</p>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- OUR TEAM -->
-    <div class="team-about">
+    <!-- OUR JOURNEY -->
+    <div class="journey-section">
         <div class="fixwrap">
-            <h2 class="section-title fade-in">Meet Our Expert Team</h2>
-            <div class="team-grid">
-                <div class="team-card fade-in">
-                    <img src="https://res.cloudinary.com/kgqfbt78/image/upload/v1784281268/doctor4_bwdzwc.jpg" alt="Dr. Varun Sharma">
-                    <h4>Dr. Varun Sharma</h4>
-                    <div class="designation">BAMS | Panchakarma Specialist</div>
-                    <p>Expert in Nadi Pariksha, holistic diagnosis, and personalized wellness care.</p>
+            <h2 class="section-title fade-in">Our Journey of Healing</h2>
+            <p class="section-subtitle fade-in delay-1">From a small clinic to a NABH-certified hospital — our story is rooted in compassion and excellence.</p>
+            <div class="journey-timeline">
+                <div class="journey-item fade-in">
+                    <div class="year">1979</div>
+                    <h4>Foundation</h4>
+                    <p>Dhaniram was established as a small Ayurvedic clinic in Hapur, with a vision to serve the community with traditional Kerala therapies.</p>
                 </div>
-                <div class="team-card fade-in delay-1">
-                    <img src="https://res.cloudinary.com/kgqfbt78/image/upload/v1784281268/doctor3_ahp5kx.jpg" alt="Dr. Karun Sharma">
-                    <h4>Dr. Karun Sharma</h4>
-                    <div class="designation">Ayurvedic Physician</div>
-                    <p>Specialist in Sports Rehabilitation, Pain Management, and bone health restoration.</p>
+                <div class="journey-item fade-in delay-1">
+                    <div class="year">1998</div>
+                    <h4>Expansion</h4>
+                    <p>Grew into a full-fledged hospital with 20 beds, introducing advanced Panchakarma and specialized departments.</p>
                 </div>
-                <div class="team-card fade-in delay-2">
-                    <img src="https://res.cloudinary.com/kgqfbt78/image/upload/v1784281268/doctor1_mozckg.jpg" alt="Dr. Juhi Singh">
-                    <h4>Dr. Juhi Singh</h4>
-                    <div class="designation">Ayurvedic Physician</div>
-                    <p>Expert in Stress Management, Skin Disorders, Adolescent Health, and Mental Wellness.</p>
+                <div class="journey-item fade-in delay-2">
+                    <div class="year">2015</div>
+                    <h4>NABH Certification</h4>
+                    <p>Achieved NABH accreditation, setting new standards in patient safety, quality care, and clinical excellence.</p>
                 </div>
-                <div class="team-card fade-in delay-3">
-                    <img src="https://res.cloudinary.com/kgqfbt78/image/upload/v1784281741/doctor4_flq5jp.jpg" alt="Dr. Ashutosh Singh">
-                    <h4>Dr. Ashutosh Singh</h4>
-                    <div class="designation">Medical Director</div>
-                    <p>BAMS, PG Neuro Rehabilitation. Specializes in Diabetes Reversal and Cardiac Care.</p>
+                <div class="journey-item fade-in delay-3">
+                    <div class="year">2023</div>
+                    <h4>Digital Wellness</h4>
+                    <p>Launched tele-consultation and wellness programs, making Ayurveda accessible globally.</p>
                 </div>
+                <div class="journey-item fade-in delay-4">
+                    <div class="year">2026</div>
+                    <h4>Legacy Continues</h4>
+                    <p>Today, Dhaniram stands as a symbol of trust, with over 45 years of excellence and thousands of healed lives.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- THE DHANIRAM PROMISE (new) -->
+    <div class="promise-section">
+        <div class="fixwrap">
+            <h2 class="section-title fade-in">The Dhaniram Promise</h2>
+            <div class="promise-grid">
+                <div class="promise-item fade-in">
+                    <span class="icon">🩺</span>
+                    <h4>Expert Care</h4>
+                    <p>All treatments are supervised by experienced Kerala-trained Ayurvedic physicians with decades of practice.</p>
+                </div>
+                <div class="promise-item fade-in delay-1">
+                    <span class="icon">🌿</span>
+                    <h4>Authentic Herbs</h4>
+                    <p>We use only pure, ethically sourced herbs from Kerala forests, ensuring maximum potency and safety.</p>
+                </div>
+                <div class="promise-item fade-in delay-2">
+                    <span class="icon">🧪</span>
+                    <h4>Personalized Protocols</h4>
+                    <p>Every patient receives a customized treatment plan based on their unique constitution and health condition.</p>
+                </div>
+                <div class="promise-item fade-in delay-3">
+                    <span class="icon">🤝</span>
+                    <h4>Patient Partnership</h4>
+                    <p>We involve patients in their healing journey, providing education and support for long-term wellness.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- OUR FACILITIES (new) -->
+    <div class="facilities-section">
+        <div class="fixwrap">
+            <h2 class="section-title fade-in">Our Facilities</h2>
+            <p class="section-subtitle fade-in delay-1">Designed to provide a serene and healing environment</p>
+            <div class="facilities-grid">
+                <div class="facility-item fade-in">
+                    <span class="icon">🏥</span>
+                    <h4>NABH-Certified Hospital</h4>
+                    <p>State-of-the-art infrastructure with 40 therapy rooms, ICU, and emergency care.</p>
+                </div>
+                <div class="facility-item fade-in delay-1">
+                    <span class="icon">🌴</span>
+                    <h4>Kerala Therapy Wing</h4>
+                    <p>Dedicated Panchakarma and Marma therapy suites with traditional Kerala architecture.</p>
+                </div>
+                <div class="facility-item fade-in delay-2">
+                    <span class="icon">💊</span>
+                    <h4>In-house Pharmacy</h4>
+                    <p>GMP-certified pharmacy preparing fresh, customized Ayurvedic medicines daily.</p>
+                </div>
+                <div class="facility-item fade-in delay-3">
+                    <span class="icon">🧘</span>
+                    <h4>Yoga & Meditation Hall</h4>
+                    <p>Spacious hall for daily yoga, pranayama, and meditation sessions for holistic healing.</p>
+                </div>
+                <div class="facility-item fade-in delay-4">
+                    <span class="icon">🍲</span>
+                    <h4>Ayurvedic Kitchen</h4>
+                    <p>Specialized kitchen serving Sattvic, diet-specific meals as per each patient's treatment plan.</p>
+                </div>
+                <div class="facility-item fade-in delay-5">
+                    <span class="icon">📞</span>
+                    <h4>Tele-Consultation</h4>
+                    <p>Remote consultation services for patients who cannot visit in person, with full digital support.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TESTIMONIALS (new) -->
+    <div class="testimonials-section">
+        <div class="fixwrap">
+            <h2 class="section-title fade-in">What Our Patients Say</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-item fade-in">
+                    <div class="quote">“</div>
+                    <p>After years of suffering from chronic back pain, Dhaniram's Panchakarma therapy gave me a new lease on life. The doctors are truly caring and knowledgeable.</p>
+                    <div class="author">— Mr. Rajesh Kumar</div>
+                    <div class="designation">Patient since 2022</div>
+                </div>
+                <div class="testimonial-item fade-in delay-1">
+                    <div class="quote">“</div>
+                    <p>I came for stress management and left with a complete transformation. The holistic approach at Dhaniram is unmatched. I recommend it to everyone.</p>
+                    <div class="author">— Mrs. Sunita Sharma</div>
+                    <div class="designation">Patient since 2023</div>
+                </div>
+                <div class="testimonial-item fade-in delay-2">
+                    <div class="quote">“</div>
+                    <p>My son's skin condition improved dramatically after just 3 weeks of treatment. The team's expertise and compassion made all the difference.</p>
+                    <div class="author">— Mr. Anil Verma</div>
+                    <div class="designation">Patient since 2024</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- GALLERY (new) -->
+    <div class="gallery-section">
+        <div class="fixwrap">
+            <h2 class="section-title fade-in">Our Gallery</h2>
+            <div class="gallery-grid">
+                <img src="https://res.cloudinary.com/kgqfbt78/image/upload/v1784278260/pic1_as47kx.jpg" alt="Dhaniram Ayurveda Hospital" class="fade-in">
+                <img src="https://res.cloudinary.com/kgqfbt78/image/upload/v1784282019/award1_u7hdx0.jpg" alt="Panchakarma Therapy" class="fade-in delay-1">
+                <img src="https://res.cloudinary.com/kgqfbt78/image/upload/v1784451332/treat10_v1rs17.jpg" alt="Ayurvedic Treatment Room" class="fade-in delay-2">
+                <img src="https://res.cloudinary.com/kgqfbt78/image/upload/v1784453032/hero2_m6do5w.jpg" alt="Herbal Garden" class="fade-in delay-3">
             </div>
         </div>
     </div>
@@ -614,97 +645,57 @@
     <div id="back-top"><a href="#top"><i class="icofont-rounded-up"></i></a></div>
 
     <!-- ====== JAVASCRIPT FILES ====== -->
-    <!-- slider jQuery -->
     <script type="text/javascript" src="js/slider/jquery.min.js"></script>
     <script type="text/javascript" src="js/slider/jquery.mobile.customized.min.js"></script>
     <script type="text/javascript" src="js/slider/jquery.easing.1.3.js"></script>
     <script type="text/javascript" src="js/slider/camera.js"></script>
-
-    <!-- thumbslider jQuery -->
     <script src="js/lightslider/lightslider.js"></script>
-
-    <!-- gallery lightbox -->
     <script src="js-lightbox/valde.min.js"></script>
     <script src="js-lightbox/glightbox.js"></script>
     <script>
         var lightbox = GLightbox();
-        lightbox.on('open', (target) => {
-            console.log("lightbox opened");
-        });
-        var lightboxDescription = GLightbox({
-            selector: '.glightbox2',
-        });
-        var lightboxVideo = GLightbox({
-            selector: '.glightbox3'
-        });
-        lightboxVideo.on('slide_changed', ({
-            prev,
-            current
-        }) => {
+        lightbox.on('open', (target) => { console.log("lightbox opened"); });
+        var lightboxDescription = GLightbox({ selector: '.glightbox2' });
+        var lightboxVideo = GLightbox({ selector: '.glightbox3' });
+        lightboxVideo.on('slide_changed', ({ prev, current }) => {
             console.log("Prev slide", prev);
             console.log("Current slide", current);
-
-            const {
-                index,
-                slide,
-                player
-            } = current;
-
+            const { index, slide, player } = current;
             if (player) {
-                if (!player.ready) {
-                    player.on('ready', event => {});
-                }
-                player.on('play', event => {
-                    console.log("Started play");
-                });
-                player.on('volumechange', event => {
-                    console.log("Volume change");
-                });
-                player.on('ended', event => {
-                    console.log("Video ended");
-                });
+                if (!player.ready) { player.on('ready', event => {}); }
+                player.on('play', event => { console.log("Started play"); });
+                player.on('volumechange', event => { console.log("Volume change"); });
+                player.on('ended', event => { console.log("Video ended"); });
             }
         });
-
-        var lightboxInlineIframe = GLightbox({
-            'selector': '.glightbox4'
-        });
+        var lightboxInlineIframe = GLightbox({ 'selector': '.glightbox4' });
     </script>
 
-    <!-- ====== ANIMATION & COUNTER SCRIPTS ====== -->
+    <!-- ====== ANIMATION & COUNTER ====== -->
     <script>
-        // ===== FADE IN ON SCROLL =====
         document.addEventListener('DOMContentLoaded', function() {
+            // Fade in on scroll
             const fadeElements = document.querySelectorAll('.fade-in');
-            
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
                         entry.target.classList.add('visible');
                     }
                 });
-            }, {
-                threshold: 0.1,
-                rootMargin: '0px 0px -50px 0px'
-            });
-
+            }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
             fadeElements.forEach(el => {
                 if (!el.classList.contains('visible')) {
                     observer.observe(el);
                 }
             });
-        });
 
-        // ===== COUNTER ANIMATION =====
-        document.addEventListener('DOMContentLoaded', function() {
+            // Counter animation
             const counters = document.querySelectorAll('.stat-item .number');
-            
-            function animateCounter(counter) {
+            counters.forEach(counter => {
                 const target = parseInt(counter.getAttribute('data-count'));
                 const duration = 2000;
-                const step = Math.max(1, Math.floor(target / 60));
+                const step = Math.max(1, Math.floor(target / 70));
                 let current = 0;
-                
                 const updateCounter = () => {
                     current += step;
                     if (current >= target) {
@@ -714,8 +705,6 @@
                     counter.textContent = current.toLocaleString();
                     requestAnimationFrame(updateCounter);
                 };
-                
-                // Start animation when stat item comes into view
                 const parent = counter.closest('.stat-item');
                 const observer = new IntersectionObserver((entries) => {
                     entries.forEach(entry => {
@@ -724,11 +713,8 @@
                         }
                     });
                 }, { threshold: 0.5 });
-                
                 observer.observe(parent);
-            }
-            
-            counters.forEach(animateCounter);
+            });
         });
     </script>
 
