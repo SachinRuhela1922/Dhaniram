@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <title>Retreat Gallery - Dhaniram Ayurveda | Photos & Videos</title>
-    <meta name="description"
-        content="Explore the retreat gallery of Dhaniram Ayurveda Hospital – authentic Panchakarma, yoga, doctor consultations, and healing environment." />
+    <meta name="description" content="Explore the retreat gallery of Dhaniram Ayurveda Hospital – authentic Panchakarma, yoga, doctor consultations, and healing environment." />
     <meta name="author" content="Dhaniram Ayurveda Centre">
     <link rel="shortcut icon" href="img/fav.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
@@ -16,31 +14,24 @@
     <link href="css/lightslider.css" rel="stylesheet" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-247515665-1">
-    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-247515665-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
+        function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
         gtag('config', 'UA-247515665-1');
     </script>
 
     <!-- fix nav (requires jQuery) -->
-    <script type="text/javascript" src="js/fix_nav.js">
-    </script>
+    <script type="text/javascript" src="js/fix_nav.js"></script>
     <script type="text/javascript">
-        $(document).ready(function() {
+        $(document).ready(function(){
             var sidebar = $('.logowrap');
             var top = sidebar.offset().top - parseFloat(sidebar.css('marginTop'));
-            $(window).scroll(function(event) {
+            $(window).scroll(function(event){
                 var ypos = $(this).scrollTop();
                 if (ypos >= top) {
                     sidebar.addClass('fixed');
@@ -80,9 +71,7 @@
 
     <style>
         /* ===== GALLERY PAGE STYLES ===== */
-        body {
-            background: #faf8f6;
-        }
+        body { background: #faf8f6; }
         .gallery-hero {
             padding: 130px 0 60px 0;
             background: linear-gradient(135deg, #f8f4f0 0%, #e8e0d8 100%);
@@ -132,16 +121,9 @@
             border: 1px solid rgba(139,26,26,0.1);
             box-shadow: 0 4px 12px rgba(0,0,0,0.02);
         }
-        .gallery-hero .gallery-stats .stat i {
-            color: #8b1a1a;
-            margin-right: 8px;
-        }
+        .gallery-hero .gallery-stats .stat i { color: #8b1a1a; margin-right: 8px; }
 
-        /* gallery grid */
-        .gallery-main {
-            padding: 50px 0 70px 0;
-            background: #faf8f6;
-        }
+        .gallery-main { padding: 50px 0 70px 0; background: #faf8f6; }
         .filter-bar {
             display: flex;
             justify-content: center;
@@ -189,92 +171,39 @@
             box-shadow: 0 16px 45px rgba(139, 26, 26, 0.18);
             z-index: 3;
         }
-        .gallery-item img,
-        .gallery-item video {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
+        .gallery-item img, .gallery-item video {
+            width: 100%; height: 100%; object-fit: cover; display: block;
             transition: transform 0.5s ease;
         }
-        .gallery-item:hover img,
-        .gallery-item:hover video {
-            transform: scale(1.06);
-        }
+        .gallery-item:hover img, .gallery-item:hover video { transform: scale(1.06); }
         .gallery-item .overlay {
-            position: absolute;
-            inset: 0;
+            position: absolute; inset: 0;
             background: rgba(45, 31, 20, 0.72);
             backdrop-filter: blur(3px);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            opacity: 0;
-            transition: opacity 0.35s ease;
-            padding: 20px;
-            text-align: center;
-            color: white;
+            display: flex; flex-direction: column; align-items: center; justify-content: center;
+            opacity: 0; transition: opacity 0.35s ease; padding: 20px; text-align: center; color: white;
         }
-        .gallery-item:hover .overlay {
-            opacity: 1;
-        }
+        .gallery-item:hover .overlay { opacity: 1; }
         .gallery-item .overlay .icon {
-            font-size: 38px;
-            margin-bottom: 8px;
-            background: rgba(255,255,255,0.13);
-            border-radius: 50%;
-            width: 64px;
-            height: 64px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            font-size: 38px; margin-bottom: 8px; background: rgba(255,255,255,0.13);
+            border-radius: 50%; width: 64px; height: 64px; display: flex; align-items: center; justify-content: center;
         }
         .gallery-item .overlay h4 {
-            font-size: 19px;
-            font-weight: 600;
-            margin: 8px 0 4px;
-            font-family: 'Playfair Display', serif;
+            font-size: 19px; font-weight: 600; margin: 8px 0 4px; font-family: 'Playfair Display', serif;
         }
-        .gallery-item .overlay p {
-            font-size: 13px;
-            opacity: 0.9;
-            line-height: 1.5;
-            margin: 0;
-            max-width: 90%;
-        }
+        .gallery-item .overlay p { font-size: 13px; opacity: 0.9; line-height: 1.5; margin: 0; max-width: 90%; }
         .gallery-item .tag {
-            position: absolute;
-            top: 14px;
-            left: 14px;
-            background: #8b1a1a;
-            color: white;
-            padding: 5px 16px;
-            border-radius: 30px;
-            font-size: 11px;
-            font-weight: 600;
-            letter-spacing: 0.4px;
-            z-index: 3;
-            pointer-events: none;
-            text-transform: uppercase;
+            position: absolute; top: 14px; left: 14px;
+            background: #8b1a1a; color: white; padding: 5px 16px; border-radius: 30px;
+            font-size: 11px; font-weight: 600; letter-spacing: 0.4px; z-index: 3; pointer-events: none; text-transform: uppercase;
         }
-        .gallery-item .tag.video-tag {
-            background: #1a3d5c;
-        }
-        .gallery-item .tag.doctor-tag {
-            background: #1f6b4a;
-        }
-        .gallery-item .tag.yoga-tag {
-            background: #b16a2b;
-        }
-        .gallery-item.hidden {
-            display: none;
-        }
+        .gallery-item .tag.video-tag { background: #1a3d5c; }
+        .gallery-item .tag.doctor-tag { background: #1f6b4a; }
+        .gallery-item .tag.yoga-tag { background: #b16a2b; }
+        .gallery-item .tag.therapy-tag { background: #8b1a1a; }
+        .gallery-item.hidden { display: none; }
 
-        /* responsive */
-        @media (max-width: 1024px) {
-            .gallery-grid { grid-template-columns: repeat(3, 1fr); }
-        }
+        @media (max-width: 1024px) { .gallery-grid { grid-template-columns: repeat(3, 1fr); } }
         @media (max-width: 768px) {
             .gallery-hero { padding: 110px 0 40px 0; }
             .gallery-hero h1 { font-size: 34px; }
@@ -288,34 +217,23 @@
             .filter-btn { padding: 6px 16px; font-size: 13px; }
         }
 
-        .fade-in {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: opacity 0.6s ease, transform 0.6s ease;
-        }
-        .fade-in.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
+        .fade-in { opacity: 0; transform: translateY(30px); transition: opacity 0.6s ease, transform 0.6s ease; }
+        .fade-in.visible { opacity: 1; transform: translateY(0); }
         .fade-in.delay-1 { transition-delay: 0.1s; }
         .fade-in.delay-2 { transition-delay: 0.2s; }
         .fade-in.delay-3 { transition-delay: 0.3s; }
         .fade-in.delay-4 { transition-delay: 0.4s; }
         .fade-in.delay-5 { transition-delay: 0.5s; }
     </style>
-
 </head>
-
 <body>
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WTBFT28H" height="0" width="0"
-            style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WTBFT28H" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
     <!-- ====== TOP BAR ====== -->
     <div class="top1bar">
-        <div class="top1bar-cells"><i class="icofont-ui-calendar"></i><strong>Online Booking</strong> Book Appointment
-        </div>
+        <div class="top1bar-cells"><i class="icofont-ui-calendar"></i><strong>Online Booking</strong> Book Appointment</div>
         <div class="top1bar-cells"><i class="icofont-cop-badge"></i><strong>Accreditation</strong>NABH Certified</div>
         <div class="top1bar-cells"><i class="icofont-ui-call"></i><strong>Call</strong>+91 90458 87854</div>
         <div class="top1bar-cells"><i class="icofont-ui-message"></i><strong>Email</strong>info@Dhaniram.com</div>
@@ -323,27 +241,22 @@
 
     <!-- ====== NAVBAR ====== -->
     <div class="logowrap">
-        <div class="mob-logo"><a href="http://www.Dhaniram.com"><img
-                    src="https://res.cloudinary.com/kgqfbt78/image/upload/v1784277802/WhatsApp_Image_2026-07-16_at_21.31.47_lyb95e.jpg"
-                    width="145" height="121" alt="Dhaniram ayurveda hospital logo"></a></div>
+        <div class="mob-logo"><a href="http://www.Dhaniram.com"><img src="https://res.cloudinary.com/kgqfbt78/image/upload/v1784277802/WhatsApp_Image_2026-07-16_at_21.31.47_lyb95e.jpg" width="145" height="121" alt="Dhaniram ayurveda hospital logo"></a></div>
         <div class="callbtn"><a href="tel:+917042350500"></a></div>
         <div id="menu">
             <nav class="nav is-fixed" role="navigation">
                 <div class="wrapper wrapper-flush">
                     <button class="nav-toggle">
-                        <div class="icon-menu"> <span class="line line-1"></span> <span class="line line-2"></span>
-                            <span class="line line-3"></span> </div>
+                        <div class="icon-menu"> <span class="line line-1"></span> <span class="line line-2"></span> <span class="line line-3"></span> </div>
                     </button>
                     <div class="nav-container">
                         <ul class="nav-menu menu">
                             <li class="menu-item"> <a href="index.html" class="menu-link">Home</a> </li>
                             <li class="menu-item"> <a href="about.html" class="menu-link">About Dhaniram</a> </li>
                             <li class="menu-item"> <a href="dhaniram.html" class="menu-link">Why Dhaniram</a> </li>
-                            <li class="logo"><img
-                                    src="https://res.cloudinary.com/kgqfbt78/image/upload/v1784277802/WhatsApp_Image_2026-07-16_at_21.31.47_lyb95e.jpg"
-                                    alt="Dhaniram Ayurveda Hospital"> </li>
+                            <li class="logo"><img src="https://res.cloudinary.com/kgqfbt78/image/upload/v1784277802/WhatsApp_Image_2026-07-16_at_21.31.47_lyb95e.jpg" alt="Dhaniram Ayurveda Hospital"> </li>
                             <li class="menu-item"> <a href="treatment.html" class="menu-link">Ayurveda Treatments</a></li>
-                            <li class="menu-item"> <a href="retreats.html" class="menu-link">Retreats</a> </li>
+                            <li class="menu-item"> <a href="gallery.html" class="menu-link">Gallery</a> </li>
                             <li class="menu-item"> <a href="contact.html" class="menu-link">Contact</a> </li>
                         </ul>
                     </div>
@@ -406,160 +319,64 @@
     <div id="back-top"><a href="#top"><i class="icofont-rounded-up"></i></a></div>
 
     <!-- ====== JAVASCRIPT ====== -->
-    <script type="text/javascript" src="js/slider/jquery.min.js">
-    </script>
-    <script type="text/javascript" src="js/slider/jquery.mobile.customized.min.js">
-    </script>
-    <script type="text/javascript" src="js/slider/jquery.easing.1.3.js">
-    </script>
-    <script type="text/javascript" src="js/slider/camera.js">
-    </script>
-    <script src="js/lightslider/lightslider.js">
-    </script>
-    <script src="js-lightbox/valde.min.js">
-    </script>
-    <script src="js-lightbox/glightbox.js">
-    </script>
+    <script type="text/javascript" src="js/slider/jquery.min.js"></script>
+    <script type="text/javascript" src="js/slider/jquery.mobile.customized.min.js"></script>
+    <script type="text/javascript" src="js/slider/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="js/slider/camera.js"></script>
+    <script src="js/lightslider/lightslider.js"></script>
+    <script src="js-lightbox/valde.min.js"></script>
+    <script src="js-lightbox/glightbox.js"></script>
     <script>
         // ============================================================
-        // 1. GALLERY DATA – ALL ITEMS CONTROLLED BY THIS OBJECT
+        // GALLERY DATA – ALL IMAGES AND VIDEOS FROM YOUR LIST
         // ============================================================
-        const galleryData = [{
-            id: 1,
-            type: 'image',
-            category: ['image', 'therapy'],
-            src: 'https://res.cloudinary.com/kgqfbt78/image/upload/v1784451331/treat1_bxzqlu.jpg',
-            alt: 'Panchakarma Therapy',
-            tag: 'Therapy',
-            tagClass: '',
-            icon: '🌿',
-            title: 'Panchakarma',
-            desc: 'Deep detox & rejuvenation'
-        }, {
-            id: 2,
-            type: 'image',
-            category: ['image', 'yoga'],
-            src: 'https://res.cloudinary.com/kgqfbt78/image/upload/v1784451331/treat2_ggrcca.jpg',
-            alt: 'Yoga Session',
-            tag: 'Yoga',
-            tagClass: 'yoga-tag',
-            icon: '🧘',
-            title: 'Daily Yoga',
-            desc: 'Balance mind & body'
-        }, {
-            id: 3,
-            type: 'video',
-            category: ['video', 'doctor'],
-            src: 'https://res.cloudinary.com/dmliuh8nm/video/upload/v1784397017/003A2005_fkltf6.mp4',
-            alt: 'Doctor Consultation',
-            tag: 'Video',
-            tagClass: 'video-tag',
-            icon: '🎥',
-            title: 'Doctor Consultation',
-            desc: 'Expert Ayurvedic guidance'
-        }, {
-            id: 4,
-            type: 'image',
-            category: ['image', 'therapy'],
-            src: 'https://res.cloudinary.com/kgqfbt78/image/upload/v1784451332/treat3_dwk7ws.jpg',
-            alt: 'Abhyanga Treatment',
-            tag: 'Treatment',
-            tagClass: '',
-            icon: '🛁',
-            title: 'Abhyanga',
-            desc: 'Warm oil massage therapy'
-        }, {
-            id: 5,
-            type: 'image',
-            category: ['image', 'doctor'],
-            src: 'https://res.cloudinary.com/kgqfbt78/image/upload/v1784451333/treat5_n1azf3.jpg',
-            alt: 'Doctors Team',
-            tag: 'Doctors',
-            tagClass: 'doctor-tag',
-            icon: '👨‍⚕️',
-            title: 'Expert Doctors',
-            desc: 'NABH certified practitioners'
-        }, {
-            id: 6,
-            type: 'video',
-            category: ['video', 'yoga'],
-            src: 'https://res.cloudinary.com/kgqfbt78/video/upload/v1784278745/treat1_scki4p.mp4',
-            alt: 'Meditation Session',
-            tag: 'Video',
-            tagClass: 'video-tag',
-            icon: '🎥',
-            title: 'Meditation',
-            desc: 'Mindfulness & inner peace'
-        }, {
-            id: 7,
-            type: 'image',
-            category: ['image', 'therapy'],
-            src: 'https://res.cloudinary.com/kgqfbt78/image/upload/v1784451332/treat7_gs5s0f.jpg',
-            alt: 'Ayurvedic Diet',
-            tag: 'Diet',
-            tagClass: '',
-            icon: '🥗',
-            title: 'Ayurvedic Diet',
-            desc: 'Dosha-specific nutrition'
-        }, {
-            id: 8,
-            type: 'image',
-            category: ['image', 'environment'],
-            src: 'https://res.cloudinary.com/kgqfbt78/image/upload/v1784451333/treat8_jkpnnu.jpg',
-            alt: 'Retreat Environment',
-            tag: 'Environment',
-            tagClass: '',
-            icon: '🌳',
-            title: 'Serene Surroundings',
-            desc: 'Healing in nature\'s lap'
-        }, {
-            id: 9,
-            type: 'image',
-            category: ['image', 'therapy'],
-            src: 'https://res.cloudinary.com/kgqfbt78/image/upload/v1784451333/treat11_gt1ea1.jpg',
-            alt: 'Shirodhara Therapy',
-            tag: 'Therapy',
-            tagClass: '',
-            icon: '💆',
-            title: 'Shirodhara',
-            desc: 'Third eye oil therapy'
-        }, {
-            id: 10,
-            type: 'video',
-            category: ['video', 'yoga'],
-            src: 'https://res.cloudinary.com/kgqfbt78/video/upload/v1784278745/treat1_scki4p.mp4',
-            alt: 'Yoga Flow',
-            tag: 'Video',
-            tagClass: 'video-tag',
-            icon: '🎥',
-            title: 'Yoga Flow',
-            desc: 'Dynamic asanas & breathing'
-        }, {
-            id: 11,
-            type: 'image',
-            category: ['image', 'doctor'],
-            src: 'https://res.cloudinary.com/kgqfbt78/image/upload/v1784451334/treat15_d6gph1.jpg',
-            alt: 'Doctor Consultation',
-            tag: 'Doctors',
-            tagClass: 'doctor-tag',
-            icon: '👨‍⚕️',
-            title: 'Consultation',
-            desc: 'Personalized health plans'
-        }, {
-            id: 12,
-            type: 'image',
-            category: ['image', 'environment'],
-            src: 'https://res.cloudinary.com/kgqfbt78/image/upload/v1784451334/treat16_q6lnoj.jpg',
-            alt: 'Garden Retreat',
-            tag: 'Environment',
-            tagClass: '',
-            icon: '🌺',
-            title: 'Garden Retreat',
-            desc: 'Blossom in tranquility'
-        }];
+        const galleryData = [
+            // ----- Images -----
+            { id: 1, type: 'image', category: ['image', 'therapy'], src: 'https://res.cloudinary.com/kgqfbt78/image/upload/v1784278260/pic2_i2nydi.jpg', alt: 'Panchakarma Therapy', tag: 'Therapy', tagClass: 'therapy-tag', icon: '🌿', title: 'Panchakarma', desc: 'Deep detox & rejuvenation' },
+            { id: 2, type: 'image', category: ['image', 'yoga'], src: 'https://res.cloudinary.com/kgqfbt78/image/upload/v1784278260/pic1_as47kx.jpg', alt: 'Yoga Session', tag: 'Yoga', tagClass: 'yoga-tag', icon: '🧘', title: 'Daily Yoga', desc: 'Balance mind & body' },
+            { id: 3, type: 'image', category: ['image', 'therapy'], src: 'https://res.cloudinary.com/kgqfbt78/image/upload/v1784278261/pic3_dv4cub.jpg', alt: 'Abhyanga Treatment', tag: 'Treatment', tagClass: 'therapy-tag', icon: '🛁', title: 'Abhyanga', desc: 'Warm oil massage therapy' },
+            { id: 4, type: 'image', category: ['image', 'doctor'], src: 'https://res.cloudinary.com/kgqfbt78/image/upload/v1784278262/pic4_aufhpr.jpg', alt: 'Doctors Team', tag: 'Doctors', tagClass: 'doctor-tag', icon: '👨‍⚕️', title: 'Expert Doctors', desc: 'NABH certified practitioners' },
+            { id: 5, type: 'image', category: ['image', 'environment'], src: 'https://res.cloudinary.com/kgqfbt78/image/upload/v1784278265/pic5_lbvfcg.jpg', alt: 'Retreat Environment', tag: 'Environment', tagClass: '', icon: '🌳', title: 'Serene Surroundings', desc: 'Healing in nature\'s lap' },
+            { id: 6, type: 'image', category: ['image', 'therapy'], src: 'https://res.cloudinary.com/kgqfbt78/image/upload/v1784278745/treat3_xrt2hz.jpg', alt: 'Ayurvedic Diet', tag: 'Diet', tagClass: 'therapy-tag', icon: '🥗', title: 'Ayurvedic Diet', desc: 'Dosha-specific nutrition' },
+            { id: 7, type: 'image', category: ['image', 'environment'], src: 'https://res.cloudinary.com/kgqfbt78/image/upload/v1784278745/treat1_scki4p.jpg', alt: 'Garden Retreat', tag: 'Environment', tagClass: '', icon: '🌺', title: 'Garden Retreat', desc: 'Blossom in tranquility' },
+            { id: 8, type: 'image', category: ['image', 'therapy'], src: 'https://res.cloudinary.com/kgqfbt78/image/upload/v1784278746/treat2_syoexc.jpg', alt: 'Shirodhara Therapy', tag: 'Therapy', tagClass: 'therapy-tag', icon: '💆', title: 'Shirodhara', desc: 'Third eye oil therapy' },
+            { id: 9, type: 'image', category: ['image', 'doctor'], src: 'https://res.cloudinary.com/kgqfbt78/image/upload/v1784280526/treat8_tlypnp.jpg', alt: 'Doctor Consultation', tag: 'Doctors', tagClass: 'doctor-tag', icon: '👨‍⚕️', title: 'Consultation', desc: 'Personalized health plans' },
+            { id: 10, type: 'image', category: ['image', 'environment'], src: 'https://res.cloudinary.com/kgqfbt78/image/upload/v1784280526/treat7_l4g4rr.jpg', alt: 'Garden Retreat', tag: 'Environment', tagClass: '', icon: '🌺', title: 'Garden Retreat', desc: 'Blossom in tranquility' },
+            { id: 11, type: 'image', category: ['image', 'environment'], src: 'https://res.cloudinary.com/kgqfbt78/image/upload/v1784280526/treat6_ofct8g.jpg', alt: 'Garden Retreat', tag: 'Environment', tagClass: '', icon: '🌺', title: 'Garden Retreat', desc: 'Blossom in tranquility' },
+            { id: 12, type: 'image', category: ['image', 'environment'], src: 'https://res.cloudinary.com/kgqfbt78/image/upload/v1784280527/treat9_icczcy.jpg', alt: 'Retreat View', tag: 'Environment', tagClass: '', icon: '🌳', title: 'Retreat View', desc: 'Peaceful atmosphere' },
+            { id: 13, type: 'image', category: ['image', 'doctor'], src: 'https://res.cloudinary.com/kgqfbt78/image/upload/v1784281268/doctor2_y3ausd.jpg', alt: 'Doctor Team', tag: 'Doctors', tagClass: 'doctor-tag', icon: '👨‍⚕️', title: 'Doctor Team', desc: 'Expert Ayurvedic physicians' },
+            { id: 14, type: 'image', category: ['image', 'doctor'], src: 'https://res.cloudinary.com/kgqfbt78/image/upload/v1784281268/doctor3_ahp5kx.jpg', alt: 'Doctor Consultation', tag: 'Doctors', tagClass: 'doctor-tag', icon: '👨‍⚕️', title: 'Consultation', desc: 'Personalized care' },
+            { id: 15, type: 'image', category: ['image', 'doctor'], src: 'https://res.cloudinary.com/kgqfbt78/image/upload/v1784281268/doctor4_bwdzwc.jpg', alt: 'Doctor Session', tag: 'Doctors', tagClass: 'doctor-tag', icon: '👨‍⚕️', title: 'Doctor Session', desc: 'In-depth consultation' },
+            { id: 16, type: 'image', category: ['image', 'doctor'], src: 'https://res.cloudinary.com/kgqfbt78/image/upload/v1784281268/doctor1_mozckg.jpg', alt: 'Senior Doctor', tag: 'Doctors', tagClass: 'doctor-tag', icon: '👨‍⚕️', title: 'Senior Doctor', desc: 'Years of experience' },
+            { id: 17, type: 'image', category: ['image', 'doctor'], src: 'https://res.cloudinary.com/kgqfbt78/image/upload/v1784281741/doctor4_flq5jp.jpg', alt: 'Doctor Team', tag: 'Doctors', tagClass: 'doctor-tag', icon: '👨‍⚕️', title: 'Doctor Team', desc: 'Holistic healthcare' },
+            { id: 18, type: 'image', category: ['image', 'environment'], src: 'https://res.cloudinary.com/kgqfbt78/image/upload/v1784282019/award1_u7hdx0.jpg', alt: 'Award', tag: 'Award', tagClass: '', icon: '🏆', title: 'Award Winning', desc: 'Excellence in Ayurveda' },
+            { id: 19, type: 'image', category: ['image', 'environment'], src: 'https://res.cloudinary.com/kgqfbt78/image/upload/v1784282020/award2_wix934.jpg', alt: 'Award', tag: 'Award', tagClass: '', icon: '🏆', title: 'Award Winning', desc: 'Recognized for quality' },
+            { id: 20, type: 'image', category: ['image', 'environment'], src: 'https://res.cloudinary.com/kgqfbt78/image/upload/v1784282887/office1_nri4tl.jpg', alt: 'Office Environment', tag: 'Environment', tagClass: '', icon: '🏢', title: 'Office Environment', desc: 'Warm and welcoming' },
+            { id: 21, type: 'image', category: ['image', 'therapy'], src: 'https://res.cloudinary.com/kgqfbt78/image/upload/v1784451331/treat1_bxzqlu.jpg', alt: 'Therapy Session', tag: 'Therapy', tagClass: 'therapy-tag', icon: '🌿', title: 'Therapy Session', desc: 'Healing hands' },
+            { id: 22, type: 'image', category: ['image', 'therapy'], src: 'https://res.cloudinary.com/kgqfbt78/image/upload/v1784451331/treat2_ggrcca.jpg', alt: 'Therapy', tag: 'Therapy', tagClass: 'therapy-tag', icon: '🌿', title: 'Therapy', desc: 'Authentic Panchakarma' },
+            { id: 23, type: 'image', category: ['image', 'yoga'], src: 'https://res.cloudinary.com/kgqfbt78/image/upload/v1784453032/hero2_m6do5w.jpg', alt: 'Yoga', tag: 'Yoga', tagClass: 'yoga-tag', icon: '🧘', title: 'Yoga', desc: 'Mind-body balance' },
+            { id: 24, type: 'image', category: ['image', 'yoga'], src: 'https://res.cloudinary.com/kgqfbt78/image/upload/v1784453033/hero1_g6k2aq.jpg', alt: 'Yoga', tag: 'Yoga', tagClass: 'yoga-tag', icon: '🧘', title: 'Yoga', desc: 'Daily practice' },
+
+            // ----- Videos (original) -----
+            { id: 25, type: 'video', category: ['video', 'doctor'], src: 'https://res.cloudinary.com/kgqfbt78/video/upload/v1784278749/treat4_mzctej.mp4', alt: 'Doctor Consultation', tag: 'Video', tagClass: 'video-tag', icon: '🎥', title: 'Doctor Consultation', desc: 'Expert Ayurvedic guidance' },
+            
+            // ----- New Videos -----
+            { id: 28, type: 'video', category: ['video', 'therapy'], src: 'https://res.cloudinary.com/kgqfbt78/video/upload/v1784529336/bhagwan-compressed_pvuiqn.mp4', alt: 'Therapy Session', tag: 'Therapy', tagClass: 'video-tag', icon: '🎥', title: 'Therapy Session', desc: 'Healing therapy in action' },
+            { id: 29, type: 'video', category: ['video', 'therapy'], src: 'https://res.cloudinary.com/kgqfbt78/video/upload/v1784529333/vd_wellness_ccentre-compressed_zbfdnm.mp4', alt: 'Wellness Centre', tag: 'Wellness', tagClass: 'video-tag', icon: '🎥', title: 'Wellness Centre', desc: 'Tour of our wellness center' },
+            { id: 30, type: 'video', category: ['video', 'therapy'], src: 'https://res.cloudinary.com/kgqfbt78/video/upload/v1784529331/muh_pe_tel-compressed_dtq34d.mp4', alt: 'Oil Therapy', tag: 'Therapy', tagClass: 'video-tag', icon: '🎥', title: 'Oil Therapy', desc: 'Traditional oil application' },
+            { id: 31, type: 'video', category: ['video', 'therapy'], src: 'https://res.cloudinary.com/kgqfbt78/video/upload/v1784529330/kamar_pe_spray-compressed_veohlp.mp4', alt: 'Spray Therapy', tag: 'Therapy', tagClass: 'video-tag', icon: '🎥', title: 'Spray Therapy', desc: 'Herbal spray treatment' },
+            { id: 32, type: 'video', category: ['video', 'therapy'], src: 'https://res.cloudinary.com/kgqfbt78/video/upload/v1784529331/muh_pe-compressed_meh266.mp4', alt: 'Facial Therapy', tag: 'Therapy', tagClass: 'video-tag', icon: '🎥', title: 'Facial Therapy', desc: 'Ayurvedic facial treatment' },
+            { id: 33, type: 'video', category: ['video', 'therapy'], src: 'https://res.cloudinary.com/kgqfbt78/video/upload/v1784529325/pairo_wali_therapy-compressed_z7nkoi.mp4', alt: 'Foot Therapy', tag: 'Therapy', tagClass: 'video-tag', icon: '🎥', title: 'Foot Therapy', desc: 'Traditional foot massage' },
+            { id: 34, type: 'video', category: ['video', 'therapy'], src: 'https://res.cloudinary.com/kgqfbt78/video/upload/v1784529325/wc_andr_se-compressed_h7oced.mp4', alt: 'Treatment Room', tag: 'Therapy', tagClass: 'video-tag', icon: '🎥', title: 'Treatment Room', desc: 'Inside our treatment room' },
+            { id: 35, type: 'video', category: ['video', 'environment'], src: 'https://res.cloudinary.com/kgqfbt78/video/upload/v1784529318/gallery-compressed_cr9csk.mp4', alt: 'Gallery Tour', tag: 'Environment', tagClass: 'video-tag', icon: '🎥', title: 'Gallery Tour', desc: 'Virtual tour of our space' },
+            { id: 36, type: 'video', category: ['video', 'therapy'], src: 'https://res.cloudinary.com/kgqfbt78/video/upload/v1784529312/therapy_rooom-compressed_c6gtso.mp4', alt: 'Therapy Room', tag: 'Therapy', tagClass: 'video-tag', icon: '🎥', title: 'Therapy Room', desc: 'Specially designed therapy room' },
+            { id: 37, type: 'video', category: ['video', 'therapy'], src: 'https://res.cloudinary.com/kgqfbt78/video/upload/v1784529311/therapy-compressed_foyovi.mp4', alt: 'Therapy Session', tag: 'Therapy', tagClass: 'video-tag', icon: '🎥', title: 'Therapy Session', desc: 'Complete therapy experience' },
+            { id: 38, type: 'video', category: ['video', 'therapy'], src: 'https://res.cloudinary.com/kgqfbt78/video/upload/v1784529300/steam_bath-compressed_pbyl6e.mp4', alt: 'Steam Bath', tag: 'Therapy', tagClass: 'video-tag', icon: '🎥', title: 'Steam Bath', desc: 'Ayurvedic steam therapy' },
+            { id: 39, type: 'video', category: ['video', 'environment'], src: 'https://res.cloudinary.com/kgqfbt78/video/upload/v1784529285/medical_store-compressed_bslskt.mp4', alt: 'Medical Store', tag: 'Environment', tagClass: 'video-tag', icon: '🎥', title: 'Medical Store', desc: 'Our authentic Ayurvedic pharmacy' }
+        ];
 
         // ============================================================
-        // 2. RENDER GALLERY FROM DATA
+        // RENDER GALLERY
         // ============================================================
         function renderGallery(items) {
             const grid = document.getElementById('galleryGrid');
@@ -576,7 +393,7 @@
                                 <source src="${item.src}" type="video/mp4">
                             </video>`;
                 } else {
-                    mediaHtml = `<img src="${item.src}" alt="${item.alt}">`;
+                    mediaHtml = `<img src="${item.src}" alt="${item.alt}" loading="lazy">`;
                 }
 
                 const tagClass = item.tagClass ? ` ${item.tagClass}` : '';
@@ -600,7 +417,7 @@
         }
 
         // ============================================================
-        // 3. FILTER LOGIC
+        // FILTER LOGIC
         // ============================================================
         function setupFilters() {
             const filterBtns = document.querySelectorAll('.filter-btn');
@@ -622,7 +439,7 @@
         }
 
         // ============================================================
-        // 4. OPEN MEDIA (LIGHTBOX)
+        // OPEN MEDIA (LIGHTBOX)
         // ============================================================
         function openMedia(id) {
             const item = galleryData.find(i => i.id === id);
@@ -655,7 +472,7 @@
         }
 
         // ============================================================
-        // 5. INIT
+        // INIT
         // ============================================================
         document.addEventListener('DOMContentLoaded', function() {
             renderGallery(galleryData);
@@ -673,7 +490,5 @@
             fadeElements.forEach(el => observer.observe(el));
         });
     </script>
-
 </body>
-
 </html>
