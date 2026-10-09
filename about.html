@@ -346,6 +346,52 @@
         .fade-in.delay-3 { transition-delay: 0.3s; }
         .fade-in.delay-4 { transition-delay: 0.4s; }
         .fade-in.delay-5 { transition-delay: 0.5s; }
+
+
+
+        /* Certificates */
+.cert-section { padding: 80px 0; background: #f8f4f0; }
+.cert-section .section-title { text-align: center; font-size: 38px; font-family: 'Playfair Display', serif; color: #2d1f14; margin-bottom: 15px; }
+.cert-section .section-subtitle { text-align: center; color: #4d3425; max-width: 650px; margin: 0 auto 50px auto; font-size: 18px; }
+.cert-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.cert-card {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+    border-top: 5px solid #8b1a1a;
+    transition: all 0.3s ease;
+}
+.cert-card:hover { transform: translateY(-6px); box-shadow: 0 18px 40px rgba(139,26,26,0.12); }
+.cert-card .icon { font-size: 56px; display: block; margin-bottom: 15px; }
+.cert-card h4 { font-size: 22px; color: #2d1f14; margin-bottom: 10px; font-family: 'Playfair Display', serif; }
+.cert-card p { font-size: 15px; color: #4d3425; line-height: 1.7; margin-bottom: 25px; }
+.cert-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background: #8b1a1a;
+    color: #fff;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 15px;
+    text-decoration: none;
+    border: 2px solid #8b1a1a;
+    transition: all 0.3s ease;
+}
+.cert-btn:hover { background: transparent; color: #8b1a1a; }
+
+@media (max-width: 768px) {
+    .cert-section { padding: 60px 0; }
+    .cert-section .section-title { font-size: 28px; }
+    .cert-grid { grid-template-columns: 1fr; }
+}
     </style>
 </head>
 
@@ -511,6 +557,29 @@
             </div>
         </div>
     </div>
+
+
+    <!-- CERTIFICATES -->
+<div class="cert-section">
+    <div class="fixwrap">
+        <h2 class="section-title fade-in">Our Certifications</h2>
+        <p class="section-subtitle fade-in delay-1">Dhaniram is an empanelled and recognised healthcare provider for cashless treatment.</p>
+        <div class="cert-grid">
+            <div class="cert-card fade-in">
+                <span class="icon">📜</span>
+                <h4>GIC Empanelment Certificate</h4>
+                <p>Official GIC empanelment certificate confirming Dhaniram as an approved hospital.</p>
+                <a href="pdf/gic-empanelment-certificate.pdf" class="cert-btn" target="_blank" rel="noopener">View Certificate</a>
+            </div>
+            <div class="cert-card fade-in delay-1">
+                <span class="icon">🏅</span>
+                <h4>GIC Placard Certificate</h4>
+                <p>GIC placard certificate displayed at Dhaniram for network hospital recognition.</p>
+                <a href="pdf/gic-placard-certificate.pdf" class="cert-btn" target="_blank" rel="noopener">View Certificate</a>
+            </div>
+        </div>
+    </div>
+</div>
 
     <!-- THE DHANIRAM PROMISE (new) -->
     <div class="promise-section">
